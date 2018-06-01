@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home</title>
+    <link rel="stylesheet" href="assets/css/vendors/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/vendors/slick.css">
+    <link rel="stylesheet" href="assets/css/vendors/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__top-section">
+            <div class="container">
+                <div class="row ">
+                    <div class="col-12 col-lg-12 d-flex justify-content-between">
+                        <div class="lang-nav">
+                            <ul>
+                                <li><a href="#" class="current">uk</a></li>
+                                <li><a href="#">eng</a></li>
+                            </ul>
+                        </div>
+                        <div class="contacts-nav">
+                            <ul>
+                                <li>
+                                    <i class="icon icon-message"></i>
+                                    <a href="mailto:Family@Residence.com.ua">Family@Residence.com.ua</a>
+                                </li>
+                                <li>
+                                    <i class="icon icon-phone"></i>
+                                    <a href="tel:+380672668263">+ 38 067 266 8263</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header__nav-section">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-3">
+                        <a href="#">
+            <img src="assets/img/logo.png" alt="#" class="img-fluid">
+          </a>
+                    </div>
+                    <div class="col-9">
+                        <nav class="main-nav">
+                            <ul class="d-flex justify-content-between">
+                                <li><a href="#">Про готель</a></li>
+                                <li><a href="#">Boutique Hotel</a></li>
+                                <li><a href="#">Budget Hotel</a></li>
+                                <li><a href="#">Apartaments</a></li>
+                                <li><a href="#">Beauty zone</a></li>
+                                <li><a href="#">Контакти</a></li>
+                                <li><a href="#">FAQ</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="main-carousel">
+        <!-- Carousel -->
+        <div data-js="main-carousel">
+            <!-- Slide -->
+            <div class="main-carousel__slide main-carousel__slide_one">
+                <div class="slide-outer" style="background-image: url(assets/img/main-slide.jpg);">
+                </div>
+            </div>
+            <!-- /Slide -->
+            <!-- Slide -->
+            <div class="main-carousel__slide main-carousel__slide_one">
+                <div class="slide-outer" style="background-image: url(assets/img/main-slide.jpg);">
+                </div>
+            </div>
+            <!-- /Slide -->
+        </div>
+        <!-- /Carousel -->
+    </section>
+    <section class="content-line">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title">
+                        <h2>
+
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-lg-8">
+                    <img src="assets/img/hostel-room-1.jpg" alt="picture" class="img-fluid pb-4">
+                    <div class="descriptions">
+                        <p>
+                            Бутік-готель з високим стандартом сервісу, поєднує у собі проживання в номерах різної категорії : від номерів Стандарт до категорії Півлюкс.
+                        </p>
+                    </div>
+                    <div class="descriptions">
+                        <p>
+                            <b>Загальна основна кількість місць у комплексі – 24.</b> Готельна частина комплексу складається з 9 номерів, умебльованих в індивідуальному стилі з цікавою кольоровою гамою інтер’єру.
+                        </p>
+                    </div>
+                    <div class="descriptions">
+                        <p>
+                            Особливість у тому, що частина меблів ручної роботи, виконана з натуральних матеріалів. Декори та аксесуари – це те, що створює красу і затишок нашого готелю
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Jquery -->
+    <script src="assets/js/vendors/jquery-3.3.1.js"></script>
+    <!-- Slick slider -->
+    <script src="assets/js/vendors/slick.min.js"></script>
+    <!-- Animate on scroll -->
+    <script src="assets/js/vendors/aos.js"></script>
+    <!-- Custom script -->
+    <script src="assets/js/script.min.js"></script>
+
+    <script>
+        var mainCarousel = $('*[data-js="main-carousel"]').length;
+        if (mainCarousel > 0) {
+            $('*[data-js="main-carousel"]').slick({
+                slidesToShow: 1,
+                slideToScroll: 1,
+                autoplay: false,
+                autoplaySpeed: 4000,
+                infinite: true,
+                arrows: true,
+                prevArrow: "<a href=\"#\" class=\"slider-arr slider-arr_prev\"></a>",
+                nextArrow: "<a href=\"#\" class=\"slider-arr slider-arr_next\"></a>",
+            });
+        }
+    </script>
+</body>
+
+</html>

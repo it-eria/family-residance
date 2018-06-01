@@ -15,6 +15,22 @@
     {{/vendor-scripts}}
       <!-- Custom script -->
       <script src="assets/js/script.min.js"></script>
+
+      <script>
+        var mainCarousel = $('*[data-js="main-carousel"]').length;
+        if(mainCarousel > 0) {
+          $('*[data-js="main-carousel"]').slick({
+            slidesToShow: 1,
+            slideToScroll: 1,
+            autoplay: false,
+            autoplaySpeed: 4000,
+            infinite: true,
+            arrows: true,
+            prevArrow: "<a href=\"#\" class=\"slider-arr slider-arr_prev\"></a>",
+            nextArrow: "<a href=\"#\" class=\"slider-arr slider-arr_next\"></a>",
+          });
+        }
+      </script>
     </body>
   </html>
 {{/foot}}

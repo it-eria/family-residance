@@ -1,0 +1,49 @@
+.content-line {
+  margin-top: 50px;
+  padding-bottom: 40px;
+  padding-top: 40px;
+  background-color: #f8f8f8;
+  box-shadow: 0 1px 10px rgba(0,0,0,.1);
+}
+
+.descriptions {
+  width: 80%;
+  p {
+    font-family: $font-2;
+  }
+}
+
+.main-carousel {
+  padding-bottom: 17px;
+  background-color: #f8f8f8;
+  box-shadow: 0 1px 10px rgba(0,0,0,.1);
+}
+
+.slide-outer {
+  padding-top: 56%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slider-arr {
+  display: block;
+  width: 12px;
+  height: 12px;
+  border:  3px solid black;
+  top: 50%;
+  position: absolute;
+  transform: rotate(-45deg);
+ 
+  &_prev {
+    border-right: none;
+    border-bottom: none;
+    z-index: 6000;
+    left: 50px;
+  }
+  &_next {
+    right: 50px;
+    border-left: none;
+    border-top: none;
+  }
+}

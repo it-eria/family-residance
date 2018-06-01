@@ -1,0 +1,87 @@
+.header  {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5000;
+  &__top-section {
+    background-color: #2a3037;
+    .lang-nav {
+      padding-top: 20px;
+      padding-bottom: 20px;
+      ul {  
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        li {
+          a {
+            text-decoration: none;
+            color: #ffffff;
+            border-bottom: 1px solid transparent;
+            margin-right: 10px;
+            padding: 0 5px;
+            transition: all .3s ease-in-out;
+            &.current, &:hover {
+              border-color: #48a9b1;
+            }
+          }
+        }
+      }
+    } 
+    .contacts-nav {
+      padding-top: 20px;
+      padding-bottom: 20px;
+      ul {  
+        display: flex;    
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        li {
+          
+          .icon-message {
+            height: 30px;
+            width: 30px;
+            background-image: url(../assets/img/message.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: 50% 50%;
+        }
+          a {
+            text-decoration: none;
+            color: #ffffff;
+          }
+          &:first-child {
+            padding-right: 50px;
+          }
+        }
+      }
+    }
+  }
+  &__nav-section {
+    background-color: rgba(247,247,247,.8);
+    .container {
+      .main-nav {
+        ul {
+          display: flex;
+          justify-content: flex-end;
+          list-style: none;
+          margin: 0;
+          padding: 0;
+          li {
+            a {
+            text-decoration: none;
+            font-family: $font-1;
+            color: #333333;
+            font-size: 1.3rem;
+            white-space: nowrap;
+            &:hover {
+              color: #5a9599;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
