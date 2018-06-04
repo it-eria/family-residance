@@ -1,18 +1,22 @@
 {{#content-line-2}}
-<section class="content-line">
+<section class="content-line py-0">
   <div class="container">
     <div class="row">
-      <div class="col-12 col-lg-5 {{#reverse}}{{/reverse}}">
+      <div class="col-12 col-lg-5 py-5 order-2 {{#normal}}order-lg-1{{/normal}} {{#reverse}}order-lg-2{{/reverse}}">
         {{> ../partials/section-title }}
-        {{#paragraphs}}
-        <p>
-          {{{text}}}
-        </p>
-        {{/paragraphs}}
-        <a href="#" class="btn btn_big btn_small ">Переглянути усі номери</a>
+        <div data-aos="fade-left">
+          {{#paragraphs}}
+          <p>
+            {{{text}}}
+          </p>
+          {{/paragraphs}}
+        </div>
+        <div data-aos="fade-down">
+          <a href="#" class="btn btn_big btn_small">Переглянути усі номери</a>
+        </div>
       </div>
-      <div class="col-12 col-lg-7">
-        pictures
+      <div class="col-12 col-lg-7 bg-img-wrapper order-1 {{#normal}}order-lg-2{{/normal}} {{#reverse}}order-lg-1{{/reverse}}">
+        <div style="background-image: url(assets/img/{{thumbnail}});" data-aos="fade-down"></div>
       </div>
     </div>
   </div>

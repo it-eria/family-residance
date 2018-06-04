@@ -1,122 +1,139 @@
 {
- "home": {
-   "head": {
-     "title": "Home"
-   },
-   "foot": {
-     "vendor-scripts": {
-       "jquery": true,
-       "slick-slider": true,
-       "aos": true
-     }
-   },
-   "main-carousel": {
+  "home": {
+    "head": {
+      "title": "Home"
+    },
+    "foot": {
+      "vendor-scripts": {
+        "jquery": true,
+        "slick-slider": true,
+        "aos": true
+      }
+    },
+    "main-carousel": {
     "slides": [
       {
-        "slide-name": "main-slide"
-       
+        "slide-name": "main-slide"       
       },
       {
-        "slide-name": "main-slide"
-        
+        "slide-name": "main-slide"        
       } 
     ]
-  },
-  "content-line-1": {
-    "section-title": {
-      "title": "Boutique Hotel"
     },
-    "teaser-1": {
-      "file-name": "hostel-room-1.jpg",
-      "class": "img-fluid pb-4",
-      "paragraphs": [
+    "content-line-1": {
+      "section-title": {
+        "title": "Boutique Hotel"
+      },
+      "teaser-1": {
+        "file-name": "hostel-room-1.jpg",
+        "class": "img-fluid pb-4",
+        "paragraphs": [
+          {
+            "text": "Бутік-готель з високим стандартом сервісу, поєднує у собі проживання в номерах різної категорії : від номерів Стандарт до категорії Півлюкс."
+          },
+          {
+            "text": "<b>Загальна основна кількість місць у комплексі – 24.</b> Готельна частина комплексу складається з 9 номерів, умебльованих в індивідуальному стилі з цікавою кольоровою гамою інтер’єру."
+          },
+          {
+            "text": "Особливість у тому, що частина меблів ручної роботи, виконана з натуральних матеріалів. Декори та аксесуари – це те, що створює красу і затишок нашого готелю"
+          }
+        ]
+      },
+      "teasers": [
         {
-          "text": "Бутік-готель з високим стандартом сервісу, поєднує у собі проживання в номерах різної категорії : від номерів Стандарт до категорії Півлюкс."
+          "teaser-2": {
+            "img-name": "min-img-1.jpg",
+            "paragraphs": [
+              {
+                "text": "Двомісний номер <b>Делюкс</b>"
+              },
+              {
+                "text": "Від <b>2800грн</b> за ніч"
+              }
+            ]
+          }    
         },
         {
-          "text": "<b>Загальна основна кількість місць у комплексі – 24.</b> Готельна частина комплексу складається з 9 номерів, умебльованих в індивідуальному стилі з цікавою кольоровою гамою інтер’єру."
+          "teaser-2": {
+            "img-name": "min-img-2.jpg",
+            "paragraphs": [
+              {
+                "text": "Двомісний номер"
+              },
+              {
+                "text": "Від <b>2200грн</b> за ніч"
+              }
+            ]
+          }    
         },
         {
-          "text": "Особливість у тому, що частина меблів ручної роботи, виконана з натуральних матеріалів. Декори та аксесуари – це те, що створює красу і затишок нашого готелю"
+          "teaser-2": {
+            "img-name": "min-img-3.jpg",
+            "paragraphs": [
+              {
+                "text": "<b>Півлюкс</b>"
+              },
+              {
+                "text": "Від <b>3000грн</b> за ніч"
+              }
+            ]
+          }    
+        },
+        {
+          "teaser-2": {
+            "img-name": "min-img-4.jpg",
+            "paragraphs": [
+              {
+                "text": "Двомісний номер <b>Стандарт</b>"
+              },
+              {
+                "text": "Від <b>2400грн</b> за ніч"
+              }
+            ]
+          }    
         }
       ]
+      
     },
-    "teasers": [
+    "content-line-2": [
       {
-        "teaser-2": {
-          "img-name": "min-img-1.jpg",
-          "paragraphs": [
-            {
-              "text": "Двомісний номер <b>Делюкс</b>"
-            },
-            {
-              "text": "Від <b>2800грн</b> за ніч"
-            }
-          ]
-        }    
+        "normal": true,
+        "thumbnail": "thumbnail-1.jpg",
+        "section-title": {
+          "title": "Budget Hotel"
+        },
+        "paragraphs": [
+          {
+            "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+          },
+          {
+            "text": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+          },
+          {
+            "text": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\""
+          }
+        ]
       },
       {
-        "teaser-2": {
-          "img-name": "min-img-2.jpg",
-          "paragraphs": [
-            {
-              "text": "Двомісний номер"
-            },
-            {
-              "text": "Від <b>2200грн</b> за ніч"
-            }
-          ]
-        }    
-      },
-      {
-        "teaser-2": {
-          "img-name": "min-img-3.jpg",
-          "paragraphs": [
-            {
-              "text": "<b>Півлюкс</b>"
-            },
-            {
-              "text": "Від <b>3000грн</b> за ніч"
-            }
-          ]
-        }    
-      },
-      {
-        "teaser-2": {
-          "img-name": "min-img-4.jpg",
-          "paragraphs": [
-            {
-              "text": "Двомісний номер <b>Стандарт</b>"
-            },
-            {
-              "text": "Від <b>2400грн</b> за ніч"
-            }
-          ]
-        }    
+        "reverse": true,
+        "thumbnail": "thumbnail-2.jpg",
+        "section-title": {
+          "title": "Apartments"
+        },
+        "paragraphs": [
+          {
+            "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+          },
+          {
+            "text": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+          },
+          {
+            "text": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\""
+          }
+        ]
       }
-    ]
-    
-  },
-  "content-line-2": {
-    "section-title": {
-      "title": "Budget Hotel"
-    },
-    "teaser-1": {
-      "class": "d-none",
-      "paragraphs": [
-        {
-          "text": "Бутік-готель з високим стандартом сервісу, поєднує у собі проживання в номерах різної категорії : від номерів Стандарт до категорії Півлюкс."
-        },
-        {
-          "text": "<b>Загальна основна кількість місць у комплексі – 24.</b> Готельна частина комплексу складається з 9 номерів, умебльованих в індивідуальному стилі з цікавою кольоровою гамою інтер’єру."
-        },
-        {
-          "text": "Особливість у тому, що частина меблів ручної роботи, виконана з натуральних матеріалів. Декори та аксесуари – це те, що створює красу і затишок нашого готелю"
-        }
-      ]
-    }
-  },
-  "content-line-3": true,
-  "content-line-4": true
- }   
+    ],
+    "content-line-3": true,
+    "content-line-4": true
+  }   
 }

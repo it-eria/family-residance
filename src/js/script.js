@@ -21,7 +21,9 @@ function iteriaWatermark() {
   console.log(".`     ``     .//////\`  :     .:  -` `/       .: ");
 }
 
-iteriaWatermark();
+// iteriaWatermark();
+
+AOS.init();
 
 
 // Google Maps
