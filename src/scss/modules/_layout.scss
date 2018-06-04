@@ -85,3 +85,18 @@
     }
   }
 }
+
+.teaser-2 {
+  p {
+    color: #373736;
+    font-family: $font-1;
+    font-size: 1.25rem;
+    line-height: 1.2;
+    b {
+      font-family: $font-3;
+    }
+    &:last-child {
+      font-size: 1rem; 
+    }
+  }
+}

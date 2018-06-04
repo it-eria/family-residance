@@ -1,9 +1,151 @@
+#map {
+  width: 100%;
+  height: 720px;
+
+}
+
+.icon-1 {
+  margin-right: 10px;
+  vertical-align: middle;
+
+}
+.icon-2 {
+  margin-right: 10px;
+  vertical-align: middle;
+  
+}
+
+.title-wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+.section-title {
+  
+  h2 {
+    font-family: $font-4;
+    font-size: 3.125rem;
+  }
+}
+
+
+.bg {
+  background-position: 0 0;
+  height: 945px;
+}
+
+.btn {
+  &_big {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    background-color: #51bac2;
+    color: #ffffff;
+    font-family: $font-3;
+  }
+  &_small {
+    width: 60%;
+  }
+} 
+
+
+.pag-nav {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  li {
+    width: 26px;
+    height: 26px;
+    text-align: center;
+    display: block;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 1px 10px rgba(0,0,0,.1);
+  }
+}
+
+.btn-classic {
+  text-decoration: none;
+  display: block;
+  border: 1px solid #49a9b2;
+  color: #000000;
+  font-family: $font-3;
+  text-align: center;
+  font-size: 1.125rem;
+  padding-top: 4px;
+  padding-bottom: 4px;
+
+}
+
 .content-line {
   margin-top: 50px;
   padding-bottom: 40px;
   padding-top: 40px;
   background-color: #f8f8f8;
   box-shadow: 0 1px 10px rgba(0,0,0,.1);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  .text-baner {
+    margin: 15.625rem 0 0;  
+    text-align: center;
+    background-color: rgba(50, 56, 63, 0.95);  
+    color: #ffffff;
+    font-size: 1.875rem;
+    font-family: $font-1;
+    p {
+      margin: 0;
+      padding: 0;
+    }
+  }
+  .info-baner {
+    display: inline-block;
+    padding: 30px;
+    margin: 9.375rem 0 0;
+    background-color: #f7f8f8;
+    * {
+      color: #373736;
+    }
+    h2,h4 {
+      font-family: $font-4;
+    }
+    h2 {
+      font-size: 3.125rem;
+      padding: 0;
+      margin: 0 0 1.5rem 0;
+    }
+    h4 {
+      font-size: 1rem;
+      margin-top: 2.125rem;
+    }
+    p {
+      font-family: $font-2;
+      max-width: 434px;
+      margin: 0;
+      padding: 0;
+      & + p {
+        margin-top: 1rem;
+      }
+    }
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      li {
+        margin: 0;
+        font-family: $font-2;
+        &:before {
+          content: '-';
+          margin-right: 0.4rem;
+        }          
+      }
+    }
+  }
 }
 
 .descriptions {
@@ -17,6 +159,7 @@
   padding-bottom: 17px;
   background-color: #f8f8f8;
   box-shadow: 0 1px 10px rgba(0,0,0,.1);
+  
 }
 
 .slide-outer {
@@ -46,4 +189,9 @@
     border-left: none;
     border-top: none;
   }
+}
+
+.footer {
+  background-color: #2a3037;
+  color: #f7f7f7;
 }

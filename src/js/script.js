@@ -22,3 +22,22 @@ function iteriaWatermark() {
 }
 
 iteriaWatermark();
+
+
+// Google Maps
+function initMap() {
+  var markerPos = {lat: 49.840594, lng: 24.023675};
+  var centerPos = {lat: markerPos.lat, lng: markerPos.lng - 0.001};
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 16,
+    center: centerPos,
+    disableDefaultUI: true
+  });
+  
+  var marker = new google.maps.Marker({
+    position: markerPos,
+    map: map,
+    icon: 'assets/img/mapID.png',
+    title: 'Family residence'
+  });
+}
