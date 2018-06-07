@@ -6,6 +6,8 @@
   left: 0;
   z-index: 5000;
   &__top-section {
+    padding-top: 15px;
+    padding-bottom: 15px;
     background-color: #2a3037;
     .lang-nav {
       ul {  
@@ -40,7 +42,7 @@
             color: #ffffff;
           }
           &:first-child {
-            margin-right: .5rem;;
+            margin-right: 1.5rem;
           }
         }
       }
@@ -72,6 +74,11 @@
             }
           }
         }
+      }
+    }
+    .contacts-nav {
+      li:first-child {
+        margin-right: 0.5rem;
       }
     }
   }
@@ -169,9 +176,7 @@
     .contacts-nav{
       vertical-align: middle;
     }
-    .lang-nav {
   
-    }
   }
 }
 
@@ -203,3 +208,57 @@
 
   }
 }
+
+.slide-outer {
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;  
+}
+
+
+.white-block {
+  position: relative;
+  background-color: #ffffff;
+  padding: 20px 20px;
+  .inner-block {
+    padding: 50px 20px;
+    border: 2px solid #97cfd4;
+  }
+}
+
+.item-list {
+  li {
+    margin-top: 5px;
+    display: flex;
+    flex-flow: row wrap;
+    position: relative;
+    justify-content: space-between;
+    padding-left: 15px;
+    &::before {
+      content: '';
+      display: inline-block;
+      left: 0;
+      top: 10px;
+      position: absolute;
+      width: 3px;
+      height: 3px;
+      border-radius: 50%;
+      background-color: #97cfd4;
+    }
+  }
+  &__sublist {
+    width: 100%;
+    li {
+      
+      justify-content: flex-end;
+      span {
+        &:first-child {
+          margin-right: 15px;
+        }
+      }
+      &:before {
+        display: none;
+      }
+    }
+  }    
+}   

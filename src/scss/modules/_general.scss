@@ -38,6 +38,22 @@ p {
   vertical-align: middle;
 }
 
+.services-icons {
+  display: flex;
+  justify-content: space-around;
+  font-size: 3rem;
+  .item {
+    text-align: center;
+    color: #49a9b2;
+    p {
+      font-size: 1rem;
+      font-family: $font-3;
+      text-align: center;
+      margin-top: 1.25rem;
+      color: #373736;
+    }
+  }
+}
 
 .title-wrapper {
   display: flex;
@@ -49,6 +65,17 @@ p {
   h2 {
     font-family: $font-4;
     font-size: 3.125rem;
+  }
+  &__beauty-bnr {
+    h2 {
+      position: relative;
+      top: 30px;
+      font-size: 4.375rem;
+      font-family: $font-6;
+      color: #f7f8f8;
+      text-align: center;
+      padding-top: 20px;
+    }
   }
 }
 @media screen and (max-width: 992px) {
@@ -282,6 +309,35 @@ p {
   }
   &_map {
     padding: 12.5rem 0;
+    margin-top: 0;
+  }
+  &__beauty-zone {
+    position: relative;
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: rgba(33, 33, 33,.5);
+      height: 100%;
+      width: 100%;
+    }
+  }
+  &__price {
+    position: relative;
+    &:before {
+      
+      position: absolute;
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: rgba(33, 33, 33,.5);
+      height: 100%;
+      width: 100%;
+    }
   }
 }
 @media screen and (max-width: 992px) {
@@ -350,15 +406,24 @@ a {
   top: 50%;
   position: absolute;
   transform: rotate(-45deg);
- 
+  z-index: 6000;
   &_prev {
     border-right: none;
     border-bottom: none;
-    z-index: 6000;
     left: 50px;
   }
   &_next {
     right: 50px;
+    border-left: none;
+    border-top: none;
+  }
+  &_left {
+    left: -50px;
+    border-right: none;
+    border-bottom: none;
+  }
+  &_right {
+    right: -50px;
     border-left: none;
     border-top: none;
   }
@@ -385,5 +450,33 @@ a {
 @media screen and (min-width: 1470px) {
   .container {
     max-width: 1440px;
+  }
+}
+
+
+.dots-place {
+  .slick-dots {
+    position: relative;
+    margin-bottom: 30px;
+    bottom: 0px;
+    display: flex;
+    justify-content: flex-start;
+    li {
+      padding: 0;
+      margin: 0;
+      margin-right: 20px;
+      border: 1px solid #333333;
+      height: 12px;
+      width: 12px;
+    }
+    .slick-active {
+     background-color: #49a9b2;
+    }
+  }
+}
+.slick-dotted {
+  &.slick-slider {
+    margin-top: 50px;
+    margin-bottom: 15px;
   }
 }

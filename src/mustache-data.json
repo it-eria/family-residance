@@ -135,5 +135,101 @@
     ],
     "content-line-3": true,
     "content-line-4": true
+  },
+  "beauty-salon": {
+    "head": {
+      "title": "Beauty salon"
+    },
+    "content-line-3": true,
+    "content-line-4": true,
+    "beauty-zone-baner": {
+      "slide-name":"beauty-zone-baner",
+      "text":"Beauty zone"
+    },
+    "beauty-slider": {
+      "text": "Власний салон краси",
+      "slides": [
+        {
+          "slide-name": "slide-1"
+        },
+        {
+          "slide-name": "slide-1"
+        },
+        {
+          "slide-name": "slide-1"
+        },
+        {
+          "slide-name": "slide-1"
+        },
+        {
+          "slide-name": "slide-1"
+        },
+        {
+          "slide-name": "slide-1"
+        }
+      ]
+    },
+    "price": {
+      "section-title": {
+        "title": "Манікюр"
+      },
+      "items": [
+        {
+          "name": "Гігієнічна чистка",
+          "price": "",
+          "sublist": {
+            "sub-items": [
+              {
+                "name": "(жін)",
+                "price": "70 грн"
+              },
+              {
+                "name": "(чол)",
+                "price": "90 грн"
+              }
+            ]
+          }
+        },
+        {
+          "name": "Зняття гель лаку",
+          "price": "30 грн"
+        },
+        {
+          "name": "Покриття гель лаком (однот.)",
+          "price": "130 грн"
+        },
+        {
+          "name": "Дизайн одного  нігтика від",
+          "price": "10 грн"
+        },
+        {
+          "name": "Дизайн лунний",
+          "price": "30 грн"
+        },
+        {
+          "name": "Дизайн френч",
+          "price": "50 грн"
+        },
+        {
+          "name": "Ремонт одного нігтика",
+          "price": "20 грн"
+        },
+        {
+          "name": "Укріплення акрил. пудрою",
+          "price": "160 грн"
+        },
+        {
+          "name": "Укріплення біогелем",
+          "price": "100 грн"
+        }
+      ]
+    }, 
+    "foot": {
+      "vendor-scripts": {
+        "jquery": true,
+        "slick-slider": true,
+        "aos": true
+      }
+    }
   }   
 }
