@@ -7,28 +7,20 @@
             <div class="col-12">
                 {{> ../partials/section-title }}
             </div>
-          </div>
-          <div class="row">
             <div class="col-12 col-lg-4">
-              <ul class="item-list">
-                {{#items}}
-                  <li>
-                    <span>{{{name}}}</span><span>{{{price}}}</span>
-                    {{#sublist}}
-                    <ul class="item-list__sublist">
-                      {{#sub-items}}
-                        <li>
-                          <span>{{{name}}}</span><span>{{{price}}}</span>
-                        </li>
-                      {{/sub-items}}
-                    </ul>
-                    {{/sublist}}
-                  </li>  
-                {{/items}}
-              </ul>
+                {{> ../partials/price-block }}
             </div>
-            <div class="col-12 col-lg-8">
-              
+            <div class="col-12 col-lg-4">
+              <div class="row">
+                <div class="col-12">
+                    {{> ../partials/price-block }}
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                    {{> ../partials/price-block }}
+                </div>
+              </div>
             </div>
           </div>
         </div>

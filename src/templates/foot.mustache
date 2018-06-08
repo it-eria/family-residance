@@ -19,6 +19,7 @@
       <script>
         var mainCarousel = $('*[data-js="main-carousel"]').length;
         var beautyCarousel = $('*[data-js="beauty-carousel"]').length;
+        var galleryCarousel = $('*[data-js="gallery-carousel"]').length;
         if(mainCarousel > 0) {
           $('*[data-js="main-carousel"]').slick({
             slidesToShow: 1,
@@ -44,6 +45,21 @@
             nextArrow: "<a href=\"#\" class=\"slider-arr slider-arr_next slider-arr_right\"></a>",
             dots: true,
             appendDots: $('.beauty-carousel .dots-place'),
+          });
+        }
+
+        if(galleryCarousel > 0) {
+          $('*[data-js="gallery-carousel"]').slick({
+            slidesToShow: 2,
+            slideToScroll: 1,
+            autoplay: false,
+            autoplaySpeed: 4000,
+            infinite: true,
+            arrows: true,
+            prevArrow: "<a href=\"#\" class=\"slider-arr slider-arr_prev slider-arr_left\"></a>",
+            nextArrow: "<a href=\"#\" class=\"slider-arr slider-arr_next slider-arr_right\"></a>",
+            dots: true,
+            appendDots: $('.gallery-carousel .dots-place'),
           });
         }
       </script>

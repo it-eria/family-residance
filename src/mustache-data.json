@@ -140,7 +140,81 @@
     "head": {
       "title": "Beauty salon"
     },
-    "content-line-3": true,
+    "content-line-1": {
+      "section-title": {
+        "title": "Boutique Hotel"
+      },
+      "teaser-1": {
+        "file-name": "hostel-room-1.jpg",
+        "class": "img-fluid pb-4",
+        "paragraphs": [
+          {
+            "text": "Бутік-готель з високим стандартом сервісу, поєднує у собі проживання в номерах різної категорії : від номерів Стандарт до категорії Півлюкс."
+          },
+          {
+            "text": "<b>Загальна основна кількість місць у комплексі – 24.</b> Готельна частина комплексу складається з 9 номерів, умебльованих в індивідуальному стилі з цікавою кольоровою гамою інтер’єру."
+          },
+          {
+            "text": "Особливість у тому, що частина меблів ручної роботи, виконана з натуральних матеріалів. Декори та аксесуари – це те, що створює красу і затишок нашого готелю"
+          }
+        ]
+      },
+      "teasers": [
+        {
+          "teaser-2": {
+            "img-name": "min-img-1.jpg",
+            "paragraphs": [
+              {
+                "text": "Двомісний номер <b>Делюкс</b>"
+              },
+              {
+                "text": "Від <b>2800грн</b> за ніч"
+              }
+            ]
+          }    
+        },
+        {
+          "teaser-2": {
+            "img-name": "min-img-2.jpg",
+            "paragraphs": [
+              {
+                "text": "Двомісний номер"
+              },
+              {
+                "text": "Від <b>2200грн</b> за ніч"
+              }
+            ]
+          }    
+        },
+        {
+          "teaser-2": {
+            "img-name": "min-img-3.jpg",
+            "paragraphs": [
+              {
+                "text": "<b>Півлюкс</b>"
+              },
+              {
+                "text": "Від <b>3000грн</b> за ніч"
+              }
+            ]
+          }    
+        },
+        {
+          "teaser-2": {
+            "img-name": "min-img-4.jpg",
+            "paragraphs": [
+              {
+                "text": "Двомісний номер <b>Стандарт</b>"
+              },
+              {
+                "text": "Від <b>2400грн</b> за ніч"
+              }
+            ]
+          }    
+        }
+      ]
+      
+    },
     "content-line-4": true,
     "beauty-zone-baner": {
       "slide-name":"beauty-zone-baner",
@@ -170,60 +244,61 @@
       ]
     },
     "price": {
-      "section-title": {
-        "title": "Манікюр"
-      },
-      "items": [
-        {
-          "name": "Гігієнічна чистка",
-          "price": "",
-          "sublist": {
-            "sub-items": [
+        "price-block": [
+          {
+            "items": [
               {
-                "name": "(жін)",
-                "price": "70 грн"
+                "name": "Гігієнічна чистка",
+                "price": "",
+                "sublist": {
+                  "sub-items": [
+                    {
+                      "name": "(жін)",
+                      "price": "70 грн"
+                    },
+                    {
+                      "name": "(чол)",
+                      "price": "90 грн"
+                    }
+                  ]
+                }
               },
               {
-                "name": "(чол)",
-                "price": "90 грн"
+                "name": "Зняття гель лаку",
+                "price": "30 грн"
+              },
+              {
+                "name": "Покриття гель лаком (однот.)",
+                "price": "130 грн"
+              },
+              {
+                "name": "Дизайн одного  нігтика від",
+                "price": "10 грн"
+              },
+              {
+                "name": "Дизайн лунний",
+                "price": "30 грн"
+              },
+              {
+                "name": "Дизайн френч",
+                "price": "50 грн"
+              },
+              {
+                "name": "Ремонт одного нігтика",
+                "price": "20 грн"
+              },
+              {
+                "name": "Укріплення акрил. пудрою",
+                "price": "160 грн"
+              },
+              {
+                "name": "Укріплення біогелем",
+                "price": "100 грн"
               }
             ]
           }
-        },
-        {
-          "name": "Зняття гель лаку",
-          "price": "30 грн"
-        },
-        {
-          "name": "Покриття гель лаком (однот.)",
-          "price": "130 грн"
-        },
-        {
-          "name": "Дизайн одного  нігтика від",
-          "price": "10 грн"
-        },
-        {
-          "name": "Дизайн лунний",
-          "price": "30 грн"
-        },
-        {
-          "name": "Дизайн френч",
-          "price": "50 грн"
-        },
-        {
-          "name": "Ремонт одного нігтика",
-          "price": "20 грн"
-        },
-        {
-          "name": "Укріплення акрил. пудрою",
-          "price": "160 грн"
-        },
-        {
-          "name": "Укріплення біогелем",
-          "price": "100 грн"
-        }
-      ]
-    }, 
+        ]  
+    },
     "foot": {
       "vendor-scripts": {
         "jquery": true,
@@ -231,5 +306,46 @@
         "aos": true
       }
     }
-  }   
+  },
+  "about": {
+    "head": {
+      "title": "About"
+    },
+    "beauty-zone-baner": {
+      "slide-name":"about-zone-baner",
+      "text":"Про нас"
+    },
+    "beauty-slider": {
+      "text": "Галерея",
+      "slides": [
+        {
+          "slide-name": "slide-1"
+        },
+        {
+          "slide-name": "slide-1"
+        },
+        {
+          "slide-name": "slide-1"
+        },
+        {
+          "slide-name": "slide-1"
+        },
+        {
+          "slide-name": "slide-1"
+        },
+        {
+          "slide-name": "slide-1"
+        }
+      ]
+    },
+    "about-menu": true,
+    "content-line-4": true,
+    "foot": {
+      "vendor-scripts": {
+        "jquery": true,
+        "slick-slider": true,
+        "aos": true
+      }
+    }
+  } 
 }

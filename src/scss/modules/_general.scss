@@ -16,6 +16,13 @@ p {
   }
 }
 
+.inf-text {
+  margin-bottom: 40px;
+  p {
+ 
+  }
+}
+
 #map {
   position: absolute;
   top: 0;
@@ -76,6 +83,36 @@ p {
       text-align: center;
       padding-top: 20px;
     }
+  }
+
+  &__img {
+    margin: 0;
+    font-size: 2.5rem;
+    text-align: center;
+    padding-top: 9rem;
+    padding-bottom: 9rem;
+    color: #ffffff;
+    a {
+      font-family: $font-4;
+      position: relative;
+      z-index: 9999;
+    }
+  }
+}
+.menu-img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  position: relative;
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(33, 33, 33,.5);
+    height: 100%;
+    width: 100%;
   }
 }
 @media screen and (max-width: 992px) {
@@ -327,7 +364,6 @@ p {
   &__price {
     position: relative;
     &:before {
-      
       position: absolute;
       content: '';
       display: block;

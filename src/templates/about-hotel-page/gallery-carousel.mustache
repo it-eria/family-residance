@@ -1,0 +1,26 @@
+{{#beauty-slider}}
+  <section class="content-line">
+      <div class="container">
+          <div class="section-title text-center">
+            <h2>
+              {{text}}
+            </h2>
+          </div>
+            <div class="gallery-carousel">
+              <!-- Carousel -->
+              <div data-js="gallery-carousel">
+                {{#slides}}
+                <!-- Slide -->
+                <div class="gallery-carousel__slide gallery-carousel__slide_one">
+                  <div class="slide-outer" style="background-image: url(assets/img/{{slide-name}}.jpg);">
+                  </div>
+                </div>
+                <!-- /Slide -->
+                {{/slides}}
+              </div>
+              <!-- /Carousel -->  
+              <div class="dots-place"></div>
+            </div>
+        </div>
+  </section>
+{{/beauty-slider}}
