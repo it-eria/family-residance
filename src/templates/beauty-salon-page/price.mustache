@@ -4,21 +4,38 @@
       <div class="white-block">
         <div class="inner-block">
           <div class="row">
-            <div class="col-12">
-                {{> ../partials/section-title }}
+            <div class="col-12 col-lg-4">
+                {{> templates/partials/section-title }}
+                {{#items}}
+                <ul class="item-list">
+                  <li>
+                    <span>{{{name}}}</span><span>{{{price}}}</span>
+                    {{#sublist}}
+                    <ul class="item-list__sublist">
+                      {{#sub-items}}
+                        <li>
+                          <span>{{{name}}}</span><span>{{{price}}}</span>
+                        </li>
+                      {{/sub-items}}
+                    </ul>
+                    {{/sublist}}
+                  </li>  
+                </ul>
+                {{/items}}
             </div>
             <div class="col-12 col-lg-4">
-                {{> ../partials/price-block }}
+               {{#items}}
+               {{/items}}
             </div>
             <div class="col-12 col-lg-4">
               <div class="row">
                 <div class="col-12">
-                    {{> ../partials/price-block }}
+                   
                 </div>
               </div>
               <div class="row">
                 <div class="col-12">
-                    {{> ../partials/price-block }}
+                  
                 </div>
               </div>
             </div>

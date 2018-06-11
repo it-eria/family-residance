@@ -20,6 +20,7 @@
         var mainCarousel = $('*[data-js="main-carousel"]').length;
         var beautyCarousel = $('*[data-js="beauty-carousel"]').length;
         var galleryCarousel = $('*[data-js="gallery-carousel"]').length;
+        var salonCarousel = $('*[data-js="salon-carousel"]').length;
         if(mainCarousel > 0) {
           $('*[data-js="main-carousel"]').slick({
             slidesToShow: 1,
@@ -41,8 +42,8 @@
             autoplaySpeed: 4000,
             infinite: true,
             arrows: true,
-            prevArrow: "<a href=\"#\" class=\"slider-arr slider-arr_prev slider-arr_left\"></a>",
-            nextArrow: "<a href=\"#\" class=\"slider-arr slider-arr_next slider-arr_right\"></a>",
+            prevArrow: "<a href=\"#\" class=\"slider-arr slider-arr_left\"></a>",
+            nextArrow: "<a href=\"#\" class=\"slider-arr slider-arr_right\"></a>",
             dots: true,
             appendDots: $('.beauty-carousel .dots-place'),
           });
@@ -51,15 +52,49 @@
         if(galleryCarousel > 0) {
           $('*[data-js="gallery-carousel"]').slick({
             slidesToShow: 2,
+            centerMode: true,
+            centerPadding: '150px',
+            slideToScroll: 1,
+            autoplay: false,
+            autoplaySpeed: 4000,
+            infinite: true, 
+            arrows: true,
+            prevArrow: "<a href=\"#\" class=\"slider-arr slider-arr_gallery-l\"></a>",
+            nextArrow: "<a href=\"#\" class=\"slider-arr slider-arr_gallery-r \"></a>",
+            dots: true,
+            appendDots: $('.gallery-carousel .dots-place_gallery'),
+            responsive: [
+              {
+                breakpoint: 481,
+                settings: {
+                  centerMode: false,
+                  slidesToShow: 1,
+                  centerPadding: '0',
+                }
+              },{
+                breakpoint: 768,
+                settings: {
+                  centerMode: false,
+                  slidesToShow: 2,
+                  centerPadding: '0',
+                }
+              }
+            ]
+          });
+        }
+
+          if(salonCarousel > 0) {
+          $('*[data-js="salon-carousel"]').slick({
+            slidesToShow: 1,
             slideToScroll: 1,
             autoplay: false,
             autoplaySpeed: 4000,
             infinite: true,
             arrows: true,
-            prevArrow: "<a href=\"#\" class=\"slider-arr slider-arr_prev slider-arr_left\"></a>",
-            nextArrow: "<a href=\"#\" class=\"slider-arr slider-arr_next slider-arr_right\"></a>",
+            prevArrow: "<a href=\"#\" class=\"slider-arr slider-arr_salon-l\"></a>",
+            nextArrow: "<a href=\"#\" class=\"slider-arr slider-arr_salon-r\"></a>",
             dots: true,
-            appendDots: $('.gallery-carousel .dots-place'),
+            appendDots: $('.salon-carousel .dots-place'),
           });
         }
       </script>

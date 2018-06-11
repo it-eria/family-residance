@@ -215,6 +215,14 @@
   background-size: cover;  
 }
 
+@media screen and (max-width:480px) {
+  .slide-outer {
+    &__gallery {
+      margin-right: 0;
+    }
+  }
+}
+
 
 .white-block {
   position: relative;
