@@ -16,6 +16,14 @@ p {
   }
 }
 
+
+.text-t {
+  h2 {
+    font-size: 2.5rem;
+    font-family: $font-5;
+  }
+}
+
 .pr-dots {
   padding-right: 72px;
 }
@@ -23,9 +31,31 @@ p {
 .menu-bg {
   background-color: #ffffff;
 }
+.column-header-bg {
+  background-color: #f7f9f9;
+}
 
 .mb-salon {
   margin-bottom: 80px;
+}
+
+.mt-price {
+  margin-top: 100px;
+}
+
+@media screen and (max-width: 992px) {
+  .mt-price {
+    margin-top: 50px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .mt-price {
+    margin-top: 80px;
+  }
+}
+
+.mt-price-1 {
+  margin-top: 50px;
 }
 
 .inf-text {
@@ -55,6 +85,38 @@ p {
 .icon {
   margin-right: 10px;
   vertical-align: middle;
+}
+
+
+
+.column-header {
+  display: flex;
+  justify-content: space-around;
+  font-size: 3rem;
+  .txt-wrapper {
+    text-align: right;
+    max-width: 50%;
+    p {      
+      font-family: $font-2;
+      font-size: 1rem;
+      
+    }
+  }
+  .item {
+    text-align: center;
+    color: #373736;
+    p {
+      font-size: 1rem;
+      font-family: $font-3;
+      text-align: center;
+      margin-top: 1rem;
+      flex-wrap: wrap;
+    }
+    span {
+      font-size: 1rem;
+      text-align: left;
+    }
+  }
 }
 
 .services-icons {
@@ -510,12 +572,12 @@ a {
     border-top: none;
   }
   &_left {
-    left: -50px;
+    left: -30px;
     border-right: none;
     border-bottom: none;
   }
   &_right {
-    right: -50px;
+    right: -30px;
     border-left: none;
     border-top: none;
   }

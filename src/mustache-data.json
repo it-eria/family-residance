@@ -244,6 +244,9 @@
       ]
     },
     "price": { 
+      "section-title": {
+        "title": "kjf;ek"
+      },
       "items": [
         {
           "name": "Гігієнічна чистка",
@@ -293,8 +296,139 @@
           "name": "Укріплення біогелем",
           "price": "100 грн"
         }
-      ]  
+      ],
+      "items-1": [
+        {
+          "name": "Педикюр (пальчики + стопа)",
+          "price": "230грн"   
+        },
+        {
+          "name": "Педикюр пальчики",
+          "price": "150 грн"
+        },
+        {
+          "name": "Покриття гель лаком",
+          "price": "150 грн"
+        }
+      ],
+      "items-2": [
+        {
+          "name": "Укладка на плойку",
+          "price": "250грн"
+        },
+        {
+          "name": "Укладка феном",
+          "price": "100-200 грн"
+        },
+        {
+          "name": "Укладка по формі",
+          "price": "140 грн"
+        },
+        {
+          "name": "Голівудські локани",
+          "price": "300 грн"
+        },
+        {
+          "name": "Візаж + укладка волосся",
+          "price": "500 грн"
+        }
+      ],
+      "items-3": [
+        {
+          "name": "Жіноча корекція",
+          "price": "70 грн"
+          
+        },
+        {
+          "name": "Чоловіча корекція",
+          "price": "90 грн"
+        },
+        {
+          "name": "Корекція + фарбування)",
+          "price": "",
+          "sublist": {
+            "sub-items": [
+              {
+                "name": "Фарба",
+                "price": "100 грн"
+              },
+              {
+                "name": "Хна",
+                "price": "150 грн"
+              }
+            ]
+          }
+        }
+      ],
+      "items-4": [
+        {
+          "name": "Класичний",
+          "price": "250 грн"  
+        },
+        {
+          "name": "Smoky eyes",
+          "price": "300 грн"
+        },
+        {
+          "name": "Red lips",
+          "price": "250 грн"
+        },
+        {
+          "name": "Віковий",
+          "price": "250 грн"
+        },
+        {
+          "name": "Весільний",
+          "price": "350 грн",
+          "sublist": {
+            "sub-items": [
+              {
+                "name": "-Війки",
+                "price": "50 грн"
+              }
+            ]
+          }
+        }
+      ] 
     },
+    "content-line-2": [
+      {
+        "normal": true,
+        "thumbnail": "thumbnail-1.jpg",
+        "section-title": {
+          "title": "Budget Hotel"
+        },
+        "paragraphs": [
+          {
+            "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+          },
+          {
+            "text": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+          },
+          {
+            "text": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\""
+          }
+        ]
+      },
+      {
+        "reverse": true,
+        "thumbnail": "thumbnail-2.jpg",
+        "section-title": {
+          "title": "Apartments"
+        },
+        "paragraphs": [
+          {
+            "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+          },
+          {
+            "text": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+          },
+          {
+            "text": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\""
+          }
+        ]
+      }
+    ],
     "foot": {
       "vendor-scripts": {
         "jquery": true,
@@ -366,5 +500,143 @@
         "aos": true
       }
     }
-  } 
+  },
+  "flat-2": {
+    "head": {
+      "title": "Beauty salon"
+    },
+    "beauty-zone-baner": {
+      "slide-name":"baner-123",
+      "text":"Family Residence Boutique Hotel"
+    },
+    "deluxe-2": {
+    "teasers": [
+      {
+        "column-header": {
+          "number-icon": "9",
+          "text": "Місткість: 2 особи"
+        }   
+      },
+      {
+        "column-header": {
+          "number-icon": "10",
+          "text": "Площа номеру 20 м кв"
+        }   
+      },
+      {
+        "teaser-2": {
+          "img-name": "min-img-1.jpg",
+          "visibility": "d-none"
+        }    
+      },
+      {
+        "teaser-2": {
+          "img-name": "min-img-2.jpg",
+          "visibility": "d-none"
+        }    
+      },
+      {
+        "teaser-2": {
+          "img-name": "min-img-3.jpg",
+          "visibility": "d-none"
+        }    
+      },
+      {
+        "teaser-2": {
+          "img-name": "min-img-4.jpg",
+          "visibility": "d-none"
+        }    
+      },
+      {
+        "teaser-2": {
+          "img-name": "min-img-3.jpg",
+          "visibility": "d-none"
+        }    
+      },
+      {
+        "teaser-2": {
+          "img-name": "min-img-3.jpg",
+          "visibility": "d-none"
+        }    
+      },
+      {
+        "teaser-2": {
+          "img-name": "min-img-3.jpg",
+          "visibility": "d-none"
+        }    
+      },
+      {
+        "teaser-2": {
+          "img-name": "min-img-3.jpg",
+          "visibility": "d-none"
+        }    
+      }
+    ],
+    "items": [
+      {
+        "name": "Душ"
+      },
+      {
+        "name": "Умивальник"
+       
+      },
+      {
+        "name": "Туалет"
+       
+      },
+      {
+        "name": "Фен"
+        
+      },
+      {
+        "name": "Рушники"
+       
+      },
+      {
+        "name": "Шампунь"
+       
+      },
+      {
+        "name": "Рідке мило"
+        
+      },
+      {
+        "name": "Одноразові тапочки"
+        
+      }
+    ],
+    "items-1": [
+      {
+        "name": "Сейф"
+      },
+      {
+        "name": "Шафа"
+       
+      },
+      {
+        "name": "Вішаки для одягу"
+       
+      },
+      {
+        "name": "Підставка під чемодан"
+        
+      },
+      {
+        "name": "Стіл"
+       
+      },
+      {
+        "name": "Крісла"
+       
+      }
+    ]
+  },
+    "foot": {
+      "vendor-scripts": {
+        "jquery": true,
+        "slick-slider": true,
+        "aos": true
+      }
+    }
+  }
 }

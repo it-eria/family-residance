@@ -1,0 +1,111 @@
+{{#deluxe-2}}
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-12">
+        <div class="text-t">
+          <h2>Двомісний делюкс</h2>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <div class="flat-nav">
+          <ul>
+            <li class="li">
+              <a href="#" class="current mr-4">Номер 1</a>
+            </li>
+            <li class="li">
+              <a href="#" class="mr-4">Номер 2</a>
+            </li>
+            <li class="li">
+              <a href="#" class="mr-4">Номер 3</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 col-lg-8">
+        <img src="assets/img/title-photo.jpg" alt="flat" class="img-fluid">
+        <div class="row">
+          <div class="col-12 col-lg-12">
+            <div class="column-header">
+              <div class="row">
+                <div class="col-6">
+                    <div class="item">
+                        <i class="icon icon-11"></i>
+                        <p>Бкзкоштовний Wi-Fi</p>
+                        <p>Власна ванна кімната</p>
+                        {{#items}}
+                        <ul class="item-list">
+                          <li>
+                            <span>{{{name}}}</span>
+                          </li>  
+                        </ul>
+                        {{/items}}
+                      </div>
+                </div>
+                <div class="col-6">
+                    <div class="item">
+                        <i class="icon icon-13"></i>
+                        <p>Кондиціонер</p>
+                        <p>Власна ванна кімната</p>
+                        {{#items-1}}
+                        <ul class="item-list">
+                          <li>
+                            <span>{{{name}}}</span>
+                          </li>  
+                        </ul>
+                        {{/items-1}}
+                      </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <div class="row">
+                    <div class="col-6">
+                        <div class="item">
+                            <i class="icon icon-12"></i>
+                            <p>Супутникове телебачення</p>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="item">
+                          <i class="icon icon-15"></i>
+                          <p>Мінібар</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12 d-flex justify-content-center">
+                      <div class="txt-wrapper">
+                        <p>fhdfgdf</p>
+                        
+                       </div>
+                    </div>
+                  </div>    
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-4">
+        <div class="row column-header-bg">
+          {{#teasers}}
+          <div class="col-6 col-sm-6 mb-3 mb-lg-1">
+              {{> ../partials/column-header }}
+          </div>
+          {{/teasers}}
+        </div>
+        <div class="row">
+          {{#teasers}}
+          <div class="col-6 col-sm-6 mb-3 mb-lg-2">
+            {{> ../partials/teaser-2 }}
+          </div>
+          {{/teasers}}
+        </div>
+      </div>
+    </div>
+  </div>
+{{/deluxe-2}}
