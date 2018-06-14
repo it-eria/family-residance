@@ -313,6 +313,8 @@
         var beautyCarousel = $('*[data-js="beauty-carousel"]').length;
         var galleryCarousel = $('*[data-js="gallery-carousel"]').length;
         var salonCarousel = $('*[data-js="salon-carousel"]').length;
+        var flatCarousel = $('*[data-js="flat-carousel"]').length;
+
         if (mainCarousel > 0) {
             $('*[data-js="main-carousel"]').slick({
                 slidesToShow: 1,
@@ -385,6 +387,26 @@
                 nextArrow: "<a href=\"#\" class=\"slider-arr slider-arr_salon-r\"></a>",
                 dots: true,
                 appendDots: $('.salon-carousel .dots-place'),
+            });
+        }
+
+
+        if (flatCarousel > 0) {
+            $('*[data-js="flat-carousel"]').slick({
+                slidesToShow: 3,
+                slideToScroll: 1,
+                autoplay: false,
+                autoplaySpeed: 4000,
+                infinite: true,
+                arrows: true,
+                prevArrow: "<a href=\"#\" class=\"slider-arr slider-arr_flats-l\"></a>",
+                nextArrow: "<a href=\"#\" class=\"slider-arr slider-arr_flats-r\"></a>",
+                responsive: [{
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 1,
+                    }
+                }]
             });
         }
     </script>
