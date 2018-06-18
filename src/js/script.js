@@ -3,7 +3,7 @@ $(function() {
     e.preventDefault();
     $(this).toggleClass('clicked');
     $('.header__nav-section').fadeToggle(300);
-  });  
+  });
 });
 
 function iteriaWatermark() {

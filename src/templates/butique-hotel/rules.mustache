@@ -1,0 +1,88 @@
+{{#rules}}
+<section class="contet-line">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-4">
+        <aside class="left-bar">
+          <div class="itm itm_1 mt-4">
+            <h2>Правила бронювання</h2>
+            <div class="separator"></div>
+            {{#items}}
+            <ul class="item-list">
+              <li>
+                <span>{{{name}}}</span>
+              </li>  
+            </ul>
+            {{/items}}
+          </div>
+          <div class="itm itm_2 mt-4">
+            <h2>Найсучасніші засоби безпеки</h2>
+            <div class="separator"></div>
+            <div class="wrp">
+              <i class="icon icon-6"></i>
+              <p>Номери з електронними замками</p>
+            </div>
+            <div class="wrp">
+              <i class="icon icon-7 mt-2"></i>
+              <p>Система відеоспостереження у коридорах</p>
+            </div>
+            <div class="wrp">
+              <i class="icon icon-8"></i>
+              <p>Сучасна пожежна сигналізація</p>
+            </div>
+          </div>
+          <div class="itm itm_3 mt-4">
+            <h2>У всіх номерах</h2>
+            <div class="separator"></div>
+            <div class="row">
+              <div class="col-6  d-flex justify-content-center">
+                <div class="item-serv">
+                  <i class="icon icon-12"></i>
+                  <p>Супутникове телебачення</p>
+                </div> 
+              </div>
+              <div class="col-6  d-flex justify-content-center">
+                  <div class="item-serv">
+                      <i class="icon icon-17"></i>
+                      <p>Мінібари</p>
+                    </div> 
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-6  d-flex justify-content-center">
+                <div class="item-serv">
+                  <i class="icon icon-20"></i>
+                  <p>Кондиціонери</p>
+                </div> 
+              </div>
+              <div class="col-6  d-flex justify-content-center">
+                <div class="item-serv">
+                  <i class="icon icon-21"></i>
+                  <p>Безкоштовний WiFi</p>
+                </div> 
+              </div>
+            </div>
+          </div>
+          <div class="itm itm_4 mt-4">
+            <i class="icon icon-6"></i>
+            <p>Стійка реєстрації працює цілодобово</p>
+          </div>
+          <div class="itm itm_5 mt-4">
+            <h2>Швидкий пошук</h2>
+            <div class="separator"></div>
+          </div>
+        </aside>
+      </div>
+      <div class="col-12 col-lg-8">
+        <div class="row">
+          {{#slides}}
+          <div class="col-12 col-lg-6">
+            {{> ../partials/teaser-3 }}
+          </div>
+          {{/slides}}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{/rules}}
