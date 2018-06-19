@@ -399,3 +399,10 @@
   margin-bottom: 20px;
 }
 
+.flat-carousel {
+  .menu-itm {
+    &:hover {
+      position: relative;
+    }
+  }
+}
