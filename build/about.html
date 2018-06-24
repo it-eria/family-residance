@@ -15,6 +15,26 @@
 
 <body>
     <header class="header">
+        <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+                    <div class="modal-txt">
+                        <h2>Hire <span>us</span></h2>
+                        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <form action="">
+                            <input type="text" placeholder="Your Email">
+                            <input type="text" placeholder="Subject">
+                            <textarea name="" id="" cols="30" rows="10" placeholder="Your message"></textarea>
+                            <input type="submit" value="Hire us">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="header__top-section">
             <div class="container">
                 <div class="row">
@@ -40,7 +60,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <a href="#" class="btn btn_big btn_big_hdr">Забронювати номер</a>
+                        <a href="#" class="btn btn_big btn_big_hdr" data-toggle="modal" data-target="#requestModal">Забронювати номер</a>
                         <a href="#" class="d-lg-none burger-button"><span></span></a>
                     </div>
                 </div>
@@ -67,6 +87,34 @@
                             </ul>
                         </nav>
                     </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="requestModal" tabindex="-1" role="dialog" aria-labelledby="requestModal" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="form-wrapper d-flex justify-content-center">
+                    <form action="SUBMIT" class="popup-form">
+                        <div class="title-color">
+                            <h2>Бронювання номеру</h2>
+                        </div>
+                        <div class="input-parent d-flex justify-content-center">
+                            <div class="txt-inputs d-flex flex-column">
+                                <p>Ім'я</p>
+                                <input type="text">
+                                <p>Прізвище</p>
+                                <input type="text">
+                            </div>
+                            <div class="txt-inputs d-flex flex-column">
+                                <p>Номер телефону</p>
+                                <input type="number">
+                                <p>Email</p>
+                                <input type="email">
+                            </div>
+                        </div>
+                        <div class="btn-wrapper">
+                            <a href="#" class="btn btn_big btn_big_form">Забронювати номер</a>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
@@ -410,6 +458,9 @@
     </script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDxkUUlSbRNNNbTvIKVa1tLmbhQfrgq45g&callback=initMap">
     </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 
 </html>

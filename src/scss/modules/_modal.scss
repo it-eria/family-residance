@@ -1,0 +1,38 @@
+/************MODAL**************/
+.popup-form {
+  background-color: #f7f9f9;
+  padding-bottom: 40px;
+  .title-color {
+    text-align: center;
+    h2 {
+      padding-top: 25px;
+      padding-bottom: 25px;
+      background-color: #71bdc2;
+      font-size: 3.125rem;
+      font-family: $font-4;
+      color: #f8f9fa;
+    }
+  }
+  .txt-inputs {
+    input {
+      margin-right: 40px;
+      margin-left: 40px;
+      width: 300px;
+      border: none;
+      border-bottom: 1px solid #71bdc2;
+      background-color: transparent;
+    }
+    p {
+      padding-left: 40px;
+      font-size: 0.8rem;
+      margin-top: 15px;
+    }
+  }
+  .btn-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 40px;
+  }
+}
+
+/******MODAL*************/

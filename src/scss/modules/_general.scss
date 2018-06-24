@@ -345,6 +345,10 @@ p {
       height: 40px;
       width: 20%;
     }
+    &_form {
+      width: 33%;
+      
+    }
     &:hover {
       color: #fff;
       background-color: darken(#51bac2, 5%);
@@ -983,5 +987,7 @@ background-size: cover;
     font-size: 3rem;
   }
 }
+
+
 
 
