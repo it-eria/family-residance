@@ -4,6 +4,7 @@ $(function() {
     $(this).toggleClass('clicked');
     $('.header__nav-section').fadeToggle(300);
   });
+  $('.custom-select').niceSelect();
 });
 
 function iteriaWatermark() {

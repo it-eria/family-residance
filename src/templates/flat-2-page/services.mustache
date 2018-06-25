@@ -2,89 +2,31 @@
  <section class="content-line content-line__menu-bg">
    <div class="container">
      <div class="row">
-        <div class="col-12 col-lg-6">
-          <div class="row">
-            <div class="col-12 col-lg-12">
-              <div class="column-header-bg">
-                <div class="title-serv">
-                  <h2>Послуги,<br>які входять у вартість</h2>
-                </div>
-              <div class="row">
-                <div class="col-6  d-flex justify-content-center">
-                  <div class="item-serv">
-                    <i class="icon icon-16"></i>
-                    <p>Кава, чай на рецепції</p>
-                  </div> 
-                </div>
-                <div class="col-6  d-flex justify-content-center">
-                    <div class="item-serv">
-                        <i class="icon icon-17"></i>
-                        <p>Інформаційні послуги</p>
-                      </div> 
+        {{#services-side}}
+        <div class="col-12 col-lg-6 text-center">
+          <div class="services-content-wrapper column-header-bg h-100">
+            <div class="row mb-2" data-mh="services-main-title-gr">
+              <div class="col-12">
+                <h2>{{{services-main-title}}}</h2>
+              </div>
+            </div>
+            <div class="row">
+              {{#serv-item}}
+              <div class="col-6 mt-5">
+                <div class="item-serv" data-mh="item-serv-gr">
+                  <i class="icon icon-{{serv-icon}} d-block mx-auto"></i>
+                  <h5>{{serv-title}}</h5>
+                  {{#serv-desc}}
+                    <p>{{serv-desc}}</p>
+                  {{/serv-desc}}
                 </div>
               </div>
-              <div class="row pb-5 mt-sr">
-                <div class="col-6  d-flex justify-content-center">
-                  <div class="item-serv">
-                    <i class="icon icon-20"></i>
-                    <p>Щоденне прибирання номерів</p>
-                  </div> 
-                </div>
-                <div class="col-6  d-flex justify-content-center">
-                  <div class="item-serv">
-                    <i class="icon icon-21"></i>
-                    <p>Виклик таксі</p>
-                  </div> 
-                </div>
-              </div>
-              </div>
+              {{/serv-item}}
             </div>
           </div>
         </div>
-        <div class="col-12 col-lg-6  mt-5 mt-lg-0">
-          <div class="row">
-            <div class="col-12 col-lg-12">
-              <div class="column-header-bg">
-                <div class="title-serv"> 
-                  <h2>Додаткові послуги,<br> що не входять у вартість</h2>
-                </div>
-                <div class="row">
-                  <div class="col-6  d-flex justify-content-center">
-                      <div class="item-serv">
-                          <i class="icon icon-18"></i>
-                          <p>Екскурсійні програми</p>
-                          <p>з кваліфікованими гідами на різних мовах</p>
-                        </div> 
-                  </div>
-                  <div class="col-6  d-flex justify-content-center">
-                      <div class="item-serv">
-                          <i class="icon icon-19"></i>
-                          <p>Beauty Zone</p>
-                          <p>Послуги салону краси</p>
-                        </div> 
-                  </div>
-                </div>
-                <div class="row pb-3 mt-srv">
-                  <div class="col-6  d-flex justify-content-center">
-                      <div class="item-serv">
-                          <i class="icon icon-22"></i>
-                          <p>Трансфер</p>
-                          <p>до залізничного вокзалу або аеропорту</p>
-                        </div> 
-                  </div>
-                  <div class="col-6  d-flex justify-content-center">
-                      <div class="item-serv">
-                          <i class="icon icon-23"></i>
-                          <p>Прокат авто</p>
-                          <p>Щоб потрапити куди потрібно з легкістю</p>
-                        </div> 
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-     </div>
+        {{/services-side}}
+      </div>
     </div>
  </section>
 {{/services}}

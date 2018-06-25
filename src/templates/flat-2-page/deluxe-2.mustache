@@ -94,12 +94,14 @@
         </div>
       </div>
       <div class="col-12 col-lg-4">
-        <div class="row column-header-bg  mt-5 mt-lg-0">
-          {{#teasers}}
-          <div class="col-6 col-sm-6 mb-3 mb-lg-1">
+        <div class="column-header-bg mt-5 mt-lg-0">
+          <div class="row">
+            {{#partials}}
+            <div class="col-6 col-sm-6 mb-3 mb-lg-1">
               {{> ../partials/column-header }}
+            </div>
+            {{/partials}}
           </div>
-          {{/teasers}}
         </div>
         <div class="row">
           {{#teasers}}

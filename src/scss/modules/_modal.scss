@@ -1,7 +1,15 @@
 /************MODAL**************/
 .popup-form {
+  width: 100%;
   background-color: #f7f9f9;
   padding-bottom: 40px;
+  .nice-select {
+    width: 30%;
+    font-family: $font-5;
+  }
+  label {
+    width: 12%;
+  }
   .title-color {
     text-align: center;
     h2 {
@@ -14,6 +22,7 @@
     }
   }
   .txt-inputs {
+    z-index: 9999;
     input {
       margin-right: 40px;
       margin-left: 40px;
@@ -33,6 +42,14 @@
     justify-content: flex-end;
     padding-right: 40px;
   }
+}
+
+.modal-body {
+  padding: 0;
+}
+
+#requestModal {
+  z-index: 99999;
 }
 
 /******MODAL*************/

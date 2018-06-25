@@ -8,7 +8,8 @@
         "jquery": true,
         "slick-slider": true,
         "aos": true,
-        "bt-js": true
+        "bt-js": true,
+        "nice-select":true
       }
     },
     "main-carousel": {
@@ -434,7 +435,9 @@
       "vendor-scripts": {
         "jquery": true,
         "slick-slider": true,
-        "aos": true
+        "aos": true,
+        "bt-js": true,
+        "nice-select":true
       }
     }
   },
@@ -498,7 +501,9 @@
       "vendor-scripts": {
         "jquery": true,
         "slick-slider": true,
-        "aos": true
+        "aos": true,
+        "bt-js": true,
+        "nice-select":true
       }
     }
   },
@@ -511,7 +516,7 @@
       "text":"Family Residence Boutique Hotel"
     },
     "deluxe-2": {
-    "teasers": [
+    "partials":[
       {
         "column-header": {
           "number-icon": "9",
@@ -523,7 +528,10 @@
           "number-icon": "10",
           "text": "Площа номеру 20 м кв"
         }   
-      },
+      }
+    ],
+    "teasers": [
+     
       {
         "teaser-2": {
           "img-name": "min-img-1.jpg",
@@ -632,7 +640,56 @@
       }
     ]
     },
-    "services": true,
+    "services": {
+      "services-side": [
+        {
+          "services-main-title": "Послуги, які входять у вартість",
+          "serv-item": [
+            {
+              "serv-icon": "16",
+              "serv-title": "Кава, чай на рецепції"
+            },
+            {
+              "serv-icon": "17",
+              "serv-title": "Інформаційні послуги"
+            },
+            {
+              "serv-icon": "20",
+              "serv-title": "Щоденне прибирання номерів"
+            },
+            {
+              "serv-icon": "21",
+              "serv-title": "Виклик таксі"
+            }
+          ]
+        },
+        {
+          "services-main-title": "Послуги, які не входять у вартість",
+          "serv-item": [
+            {
+              "serv-icon": "18",
+              "serv-title": "Екскурсійні програми",
+              "serv-desc":"з кваліфікованими гідами на різних мовах"
+            },
+            {
+              "serv-icon": "19",
+              "serv-title": "Beauty Zone",
+              "serv-desc":"Послуги салону краси"
+            },
+            {
+              "serv-icon": "22",
+              "serv-title": "Трансфер",
+              "serv-desc":"до залізничного вокзалу або аеропорту"
+            },
+            {
+              "serv-icon": "23",
+              "serv-title": "Прокат авто",
+              "serv-desc":"Щоб потрапити куди потрібно з легкістю"
+            }
+          ]
+        }
+      ]  
+    },
     "flat-carousel": {
       "section-title": {
         "title": "Інші номери"
@@ -706,7 +763,9 @@
         "jquery": true,
         "slick-slider": true,
         "aos": true,
-        "m-height": true
+        "m-height": true,
+        "bt-js": true,
+        "nice-select":true
       }
     }
   },
@@ -863,7 +922,9 @@
         "jquery": true,
         "slick-slider": true,
         "aos": true,
-        "m-height": true
+        "m-height": true,
+        "nice-select":true,
+        "bt-js": true
       }
     }
   }

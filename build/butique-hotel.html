@@ -15,26 +15,6 @@
 
 <body>
     <header class="header">
-        <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-                    <div class="modal-txt">
-                        <h2>Hire <span>us</span></h2>
-                        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        <form action="">
-                            <input type="text" placeholder="Your Email">
-                            <input type="text" placeholder="Subject">
-                            <textarea name="" id="" cols="30" rows="10" placeholder="Your message"></textarea>
-                            <input type="submit" value="Hire us">
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
         <div class="header__top-section">
             <div class="container">
                 <div class="row">
@@ -90,35 +70,65 @@
                 </div>
             </div>
         </div>
-        <div class="modal fade" id="requestModal" tabindex="-1" role="dialog" aria-labelledby="requestModal" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="form-wrapper d-flex justify-content-center">
-                    <form action="SUBMIT" class="popup-form">
-                        <div class="title-color">
-                            <h2>Бронювання номеру</h2>
-                        </div>
-                        <div class="input-parent d-flex justify-content-center">
-                            <div class="txt-inputs d-flex flex-column">
-                                <p>Ім'я</p>
-                                <input type="text">
-                                <p>Прізвище</p>
-                                <input type="text">
+    </header>
+    <!-- Modal form -->
+    <div class="modal fade" tabindex="-1" role="dialog" id="requestModal">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="form-wrapper d-flex justify-content-center">
+                        <form action="SUBMIT" class="popup-form">
+                            <button type="button" class="close pr-2" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+                            <div class="title-color">
+                                <h2>Бронювання номеру</h2>
                             </div>
-                            <div class="txt-inputs d-flex flex-column">
-                                <p>Номер телефону</p>
-                                <input type="number">
-                                <p>Email</p>
-                                <input type="email">
+                            <div class="input-parent d-flex justify-content-center">
+                                <div class="txt-inputs d-flex flex-column">
+                                    <p>Ім'я</p>
+                                    <input type="text">
+                                    <p>Прізвище</p>
+                                    <input type="text">
+                                </div>
+                                <div class="txt-inputs d-flex flex-column">
+                                    <p>Номер телефону</p>
+                                    <input type="text">
+                                    <p>Email</p>
+                                    <input type="email">
+                                </div>
                             </div>
-                        </div>
-                        <div class="btn-wrapper">
-                            <a href="#" class="btn btn_big btn_big_form">Забронювати номер</a>
-                        </div>
-                    </form>
+                            <div class="separator"></div>
+                            <div class="dialog-content pl-5">
+                                <div class="select-with-label select-with-label_form d-flex">
+                                    <label for="select-1234">Місткість:</label>
+                                    <select class="custom-select pl-0" id="select-1234">
+                  <option value="0">2 дорослих</option>
+                  <option value="1">Some option</option>
+                  <option value="2">Some option</option>
+                  <option value="3">Some option</option>
+                </select>
+                                </div>
+                                <div class="select-with-label select-with-label_form d-flex d-flex">
+                                    <label for="select-1234">Місткість:</label>
+                                    <select class="custom-select pl-0" id="select-1234">
+                  <option value="0">2 дорослих</option>
+                  <option value="1">Some option</option>
+                  <option value="2">Some option</option>
+                  <option value="3">Some option</option>
+                </select>
+                                </div>
+                            </div>
+                            <div class="btn-wrapper">
+                                <a href="#" class="btn btn_big btn_big_form">Забронювати номер</a>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
-    </header>
+    </div>
+    <!-- /Modal form -->
     <section class="content-line content-line__beauty-zone" style="background-image: url(assets/img/baner-1234.jpg);">
         <div class="section-title section-title__beauty-bnr">
             <h2>Family Residence Boutique Hotel</h2>
@@ -198,331 +208,351 @@
                         </div>
                         <div class="itm itm_5 mt-4">
                             <h2>Швидкий пошук</h2>
-                            <div class="separator"></div>
-                        </div>
+                            <div class="separator separator_search mb-0 mt-3"></div>
+                            <div class="select-with-label d-flex align-center">
+                                <label for="select-1234"><span>Тип номеру:</span></label>
+                                <select class="custom-select" id="select-1234">
+                <option value="0">Двомісний номер делюкс</option>
+                <option value="1">Some option</option>
+                <option value="2">Some option</option>
+                <option value="3">Some option</option>
+              </select>
+                            </div>
+                            <div class="separator separator_search"></div>
+                            <div class="select-with-label d-flex">
+                                <label for="select-1234">Місткість:</label>
+                                <select class="custom-select pl-0" id="select-1234">
+                <option value="0">2 обсоби</option>
+                <option value="1">Some option</option>
+                <option value="2">Some option</option>
+                <option value="3">Some option</option>
+              </select>
+                            </div>
+                            <div class="separator separator_search"></div>
                     </aside>
-                </div>
-                <div class="col-12 col-lg-8">
-                    <div class="row">
-                        <div class="col-12 col-lg-6">
-                            <div class="menu-itm mt-4 ">
-                                <div data-mh="slide-gr" class="bgc mb-5 mr-0 ml-0">
-                                    <div class="flat-carousel__slide flat-carousel__slide_one">
-                                        <img src="assets/img/other-slide-1.jpg" alt="picture" class="img-fluid">
-                                    </div>
-                                    <div class="flat-wrapper">
-                                        <div class="title-serv title-serv_flt">
-                                            <a href="#"><b>Двомісний номер</b></a>
+                    </div>
+                    <div class="col-12 col-lg-8">
+                        <div class="row">
+                            <div class="col-12 col-lg-6">
+                                <div class="menu-itm mt-4 ">
+                                    <div data-mh="slide-gr" class="bgc mb-5 mr-0 ml-0">
+                                        <div class="flat-carousel__slide flat-carousel__slide_one">
+                                            <img src="assets/img/other-slide-1.jpg" alt="picture" class="img-fluid">
                                         </div>
-                                        <div class="flat-txt d-flex flex-row">
-                                            <p>Кількість номерів - 1</p>
-                                            <p>Ціна: від <span>2200грн</span></p>
-                                        </div>
-                                        <div class="separator ml-2"></div>
-                                        <div class="info-item d-flex flex-row">
-                                            <i class="icon icon-9"></i>
-                                            <p><b>Місткість:</b> 1 або 2 особи</p>
-                                        </div>
-                                        <div class="info-item  d-flex flex-row mt-2">
-                                            <i class="icon icon-10"></i>
-                                            <p><b>Площа номеру:</b> 14 м кв</p>
-                                        </div>
-                                        <div class="separator"></div>
-                                        <div class="description">
-                                            <p>Двомісний номер, який ми рекомендуємо для 1 або 2-х осіб з двоспальним ліжком з ортопедичним матрацом.</p>
-                                        </div>
-                                        <div class="btn-wrp d-flex justify-content-center">
-                                            <div class="btn btn_big btn_big_mdf">Забронювати</div>
-                                        </div>
-                                        <div class="itm-wrp">
-                                            <ul class="flat-list">
-                                                <li>
-                                                    <i class="icon icon-11"></i>
-                                                </li>
-                                                <li>
-                                                    <i class="icon icon-12"></i>
-                                                </li>
-                                                <li>
-                                                    <i class="icon icon-13"></i>
-                                                </li>
-                                                <li>
-                                                    <i class="icon icon-15"></i>
-                                                </li>
-                                                <li>
-                                                    <i class="icon icon-14"></i>
-                                                </li>
-                                            </ul>
-                                            <a href="#">Переглянути номер</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-lg-6">
-                            <div class="menu-itm mt-4 ">
-                                <div data-mh="slide-gr" class="bgc mb-5 mr-0 ml-0">
-                                    <div class="flat-carousel__slide flat-carousel__slide_one">
-                                        <img src="assets/img/other-slide-1.jpg" alt="picture" class="img-fluid">
-                                    </div>
-                                    <div class="flat-wrapper">
-                                        <div class="title-serv title-serv_flt">
-                                            <a href="#"><b>Двомісний номер</b></a>
-                                        </div>
-                                        <div class="flat-txt d-flex flex-row">
-                                            <p>Кількість номерів - 1</p>
-                                            <p>Ціна: від <span>2200грн</span></p>
-                                        </div>
-                                        <div class="separator ml-2"></div>
-                                        <div class="info-item d-flex flex-row">
-                                            <i class="icon icon-9"></i>
-                                            <p><b>Місткість:</b> 1 або 1 особи</p>
-                                        </div>
-                                        <div class="info-item  d-flex flex-row mt-2">
-                                            <i class="icon icon-10"></i>
-                                            <p><b>Площа номеру:</b> 14 м кв</p>
-                                        </div>
-                                        <div class="separator"></div>
-                                        <div class="description">
-                                            <p>Двомісний номер, який ми рекомендуємо для 1 або 2-х осіб з двоспальним ліжком з ортопедичним матрацом.</p>
-                                        </div>
-                                        <div class="btn-wrp d-flex justify-content-center">
-                                            <div class="btn btn_big btn_big_mdf">Забронювати</div>
-                                        </div>
-                                        <div class="itm-wrp">
-                                            <ul class="flat-list">
-                                                <li>
-                                                    <i class="icon icon-11"></i>
-                                                </li>
-                                                <li>
-                                                    <i class="icon icon-12"></i>
-                                                </li>
-                                                <li>
-                                                    <i class="icon icon-13"></i>
-                                                </li>
-                                                <li>
-                                                    <i class="icon icon-15"></i>
-                                                </li>
-                                                <li>
-                                                    <i class="icon icon-14"></i>
-                                                </li>
-                                            </ul>
-                                            <a href="#">Переглянути номер</a>
+                                        <div class="flat-wrapper">
+                                            <div class="title-serv title-serv_flt">
+                                                <a href="#"><b>Двомісний номер</b></a>
+                                            </div>
+                                            <div class="flat-txt d-flex flex-row">
+                                                <p>Кількість номерів - 1</p>
+                                                <p>Ціна: від <span>2200грн</span></p>
+                                            </div>
+                                            <div class="separator ml-2"></div>
+                                            <div class="info-item d-flex flex-row">
+                                                <i class="icon icon-9"></i>
+                                                <p><b>Місткість:</b> 1 або 2 особи</p>
+                                            </div>
+                                            <div class="info-item  d-flex flex-row mt-2">
+                                                <i class="icon icon-10"></i>
+                                                <p><b>Площа номеру:</b> 14 м кв</p>
+                                            </div>
+                                            <div class="separator"></div>
+                                            <div class="description">
+                                                <p>Двомісний номер, який ми рекомендуємо для 1 або 2-х осіб з двоспальним ліжком з ортопедичним матрацом.</p>
+                                            </div>
+                                            <div class="btn-wrp d-flex justify-content-center">
+                                                <div class="btn btn_big btn_big_mdf">Забронювати</div>
+                                            </div>
+                                            <div class="itm-wrp">
+                                                <ul class="flat-list">
+                                                    <li>
+                                                        <i class="icon icon-11"></i>
+                                                    </li>
+                                                    <li>
+                                                        <i class="icon icon-12"></i>
+                                                    </li>
+                                                    <li>
+                                                        <i class="icon icon-13"></i>
+                                                    </li>
+                                                    <li>
+                                                        <i class="icon icon-15"></i>
+                                                    </li>
+                                                    <li>
+                                                        <i class="icon icon-14"></i>
+                                                    </li>
+                                                </ul>
+                                                <a href="#">Переглянути номер</a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-12 col-lg-6">
-                            <div class="menu-itm mt-4 ">
-                                <div data-mh="slide-gr" class="bgc mb-5 mr-0 ml-0">
-                                    <div class="flat-carousel__slide flat-carousel__slide_one">
-                                        <img src="assets/img/other-slide-1.jpg" alt="picture" class="img-fluid">
-                                    </div>
-                                    <div class="flat-wrapper">
-                                        <div class="title-serv title-serv_flt">
-                                            <a href="#"><b>Двомісний номер</b></a>
+                            <div class="col-12 col-lg-6">
+                                <div class="menu-itm mt-4 ">
+                                    <div data-mh="slide-gr" class="bgc mb-5 mr-0 ml-0">
+                                        <div class="flat-carousel__slide flat-carousel__slide_one">
+                                            <img src="assets/img/other-slide-1.jpg" alt="picture" class="img-fluid">
                                         </div>
-                                        <div class="flat-txt d-flex flex-row">
-                                            <p>Кількість номерів - 1</p>
-                                            <p>Ціна: від <span>2200грн</span></p>
-                                        </div>
-                                        <div class="separator ml-2"></div>
-                                        <div class="info-item d-flex flex-row">
-                                            <i class="icon icon-9"></i>
-                                            <p><b>Місткість:</b> 1 або 2 особи</p>
-                                        </div>
-                                        <div class="info-item  d-flex flex-row mt-2">
-                                            <i class="icon icon-10"></i>
-                                            <p><b>Площа номеру:</b> 14 м кв</p>
-                                        </div>
-                                        <div class="separator"></div>
-                                        <div class="description">
-                                            <p>Двомісний номер, який ми рекомендуємо для 1 або 2-х осіб з двоспальним ліжком з ортопедичним матрацом.</p>
-                                        </div>
-                                        <div class="btn-wrp d-flex justify-content-center">
-                                            <div class="btn btn_big btn_big_mdf">Забронювати</div>
-                                        </div>
-                                        <div class="itm-wrp">
-                                            <ul class="flat-list">
-                                                <li>
-                                                    <i class="icon icon-11"></i>
-                                                </li>
-                                                <li>
-                                                    <i class="icon icon-12"></i>
-                                                </li>
-                                                <li>
-                                                    <i class="icon icon-13"></i>
-                                                </li>
-                                                <li>
-                                                    <i class="icon icon-15"></i>
-                                                </li>
-                                                <li>
-                                                    <i class="icon icon-14"></i>
-                                                </li>
-                                            </ul>
-                                            <a href="#">Переглянути номер</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-lg-6">
-                            <div class="menu-itm mt-4 ">
-                                <div data-mh="slide-gr" class="bgc mb-5 mr-0 ml-0">
-                                    <div class="flat-carousel__slide flat-carousel__slide_one">
-                                        <img src="assets/img/other-slide-1.jpg" alt="picture" class="img-fluid">
-                                    </div>
-                                    <div class="flat-wrapper">
-                                        <div class="title-serv title-serv_flt">
-                                            <a href="#"><b>Двомісний номер</b></a>
-                                        </div>
-                                        <div class="flat-txt d-flex flex-row">
-                                            <p>Кількість номерів - 1</p>
-                                            <p>Ціна: від <span>2200грн</span></p>
-                                        </div>
-                                        <div class="separator ml-2"></div>
-                                        <div class="info-item d-flex flex-row">
-                                            <i class="icon icon-9"></i>
-                                            <p><b>Місткість:</b> 1 або 2 особи</p>
-                                        </div>
-                                        <div class="info-item  d-flex flex-row mt-2">
-                                            <i class="icon icon-10"></i>
-                                            <p><b>Площа номеру:</b> 14 м кв</p>
-                                        </div>
-                                        <div class="separator"></div>
-                                        <div class="description">
-                                            <p>Двомісний номер, який ми рекомендуємо для 1 або 2-х осіб з двоспальним ліжком з ортопедичним матрацом.</p>
-                                        </div>
-                                        <div class="btn-wrp d-flex justify-content-center">
-                                            <div class="btn btn_big btn_big_mdf">Забронювати</div>
-                                        </div>
-                                        <div class="itm-wrp">
-                                            <ul class="flat-list">
-                                                <li>
-                                                    <i class="icon icon-11"></i>
-                                                </li>
-                                                <li>
-                                                    <i class="icon icon-12"></i>
-                                                </li>
-                                                <li>
-                                                    <i class="icon icon-13"></i>
-                                                </li>
-                                                <li>
-                                                    <i class="icon icon-15"></i>
-                                                </li>
-                                                <li>
-                                                    <i class="icon icon-14"></i>
-                                                </li>
-                                            </ul>
-                                            <a href="#">Переглянути номер</a>
+                                        <div class="flat-wrapper">
+                                            <div class="title-serv title-serv_flt">
+                                                <a href="#"><b>Двомісний номер</b></a>
+                                            </div>
+                                            <div class="flat-txt d-flex flex-row">
+                                                <p>Кількість номерів - 1</p>
+                                                <p>Ціна: від <span>2200грн</span></p>
+                                            </div>
+                                            <div class="separator ml-2"></div>
+                                            <div class="info-item d-flex flex-row">
+                                                <i class="icon icon-9"></i>
+                                                <p><b>Місткість:</b> 1 або 1 особи</p>
+                                            </div>
+                                            <div class="info-item  d-flex flex-row mt-2">
+                                                <i class="icon icon-10"></i>
+                                                <p><b>Площа номеру:</b> 14 м кв</p>
+                                            </div>
+                                            <div class="separator"></div>
+                                            <div class="description">
+                                                <p>Двомісний номер, який ми рекомендуємо для 1 або 2-х осіб з двоспальним ліжком з ортопедичним матрацом.</p>
+                                            </div>
+                                            <div class="btn-wrp d-flex justify-content-center">
+                                                <div class="btn btn_big btn_big_mdf">Забронювати</div>
+                                            </div>
+                                            <div class="itm-wrp">
+                                                <ul class="flat-list">
+                                                    <li>
+                                                        <i class="icon icon-11"></i>
+                                                    </li>
+                                                    <li>
+                                                        <i class="icon icon-12"></i>
+                                                    </li>
+                                                    <li>
+                                                        <i class="icon icon-13"></i>
+                                                    </li>
+                                                    <li>
+                                                        <i class="icon icon-15"></i>
+                                                    </li>
+                                                    <li>
+                                                        <i class="icon icon-14"></i>
+                                                    </li>
+                                                </ul>
+                                                <a href="#">Переглянути номер</a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-12 col-lg-6">
-                            <div class="menu-itm mt-4 ">
-                                <div data-mh="slide-gr" class="bgc mb-5 mr-0 ml-0">
-                                    <div class="flat-carousel__slide flat-carousel__slide_one">
-                                        <img src="assets/img/other-slide-1.jpg" alt="picture" class="img-fluid">
-                                    </div>
-                                    <div class="flat-wrapper">
-                                        <div class="title-serv title-serv_flt">
-                                            <a href="#"><b>Двомісний номер</b></a>
+                            <div class="col-12 col-lg-6">
+                                <div class="menu-itm mt-4 ">
+                                    <div data-mh="slide-gr" class="bgc mb-5 mr-0 ml-0">
+                                        <div class="flat-carousel__slide flat-carousel__slide_one">
+                                            <img src="assets/img/other-slide-1.jpg" alt="picture" class="img-fluid">
                                         </div>
-                                        <div class="flat-txt d-flex flex-row">
-                                            <p>Кількість номерів - 1</p>
-                                            <p>Ціна: від <span>2200грн</span></p>
-                                        </div>
-                                        <div class="separator ml-2"></div>
-                                        <div class="info-item d-flex flex-row">
-                                            <i class="icon icon-9"></i>
-                                            <p><b>Місткість:</b> 1 або 2 особи</p>
-                                        </div>
-                                        <div class="info-item  d-flex flex-row mt-2">
-                                            <i class="icon icon-10"></i>
-                                            <p><b>Площа номеру:</b> 14 м кв</p>
-                                        </div>
-                                        <div class="separator"></div>
-                                        <div class="description">
-                                            <p>Двомісний номер, який ми рекомендуємо для 1 або 2-х осіб з двоспальним ліжком з ортопедичним матрацом.</p>
-                                        </div>
-                                        <div class="btn-wrp d-flex justify-content-center">
-                                            <div class="btn btn_big btn_big_mdf">Забронювати</div>
-                                        </div>
-                                        <div class="itm-wrp">
-                                            <ul class="flat-list">
-                                                <li>
-                                                    <i class="icon icon-11"></i>
-                                                </li>
-                                                <li>
-                                                    <i class="icon icon-12"></i>
-                                                </li>
-                                                <li>
-                                                    <i class="icon icon-13"></i>
-                                                </li>
-                                                <li>
-                                                    <i class="icon icon-15"></i>
-                                                </li>
-                                                <li>
-                                                    <i class="icon icon-14"></i>
-                                                </li>
-                                            </ul>
-                                            <a href="#">Переглянути номер</a>
+                                        <div class="flat-wrapper">
+                                            <div class="title-serv title-serv_flt">
+                                                <a href="#"><b>Двомісний номер</b></a>
+                                            </div>
+                                            <div class="flat-txt d-flex flex-row">
+                                                <p>Кількість номерів - 1</p>
+                                                <p>Ціна: від <span>2200грн</span></p>
+                                            </div>
+                                            <div class="separator ml-2"></div>
+                                            <div class="info-item d-flex flex-row">
+                                                <i class="icon icon-9"></i>
+                                                <p><b>Місткість:</b> 1 або 2 особи</p>
+                                            </div>
+                                            <div class="info-item  d-flex flex-row mt-2">
+                                                <i class="icon icon-10"></i>
+                                                <p><b>Площа номеру:</b> 14 м кв</p>
+                                            </div>
+                                            <div class="separator"></div>
+                                            <div class="description">
+                                                <p>Двомісний номер, який ми рекомендуємо для 1 або 2-х осіб з двоспальним ліжком з ортопедичним матрацом.</p>
+                                            </div>
+                                            <div class="btn-wrp d-flex justify-content-center">
+                                                <div class="btn btn_big btn_big_mdf">Забронювати</div>
+                                            </div>
+                                            <div class="itm-wrp">
+                                                <ul class="flat-list">
+                                                    <li>
+                                                        <i class="icon icon-11"></i>
+                                                    </li>
+                                                    <li>
+                                                        <i class="icon icon-12"></i>
+                                                    </li>
+                                                    <li>
+                                                        <i class="icon icon-13"></i>
+                                                    </li>
+                                                    <li>
+                                                        <i class="icon icon-15"></i>
+                                                    </li>
+                                                    <li>
+                                                        <i class="icon icon-14"></i>
+                                                    </li>
+                                                </ul>
+                                                <a href="#">Переглянути номер</a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-12 col-lg-6">
-                            <div class="menu-itm mt-4 ">
-                                <div data-mh="slide-gr" class="bgc mb-5 mr-0 ml-0">
-                                    <div class="flat-carousel__slide flat-carousel__slide_one">
-                                        <img src="assets/img/other-slide-1.jpg" alt="picture" class="img-fluid">
+                            <div class="col-12 col-lg-6">
+                                <div class="menu-itm mt-4 ">
+                                    <div data-mh="slide-gr" class="bgc mb-5 mr-0 ml-0">
+                                        <div class="flat-carousel__slide flat-carousel__slide_one">
+                                            <img src="assets/img/other-slide-1.jpg" alt="picture" class="img-fluid">
+                                        </div>
+                                        <div class="flat-wrapper">
+                                            <div class="title-serv title-serv_flt">
+                                                <a href="#"><b>Двомісний номер</b></a>
+                                            </div>
+                                            <div class="flat-txt d-flex flex-row">
+                                                <p>Кількість номерів - 1</p>
+                                                <p>Ціна: від <span>2200грн</span></p>
+                                            </div>
+                                            <div class="separator ml-2"></div>
+                                            <div class="info-item d-flex flex-row">
+                                                <i class="icon icon-9"></i>
+                                                <p><b>Місткість:</b> 1 або 2 особи</p>
+                                            </div>
+                                            <div class="info-item  d-flex flex-row mt-2">
+                                                <i class="icon icon-10"></i>
+                                                <p><b>Площа номеру:</b> 14 м кв</p>
+                                            </div>
+                                            <div class="separator"></div>
+                                            <div class="description">
+                                                <p>Двомісний номер, який ми рекомендуємо для 1 або 2-х осіб з двоспальним ліжком з ортопедичним матрацом.</p>
+                                            </div>
+                                            <div class="btn-wrp d-flex justify-content-center">
+                                                <div class="btn btn_big btn_big_mdf">Забронювати</div>
+                                            </div>
+                                            <div class="itm-wrp">
+                                                <ul class="flat-list">
+                                                    <li>
+                                                        <i class="icon icon-11"></i>
+                                                    </li>
+                                                    <li>
+                                                        <i class="icon icon-12"></i>
+                                                    </li>
+                                                    <li>
+                                                        <i class="icon icon-13"></i>
+                                                    </li>
+                                                    <li>
+                                                        <i class="icon icon-15"></i>
+                                                    </li>
+                                                    <li>
+                                                        <i class="icon icon-14"></i>
+                                                    </li>
+                                                </ul>
+                                                <a href="#">Переглянути номер</a>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="flat-wrapper">
-                                        <div class="title-serv title-serv_flt">
-                                            <a href="#"><b>Двомісний номер</b></a>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <div class="menu-itm mt-4 ">
+                                    <div data-mh="slide-gr" class="bgc mb-5 mr-0 ml-0">
+                                        <div class="flat-carousel__slide flat-carousel__slide_one">
+                                            <img src="assets/img/other-slide-1.jpg" alt="picture" class="img-fluid">
                                         </div>
-                                        <div class="flat-txt d-flex flex-row">
-                                            <p>Кількість номерів - 1</p>
-                                            <p>Ціна: від <span>2200грн</span></p>
+                                        <div class="flat-wrapper">
+                                            <div class="title-serv title-serv_flt">
+                                                <a href="#"><b>Двомісний номер</b></a>
+                                            </div>
+                                            <div class="flat-txt d-flex flex-row">
+                                                <p>Кількість номерів - 1</p>
+                                                <p>Ціна: від <span>2200грн</span></p>
+                                            </div>
+                                            <div class="separator ml-2"></div>
+                                            <div class="info-item d-flex flex-row">
+                                                <i class="icon icon-9"></i>
+                                                <p><b>Місткість:</b> 1 або 2 особи</p>
+                                            </div>
+                                            <div class="info-item  d-flex flex-row mt-2">
+                                                <i class="icon icon-10"></i>
+                                                <p><b>Площа номеру:</b> 14 м кв</p>
+                                            </div>
+                                            <div class="separator"></div>
+                                            <div class="description">
+                                                <p>Двомісний номер, який ми рекомендуємо для 1 або 2-х осіб з двоспальним ліжком з ортопедичним матрацом.</p>
+                                            </div>
+                                            <div class="btn-wrp d-flex justify-content-center">
+                                                <div class="btn btn_big btn_big_mdf">Забронювати</div>
+                                            </div>
+                                            <div class="itm-wrp">
+                                                <ul class="flat-list">
+                                                    <li>
+                                                        <i class="icon icon-11"></i>
+                                                    </li>
+                                                    <li>
+                                                        <i class="icon icon-12"></i>
+                                                    </li>
+                                                    <li>
+                                                        <i class="icon icon-13"></i>
+                                                    </li>
+                                                    <li>
+                                                        <i class="icon icon-15"></i>
+                                                    </li>
+                                                    <li>
+                                                        <i class="icon icon-14"></i>
+                                                    </li>
+                                                </ul>
+                                                <a href="#">Переглянути номер</a>
+                                            </div>
                                         </div>
-                                        <div class="separator ml-2"></div>
-                                        <div class="info-item d-flex flex-row">
-                                            <i class="icon icon-9"></i>
-                                            <p><b>Місткість:</b> 1 або 2 особи</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <div class="menu-itm mt-4 ">
+                                    <div data-mh="slide-gr" class="bgc mb-5 mr-0 ml-0">
+                                        <div class="flat-carousel__slide flat-carousel__slide_one">
+                                            <img src="assets/img/other-slide-1.jpg" alt="picture" class="img-fluid">
                                         </div>
-                                        <div class="info-item  d-flex flex-row mt-2">
-                                            <i class="icon icon-10"></i>
-                                            <p><b>Площа номеру:</b> 14 м кв</p>
-                                        </div>
-                                        <div class="separator"></div>
-                                        <div class="description">
-                                            <p>Двомісний номер, який ми рекомендуємо для 1 або 2-х осіб з двоспальним ліжком з ортопедичним матрацом.</p>
-                                        </div>
-                                        <div class="btn-wrp d-flex justify-content-center">
-                                            <div class="btn btn_big btn_big_mdf">Забронювати</div>
-                                        </div>
-                                        <div class="itm-wrp">
-                                            <ul class="flat-list">
-                                                <li>
-                                                    <i class="icon icon-11"></i>
-                                                </li>
-                                                <li>
-                                                    <i class="icon icon-12"></i>
-                                                </li>
-                                                <li>
-                                                    <i class="icon icon-13"></i>
-                                                </li>
-                                                <li>
-                                                    <i class="icon icon-15"></i>
-                                                </li>
-                                                <li>
-                                                    <i class="icon icon-14"></i>
-                                                </li>
-                                            </ul>
-                                            <a href="#">Переглянути номер</a>
+                                        <div class="flat-wrapper">
+                                            <div class="title-serv title-serv_flt">
+                                                <a href="#"><b>Двомісний номер</b></a>
+                                            </div>
+                                            <div class="flat-txt d-flex flex-row">
+                                                <p>Кількість номерів - 1</p>
+                                                <p>Ціна: від <span>2200грн</span></p>
+                                            </div>
+                                            <div class="separator ml-2"></div>
+                                            <div class="info-item d-flex flex-row">
+                                                <i class="icon icon-9"></i>
+                                                <p><b>Місткість:</b> 1 або 2 особи</p>
+                                            </div>
+                                            <div class="info-item  d-flex flex-row mt-2">
+                                                <i class="icon icon-10"></i>
+                                                <p><b>Площа номеру:</b> 14 м кв</p>
+                                            </div>
+                                            <div class="separator"></div>
+                                            <div class="description">
+                                                <p>Двомісний номер, який ми рекомендуємо для 1 або 2-х осіб з двоспальним ліжком з ортопедичним матрацом.</p>
+                                            </div>
+                                            <div class="btn-wrp d-flex justify-content-center">
+                                                <div class="btn btn_big btn_big_mdf">Забронювати</div>
+                                            </div>
+                                            <div class="itm-wrp">
+                                                <ul class="flat-list">
+                                                    <li>
+                                                        <i class="icon icon-11"></i>
+                                                    </li>
+                                                    <li>
+                                                        <i class="icon icon-12"></i>
+                                                    </li>
+                                                    <li>
+                                                        <i class="icon icon-13"></i>
+                                                    </li>
+                                                    <li>
+                                                        <i class="icon icon-15"></i>
+                                                    </li>
+                                                    <li>
+                                                        <i class="icon icon-14"></i>
+                                                    </li>
+                                                </ul>
+                                                <a href="#">Переглянути номер</a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -531,7 +561,6 @@
                     </div>
                 </div>
             </div>
-        </div>
     </section>
     <section class="content-line py-0">
         <div class="container">
@@ -627,6 +656,9 @@
     <script src="assets/js/vendors/jquery.matchHeight-min.js"></script>
     <!-- Slick slider -->
     <script src="assets/js/vendors/slick.min.js"></script>
+    <!-- Slick slider -->
+    <script src="assets/js/vendors/jquery.nice-select.js"></script>
+    <script src="assets/js/vendors/bootstrap.min.js"></script>
     <!-- Animate on scroll -->
     <script src="assets/js/vendors/aos.js"></script>
     <!-- Custom script -->
@@ -736,9 +768,6 @@
     </script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDxkUUlSbRNNNbTvIKVa1tLmbhQfrgq45g&callback=initMap">
     </script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 
 </html>

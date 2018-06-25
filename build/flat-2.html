@@ -15,26 +15,6 @@
 
 <body>
     <header class="header">
-        <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-                    <div class="modal-txt">
-                        <h2>Hire <span>us</span></h2>
-                        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                        <form action="">
-                            <input type="text" placeholder="Your Email">
-                            <input type="text" placeholder="Subject">
-                            <textarea name="" id="" cols="30" rows="10" placeholder="Your message"></textarea>
-                            <input type="submit" value="Hire us">
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
         <div class="header__top-section">
             <div class="container">
                 <div class="row">
@@ -90,35 +70,65 @@
                 </div>
             </div>
         </div>
-        <div class="modal fade" id="requestModal" tabindex="-1" role="dialog" aria-labelledby="requestModal" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="form-wrapper d-flex justify-content-center">
-                    <form action="SUBMIT" class="popup-form">
-                        <div class="title-color">
-                            <h2>Бронювання номеру</h2>
-                        </div>
-                        <div class="input-parent d-flex justify-content-center">
-                            <div class="txt-inputs d-flex flex-column">
-                                <p>Ім'я</p>
-                                <input type="text">
-                                <p>Прізвище</p>
-                                <input type="text">
+    </header>
+    <!-- Modal form -->
+    <div class="modal fade" tabindex="-1" role="dialog" id="requestModal">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="form-wrapper d-flex justify-content-center">
+                        <form action="SUBMIT" class="popup-form">
+                            <button type="button" class="close pr-2" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+                            <div class="title-color">
+                                <h2>Бронювання номеру</h2>
                             </div>
-                            <div class="txt-inputs d-flex flex-column">
-                                <p>Номер телефону</p>
-                                <input type="number">
-                                <p>Email</p>
-                                <input type="email">
+                            <div class="input-parent d-flex justify-content-center">
+                                <div class="txt-inputs d-flex flex-column">
+                                    <p>Ім'я</p>
+                                    <input type="text">
+                                    <p>Прізвище</p>
+                                    <input type="text">
+                                </div>
+                                <div class="txt-inputs d-flex flex-column">
+                                    <p>Номер телефону</p>
+                                    <input type="text">
+                                    <p>Email</p>
+                                    <input type="email">
+                                </div>
                             </div>
-                        </div>
-                        <div class="btn-wrapper">
-                            <a href="#" class="btn btn_big btn_big_form">Забронювати номер</a>
-                        </div>
-                    </form>
+                            <div class="separator"></div>
+                            <div class="dialog-content pl-5">
+                                <div class="select-with-label select-with-label_form d-flex">
+                                    <label for="select-1234">Місткість:</label>
+                                    <select class="custom-select pl-0" id="select-1234">
+                  <option value="0">2 дорослих</option>
+                  <option value="1">Some option</option>
+                  <option value="2">Some option</option>
+                  <option value="3">Some option</option>
+                </select>
+                                </div>
+                                <div class="select-with-label select-with-label_form d-flex d-flex">
+                                    <label for="select-1234">Місткість:</label>
+                                    <select class="custom-select pl-0" id="select-1234">
+                  <option value="0">2 дорослих</option>
+                  <option value="1">Some option</option>
+                  <option value="2">Some option</option>
+                  <option value="3">Some option</option>
+                </select>
+                                </div>
+                            </div>
+                            <div class="btn-wrapper">
+                                <a href="#" class="btn btn_big btn_big_form">Забронювати номер</a>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
-    </header>
+    </div>
+    <!-- /Modal form -->
     <section class="content-line content-line__beauty-zone" style="background-image: url(assets/img/baner-123.jpg);">
         <div class="section-title section-title__beauty-bnr">
             <h2>Family Residence Boutique Hotel</h2>
@@ -275,45 +285,27 @@
                 </div>
             </div>
             <div class="col-12 col-lg-4">
-                <div class="row column-header-bg  mt-5 mt-lg-0">
-                    <div class="col-6 col-sm-6 mb-3 mb-lg-1">
-                        <div class="column-header">
-                            <div class="item">
-                                <i class="icon icon-9"></i>
-                                <p>Місткість: 2 особи</p>
+                <div class="column-header-bg mt-5 mt-lg-0">
+                    <div class="row">
+                        <div class="col-6 col-sm-6 mb-3 mb-lg-1">
+                            <div class="column-header">
+                                <div class="item">
+                                    <i class="icon icon-9"></i>
+                                    <p>Місткість: 2 особи</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-6 col-sm-6 mb-3 mb-lg-1">
-                        <div class="column-header">
-                            <div class="item">
-                                <i class="icon icon-10"></i>
-                                <p>Площа номеру 20 м кв</p>
+                        <div class="col-6 col-sm-6 mb-3 mb-lg-1">
+                            <div class="column-header">
+                                <div class="item">
+                                    <i class="icon icon-10"></i>
+                                    <p>Площа номеру 20 м кв</p>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-6 col-sm-6 mb-3 mb-lg-1">
-                    </div>
-                    <div class="col-6 col-sm-6 mb-3 mb-lg-1">
-                    </div>
-                    <div class="col-6 col-sm-6 mb-3 mb-lg-1">
-                    </div>
-                    <div class="col-6 col-sm-6 mb-3 mb-lg-1">
-                    </div>
-                    <div class="col-6 col-sm-6 mb-3 mb-lg-1">
-                    </div>
-                    <div class="col-6 col-sm-6 mb-3 mb-lg-1">
-                    </div>
-                    <div class="col-6 col-sm-6 mb-3 mb-lg-1">
-                    </div>
-                    <div class="col-6 col-sm-6 mb-3 mb-lg-1">
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-6 col-sm-6 mb-3 mb-lg-2">
-                    </div>
-                    <div class="col-6 col-sm-6 mb-3 mb-lg-2">
-                    </div>
                     <div class="col-6 col-sm-6 mb-3 mb-lg-2">
                         <div class="teaser-2 h-100 d-flex flex-column">
                             <img src="assets/img/min-img-1.jpg" alt="image" class="img-fluid mb-2">
@@ -401,83 +393,75 @@
     <section class="content-line content-line__menu-bg">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-lg-6">
-                    <div class="row">
-                        <div class="col-12 col-lg-12">
-                            <div class="column-header-bg">
-                                <div class="title-serv">
-                                    <h2>Послуги,<br>які входять у вартість</h2>
+                <div class="col-12 col-lg-6 text-center">
+                    <div class="services-content-wrapper column-header-bg h-100">
+                        <div class="row mb-2" data-mh="services-main-title-gr">
+                            <div class="col-12">
+                                <h2>Послуги, які входять у вартість</h2>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6 mt-5">
+                                <div class="item-serv" data-mh="item-serv-gr">
+                                    <i class="icon icon-16 d-block mx-auto"></i>
+                                    <h5>Кава, чай на рецепції</h5>
                                 </div>
-                                <div class="row">
-                                    <div class="col-6  d-flex justify-content-center">
-                                        <div class="item-serv">
-                                            <i class="icon icon-16"></i>
-                                            <p>Кава, чай на рецепції</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-6  d-flex justify-content-center">
-                                        <div class="item-serv">
-                                            <i class="icon icon-17"></i>
-                                            <p>Інформаційні послуги</p>
-                                        </div>
-                                    </div>
+                            </div>
+                            <div class="col-6 mt-5">
+                                <div class="item-serv" data-mh="item-serv-gr">
+                                    <i class="icon icon-17 d-block mx-auto"></i>
+                                    <h5>Інформаційні послуги</h5>
                                 </div>
-                                <div class="row pb-5 mt-sr">
-                                    <div class="col-6  d-flex justify-content-center">
-                                        <div class="item-serv">
-                                            <i class="icon icon-20"></i>
-                                            <p>Щоденне прибирання номерів</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-6  d-flex justify-content-center">
-                                        <div class="item-serv">
-                                            <i class="icon icon-21"></i>
-                                            <p>Виклик таксі</p>
-                                        </div>
-                                    </div>
+                            </div>
+                            <div class="col-6 mt-5">
+                                <div class="item-serv" data-mh="item-serv-gr">
+                                    <i class="icon icon-20 d-block mx-auto"></i>
+                                    <h5>Щоденне прибирання номерів</h5>
+                                </div>
+                            </div>
+                            <div class="col-6 mt-5">
+                                <div class="item-serv" data-mh="item-serv-gr">
+                                    <i class="icon icon-21 d-block mx-auto"></i>
+                                    <h5>Виклик таксі</h5>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-lg-6  mt-5 mt-lg-0">
-                    <div class="row">
-                        <div class="col-12 col-lg-12">
-                            <div class="column-header-bg">
-                                <div class="title-serv">
-                                    <h2>Додаткові послуги,<br> що не входять у вартість</h2>
+                <div class="col-12 col-lg-6 text-center">
+                    <div class="services-content-wrapper column-header-bg h-100">
+                        <div class="row mb-2" data-mh="services-main-title-gr">
+                            <div class="col-12">
+                                <h2>Послуги, які не входять у вартість</h2>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6 mt-5">
+                                <div class="item-serv" data-mh="item-serv-gr">
+                                    <i class="icon icon-18 d-block mx-auto"></i>
+                                    <h5>Екскурсійні програми</h5>
+                                    <p>з кваліфікованими гідами на різних мовах</p>
                                 </div>
-                                <div class="row">
-                                    <div class="col-6  d-flex justify-content-center">
-                                        <div class="item-serv">
-                                            <i class="icon icon-18"></i>
-                                            <p>Екскурсійні програми</p>
-                                            <p>з кваліфікованими гідами на різних мовах</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-6  d-flex justify-content-center">
-                                        <div class="item-serv">
-                                            <i class="icon icon-19"></i>
-                                            <p>Beauty Zone</p>
-                                            <p>Послуги салону краси</p>
-                                        </div>
-                                    </div>
+                            </div>
+                            <div class="col-6 mt-5">
+                                <div class="item-serv" data-mh="item-serv-gr">
+                                    <i class="icon icon-19 d-block mx-auto"></i>
+                                    <h5>Beauty Zone</h5>
+                                    <p>Послуги салону краси</p>
                                 </div>
-                                <div class="row pb-3 mt-srv">
-                                    <div class="col-6  d-flex justify-content-center">
-                                        <div class="item-serv">
-                                            <i class="icon icon-22"></i>
-                                            <p>Трансфер</p>
-                                            <p>до залізничного вокзалу або аеропорту</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-6  d-flex justify-content-center">
-                                        <div class="item-serv">
-                                            <i class="icon icon-23"></i>
-                                            <p>Прокат авто</p>
-                                            <p>Щоб потрапити куди потрібно з легкістю</p>
-                                        </div>
-                                    </div>
+                            </div>
+                            <div class="col-6 mt-5">
+                                <div class="item-serv" data-mh="item-serv-gr">
+                                    <i class="icon icon-22 d-block mx-auto"></i>
+                                    <h5>Трансфер</h5>
+                                    <p>до залізничного вокзалу або аеропорту</p>
+                                </div>
+                            </div>
+                            <div class="col-6 mt-5">
+                                <div class="item-serv" data-mh="item-serv-gr">
+                                    <i class="icon icon-23 d-block mx-auto"></i>
+                                    <h5>Прокат авто</h5>
+                                    <p>Щоб потрапити куди потрібно з легкістю</p>
                                 </div>
                             </div>
                         </div>
@@ -776,6 +760,9 @@
     <script src="assets/js/vendors/jquery.matchHeight-min.js"></script>
     <!-- Slick slider -->
     <script src="assets/js/vendors/slick.min.js"></script>
+    <!-- Slick slider -->
+    <script src="assets/js/vendors/jquery.nice-select.js"></script>
+    <script src="assets/js/vendors/bootstrap.min.js"></script>
     <!-- Animate on scroll -->
     <script src="assets/js/vendors/aos.js"></script>
     <!-- Custom script -->
@@ -885,9 +872,6 @@
     </script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDxkUUlSbRNNNbTvIKVa1tLmbhQfrgq45g&callback=initMap">
     </script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 
 </html>

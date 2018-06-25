@@ -2,9 +2,15 @@ body, html {
   min-width: 320px;
 }
 * {
-  
+  box-shadow: none;
   outline: none;
 }
+.custom-select{
+  &:focus {
+    box-shadow: none;
+  }
+}
+
 
 @media screen and (max-width: 992px) {
   font-size: 12px;
@@ -116,7 +122,7 @@ p {
   }
 }
 .icon {
-  margin-right: 10px;
+  // margin-right: 10px;
   vertical-align: middle;
 }
 
@@ -198,6 +204,10 @@ p {
       }
     }
   }
+}
+
+.services-content-wrapper {
+  padding: 3.1rem 4.3rem;
 }
 
 .services-icons {
