@@ -219,8 +219,11 @@
     },
     "content-line-4": true,
     "beauty-zone-baner": {
-      "slide-name":"beauty-zone-baner",
-      "text":"Beauty zone"
+      "slide-name":"baner-1234",
+      "title":"Beauty zone",
+      "class": "text-center banner__beauty-zone"
+      
+    
     },
     "beauty-slider": {
       "text": "Власний салон краси",
@@ -446,8 +449,9 @@
       "title": "About"
     },
     "beauty-zone-baner": {
-      "slide-name":"about-zone-baner",
-      "text":"Про нас"
+      "slide-name":"baner-1234",
+      "title":"Family Residence Boutique Hotel",
+      "desc": "Усі номери"
     },
     "beauty-slider": {
       "text": "Галерея",
@@ -512,21 +516,22 @@
       "title": "Flat-2"
     },
     "beauty-zone-baner": {
-      "slide-name":"baner-123",
-      "text":"Family Residence Boutique Hotel"
+      "slide-name":"baner-1234",
+      "title":"Family Residence Boutique Hotel",
+      "desc": "Усі номери"
     },
     "deluxe-2": {
     "partials":[
       {
         "column-header": {
           "number-icon": "9",
-          "text": "Місткість: 2 особи"
+          "text": "<b>Місткість:</b> 2 особи"
         }   
       },
       {
         "column-header": {
           "number-icon": "10",
-          "text": "Площа номеру 20 м кв"
+          "text": "<b>Площа номеру:</b> 20 м кв"
         }   
       }
     ],
@@ -775,7 +780,8 @@
     },
     "beauty-zone-baner": {
       "slide-name":"baner-1234",
-      "text":"Family Residence Boutique Hotel"
+      "title":"Family Residence Boutique Hotel",
+      "desc": "Усі номери"
     },
     "rules": {
       "items": [
@@ -876,7 +882,23 @@
             "number-2": "10"   
           }
         }
-      ]
+      ],
+      "secure-list": {
+        "secure-items": [
+          {
+            "icon": "6",
+            "item-text": "Номери з електронними замками"
+          },
+          {
+            "icon": "7",
+            "item-text": "Система відеоспостереження у коридорах"
+          },
+          {
+            "icon": "8",
+            "item-text": "Сучасна пожежна сигналізація"
+          }
+        ]
+      }
     },
     "content-line-4":true,
     "content-line-2": [

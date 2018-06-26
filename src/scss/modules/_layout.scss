@@ -84,7 +84,7 @@
     }
   }
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1200px) {
   .header {
     &__top-section {
      .icon-2 {
@@ -211,9 +211,23 @@
 }
 
 .slide-outer {
+  height: 720px;
+  width: 100%;
   background-position: 50% 50%;
   background-repeat: no-repeat;
-  background-size: cover;  
+  background-size: cover; 
+  &__gallery {
+    height: 300px;
+    width: 100%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    margin-right: 20px;
+    margin-left: 20px;  
+  } 
+  &__beauty {
+    height: 500px;
+  }
 }
 
 @media screen and (max-width:480px) {
@@ -371,12 +385,24 @@
 .flat-txt {
   justify-content: space-between;
   margin-top: 10px;
+  font-size: 1rem;
   p {
     margin: 0;
     span {
-      font-size: 1rem;
+     
       color: #51bac2;
     }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .flat-txt {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 992px) {
+  .flat-txt {
+    font-size: 1rem;
   }
 }
 
@@ -406,9 +432,12 @@
 }
 
 .flat-carousel {
-  .menu-itm {
-    &:hover {
-      position: relative;
+  .slick-list {
+    transition: all .3s ease-in-out;
+  }
+  &:hover {
+    .slick-list {
+      padding-bottom: 152px;
     }
   }
 }

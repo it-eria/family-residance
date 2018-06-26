@@ -27,66 +27,70 @@
     <div class="row">
       <div class="col-12 col-lg-8">
         <img src="assets/img/title-photo.jpg" alt="flat" class="img-fluid"> 
-        <div class="row">
-          <div class="col-12 col-lg-12">
-            <div class="column-header-bg  pb-5">
-              <div class="column-header column-header_mod">
-                <div class="item justify-self-start">
-                  <i class="icon icon-11"></i>
-                  <p>Бкзкоштовний Wi-Fi</p>
-                </div>
-                <div class="item">
-                  <i class="icon icon-13"></i>
-                  <p>Кондиціонер</p>
-                </div>
-                <div class="item">
-                  <i class="icon icon-12"></i>
-                  <p>Супутникове телебачення</p>
-                </div>
-                <div class="item">
-                  <i class="icon icon-15"></i>
-                  <p>Мінібар</p>
-                </div>
+        <div class="column-header column-header-bg py-3 py-lg-5 px-3 d-block">
+          <div class="row">
+            <div class="col-6 col-sm-6 col-lg-3">
+              <div class="item mt-3">
+                <i class="icon icon-11"></i>
+                <p>Бкзкоштовний Wi-Fi</p>
               </div>
-              <div class="row">
-                <div class="col-12 col-lg-6">
-                  <div class="column-header">
-                    <div class="item">
-                      <p>Власна ванна кімната</p>
-                      {{#items}}
-                      <ul class="item-list item-list__mp">
-                        <li>
-                          <span>{{{name}}}</span>
-                        </li>  
-                      </ul>
-                      {{/items}}
-                    </div>
-                    <div class="item">
-                      <p>Власна ванна кімната</p>
-                      {{#items-1}}
-                      <ul class="item-list">
-                        <li>
-                          <span>{{{name}}}</span>
-                        </li>  
-                      </ul>
-                      {{/items-1}}
-                    </div>
-                  </div>
+            </div>
+            <div class="col-6 col-sm-6 col-lg-3">
+              <div class="item mt-3">
+                <i class="icon icon-13"></i>
+                <p>Кондиціонер</p>
+              </div>
+            </div>
+            <div class="col-6 col-sm-6 col-lg-3">
+              <div class="item mt-3">
+                <i class="icon icon-12"></i>
+                <p>Супутникове телебачення</p>
+              </div>
+            </div>
+            <div class="col-6 col-sm-6 col-lg-3">
+              <div class="item mt-3">
+                <i class="icon icon-15"></i>
+                <p>Мінібар</p>
+              </div>
+            </div>                
+          </div>
+          <div class="row mt-5">
+            <div class="col-12 col-sm-6 col-lg-3 mt-3 mt-sm-0">
+              <div class="item item_no-flex">
+                <div data-mh="title-gr">
+                  <h4>Власна ванна кімната</h4>
                 </div>
-                <div class="col-12 col-lg-6">
-                  <div class="row">
-                    <div class="col-12 pr-5">
-                      <div class="txt-wrapper mt-4">
-                        <p>Двомісний номер, який ми рекомендуємо для 2-х осіб з двоспальним ліжком King size з ортопедичним матрасом розміром 180х200см.</p>
-                        <span>Ціна від 2800грн</span>
-                      </div>
-                      <div class="row">
-                        <div class="col-12 d-flex justify-content-end">
-                          <a href="#" class="btn btn_big btn_big_mdf">Забронювати</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                <ul class="item-list item-list__mp">
+                  {{#items}}
+                  <li>
+                    {{{name}}}
+                  </li>  
+                  {{/items}}
+                </ul>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3 mt-3 mt-sm-0">
+              <div class="item item_no-flex">
+                <div data-mh="title-gr">
+                  <h4>Зручності</h4>
+                </div>
+                <ul class="item-list item-list__mp">
+                  {{#items-1}}
+                  <li>
+                    {{{name}}}
+                  </li>  
+                  {{/items-1}}
+                </ul>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6 mt-5 mt-lg-0">
+              <div class="d-flex flex-column h-100">
+                <div class="txt-wrapper">
+                  <p>Двомісний номер, який ми рекомендуємо для 2-х осіб з двоспальним ліжком King size з ортопедичним матрасом розміром 180х200см.</p>
+                </div>
+                <div class="mt-auto text-right">
+                  <p class="price mt-3">Ціна від <span>2800грн</span></p>
+                  <a href="#" class="btn btn_big btn_big_mdf ml-auto">Забронювати</a>
                 </div>
               </div>
             </div>
@@ -94,7 +98,7 @@
         </div>
       </div>
       <div class="col-12 col-lg-4">
-        <div class="column-header-bg mt-5 mt-lg-0">
+        <div class="column-header-bg mt-5 mb-3 pb-2 mt-lg-0">
           <div class="row">
             {{#partials}}
             <div class="col-6 col-sm-6 mb-3 mb-lg-1">

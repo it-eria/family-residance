@@ -3,12 +3,17 @@
   width: 100%;
   background-color: #f7f9f9;
   padding-bottom: 40px;
+  .dialog-line {
+    input {
+      width: 30%;
+    }
+  }
   .nice-select {
     width: 30%;
     font-family: $font-5;
   }
   label {
-    width: 12%;
+    width: 50%;
   }
   .title-color {
     text-align: center;

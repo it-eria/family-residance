@@ -18,31 +18,29 @@
           <div class="itm itm_2 mt-4">
             <h2>Найсучасніші засоби безпеки</h2>
             <div class="separator"></div>
-            <div class="wrp">
-              <i class="icon icon-6"></i>
-              <p>Номери з електронними замками</p>
-            </div>
-            <div class="wrp">
-              <i class="icon icon-7 mt-2"></i>
-              <p>Система відеоспостереження у коридорах</p>
-            </div>
-            <div class="wrp">
-              <i class="icon icon-8"></i>
-              <p>Сучасна пожежна сигналізація</p>
-            </div>
+            {{#secure-list}}
+            <ul class="secure-list">
+              {{#secure-items}}
+              <li {{#class}}class="{{class}}"{{/class}}>
+                <i class="icon icon-{{icon}}"></i>
+                {{item-text}}
+              </li>
+              {{/secure-items}}
+            </ul>
+            {{/secure-list}}
           </div>
           <div class="itm itm_3 mt-4">
             <h2>У всіх номерах</h2>
             <div class="separator"></div>
             <div class="row">
               <div class="col-6  d-flex justify-content-center">
-                <div class="item-serv">
+                <div class="item-serv item-serv_aside">
                   <i class="icon icon-12 m-0"></i>
                   <p>Супутникове телебачення</p>
                 </div> 
               </div>
               <div class="col-6  d-flex justify-content-center">
-                  <div class="item-serv">
+                  <div class="item-serv item-serv_aside">
                       <i class="icon icon-17 m-0"></i>
                       <p>Мінібари</p>
                     </div> 
@@ -50,13 +48,13 @@
             </div>
             <div class="row">
               <div class="col-6  d-flex justify-content-center">
-                <div class="item-serv">
+                <div class="item-serv item-serv_aside">
                   <i class="icon icon-20 m-0"></i>
                   <p>Кондиціонери</p>
                 </div> 
               </div>
               <div class="col-6  d-flex justify-content-center">
-                <div class="item-serv">
+                <div class="item-serv item-serv_aside">
                   <i class="icon icon-21 m-0"></i>
                   <p>Безкоштовний WiFi</p>
                 </div> 
@@ -100,6 +98,14 @@
           </div>
           {{/slides}}
         </div>
+        <div class="row">
+            <div class="col-12 d-flex justify-content-center">
+              <ul class="pag-nav">
+                  <li><a href="#" class="current">1</a></li>
+                  <li><a href="#">2</a></li>
+                </ul>
+            </div>
+          </div>
       </div>
     </div>
   </div>
