@@ -1,60 +1,197 @@
 /************MODAL**************/
-.popup-form {
-  width: 100%;
-  background-color: #f7f9f9;
-  padding-bottom: 40px;
-  .dialog-line {
-    input {
-      width: 30%;
+// .popup-form {
+//   width: 100%;
+//   background-color: #f7f9f9;
+//   padding-bottom: 40px;
+//   .dialog-line {
+//     input {
+//       width: 30%;
+//     }
+//   }
+//   .nice-select {
+//     width: 30%;
+//     font-family: $font-5;
+//   }
+//   label {
+//     width: 50%;
+//   }
+//   .title-color {
+//     text-align: center;
+//     h2 {
+//       padding-top: 25px;
+//       padding-bottom: 25px;
+//       background-color: #71bdc2;
+//       font-size: 3.125rem;
+//       font-family: $font-4;
+//       color: #f8f9fa;
+//     }
+//   }
+//   .txt-inputs {
+//     z-index: 9999;
+//     input {
+//       width: 310px;
+//       border: none;
+//       border-bottom: 1px solid #71bdc2;
+//       background-color: transparent;
+//     }
+//     p {
+//       font-size: 0.8rem;
+//       margin-top: 15px;
+//     }
+//   }
+//   .btn-wrapper {
+//     display: flex;
+//     justify-content: flex-end;
+//     padding-right: 40px;
+//   }
+// }
+
+// .modal-content {
+//   border: none;
+// }
+
+// .modal-body {
+//   padding: 0;
+// }
+
+// #requestModal {
+//   z-index: 99999;
+// }
+
+
+// .date-inputs {
+//   input {
+//     max-width: 180px;
+//     padding: 0;
+//     border: none;
+//     border-bottom: 1px solid #71bdc2;
+//     background-color: transparent;
+//   }
+// }
+
+$register-blue: #71bdc2;
+$register-white: #fff;
+$register-black: #373736;
+$radio-border-color: #787a7b;
+
+.modal {
+  z-index: 99999;
+  &-content {
+    border: none;
+    border-radius: 0;
+  }
+  &-body {
+    padding: 0;
+  }
+}
+
+.register-modal {
+  * {
+    color: $register-black;
+  }
+  &__title {
+    text-align: center;
+    padding: 1.5625rem 0;
+    background-color: $register-blue;
+    h2 {
+      margin: 0;
+      padding: 0;
+      font-family: $font-4;
+      font-size: 3.125rem;
+      color: $register-white;
     }
   }
-  .nice-select {
-    width: 30%;
-    font-family: $font-5;
+  input, label, select, .nice-select {
+    display: block;
+    width: 100%;
+    border: none;
+    margin: 0;
+    padding: 0;
   }
   label {
-    width: 50%;
+    font-family: $font-9;
+    font-size: 0.75rem;
+    margin: 0;
+    padding: 0;
   }
-  .title-color {
-    text-align: center;
-    h2 {
-      padding-top: 25px;
-      padding-bottom: 25px;
-      background-color: #71bdc2;
-      font-size: 3.125rem;
-      font-family: $font-4;
-      color: #f8f9fa;
+  &__form {
+    padding: 2.5rem 1rem;
+  }
+  .f-group {
+    font-size: 0;
+    input[type="text"], input[type="email"], select, .nice-select, .checkbox-lbl {
+      font-family: $font-5;
+      font-size: 1rem;
+      line-height: 1.75rem;
+    }
+    border-bottom: 1px solid $register-blue;
+    padding: 0 0.625rem;
+    & + .f-group {
+      margin-top: 1.25rem;
+    }
+    &_inline {
+      font-size: 0;
+      label, input, select, .nice-select {
+        display: inline-block;
+        width: 50%;
+        &[for="f-select-2"] {
+          width: 30%;
+        }
+        &#f-select-2 + .nice-select {
+          width: 70%;
+        }
+      }
     }
   }
-  .txt-inputs {
-    z-index: 9999;
+  input[type="submit"] {
+    display: inline-block;
+    font-family: $font-3;
+    font-size: 1rem;
+    color: $register-white;
+    background-color: $register-blue;
+    padding: 0.75rem 0;
+    width: 100%;
+  }
+  .nice-select {
+    height: auto;
+    .list {
+      width: 100%;
+      font-size: 0.75rem;
+    }
+    &:after {
+      right: 0;
+      margin-top: -0.5rem;
+    }
+  }
+  .checkbox-lbl {
+    display: inline-block;
+    width: auto;
+    & + .checkbox-lbl {
+      margin-left: 0.5rem;
+    }
+    &:after {
+      content: '';
+      display: inline-block;
+      vertical-align: middle;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      border: 1px solid $radio-border-color;
+      margin-top: -0.1rem;
+      margin-left: 0.2rem;
+      cursor: pointer;
+    }
+    &.selected {
+      &:after {
+        box-shadow: inset 0 0 2px 1px $register-white;
+        background-color: $register-blue;
+      }
+    }
     input {
-      margin-right: 40px;
-      margin-left: 40px;
-      width: 300px;
-      border: none;
-      border-bottom: 1px solid #71bdc2;
-      background-color: transparent;
+      display: none;
     }
-    p {
-      padding-left: 40px;
-      font-size: 0.8rem;
-      margin-top: 15px;
-    }
-  }
-  .btn-wrapper {
-    display: flex;
-    justify-content: flex-end;
-    padding-right: 40px;
   }
 }
 
-.modal-body {
-  padding: 0;
-}
-
-#requestModal {
-  z-index: 99999;
-}
 
 /******MODAL*************/

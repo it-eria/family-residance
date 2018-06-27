@@ -14,13 +14,24 @@ body, html {
   }
 }
 
-.current {
+.white-bg {
+  background-color: #faf7f5;
+  width: 40px;
+  height: 50px;
+}
+.item-bg {
+  height: 0;
+  padding-top: 64%;
+}
+.current-item {
   color: #48a9b1;
 }
 
 @media screen and (max-width: 992px) {
   font-size: 12px;
 }
+
+
 
 h1,h2,h3,h4,h5,h6,p,span,ul,a {
   margin: 0;
@@ -56,21 +67,9 @@ p {
   }
 }
 
-
-.flat-wrapper {
-  display: block;
-  padding-left: 30px;
-  padding-right: 20px;
-  padding-bottom: 20px;
- 
-}
-
-.menu-bg {
-  background-color: #ffffff;
-}
-.column-header-bg {
-  background-color: #f7f9f9;
-  box-shadow: 0 1px 10px rgba(0,0,0,.1);
+.brd-bottom {
+  border-bottom: 1px solid #71bdc2;
+  max-width: 300px;
 }
 
 .bgc {
@@ -332,7 +331,7 @@ p {
     text-align: center; 
     color: #ffffff;
     height: 340px;
-    a {
+    span {
       font-family: $font-4;
       position: relative;
       z-index: 9999;
@@ -340,13 +339,14 @@ p {
   }
 }
 .menu-img {
+  display: block;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
   position: relative;
   cursor: pointer;
   &:hover {
-    a {
+    span {
       font-size: 2.8rem;
       transition: all 0.2s ease-in-out;
     }
@@ -400,7 +400,7 @@ p {
     }
     &_hdr {
       margin-top: 0;
-      height: 40px;
+      padding-top: 13px;
       width: 20%;
     }
     &_form {
@@ -416,6 +416,28 @@ p {
     width: 60%;
   }
 } 
+
+@media screen and (max-width: 991px) {
+  .btn {
+    &_big {
+      margin-top: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 50px;
+      background-color: #51bac2;
+      color: #ffffff;
+      font-family: $font-3;
+      transition: all .3s ease-in-out;
+      &_hdr {
+        margin-top: 0;
+        height: 40px;
+        width: 50%;
+      }
+    }
+  }
+}
 
 
 .pag-nav {
@@ -685,7 +707,7 @@ margin-left: 15px;
   }
 }
 
-a {
+span {
   color: currentColor;
   &:hover {
     color: currentCOlor;
@@ -711,30 +733,69 @@ a {
     margin-left: 10px;
   }
   &__slide {
+
       img {
         width: 100%;
       }
     }
   }
 }
+
+
+
+
 .slider-arr {
   display: block;
   width: 12px;
   height: 12px;
   border:  3px solid black;
-  top: 50%;
+  top: 58%;
   position: absolute;
   transform: rotate(-45deg);
   z-index: 6000;
   &_prev {
-    border-right: none;
-    border-bottom: none;
+    width: 40px;
+    height: 50px;
+    background-color: #fff;
+    border: none;
+    transform: none;
     left: 50px;
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 12px;
+      height: 12px;
+      border:  3px solid black;
+      transform-origin: 50% 50%;
+      transform: translate(-25%, -50%) rotate(45deg);
+      border-right: none;
+      border-top: none;
+    }
   }
   &_next {
+    width: 40px;
+    height: 50px;
+    background-color: #fff;
+    border: none;
+    transform: none;
     right: 50px;
-    border-left: none;
-    border-top: none;
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 12px;
+      height: 12px;
+      border:  3px solid black;
+      transform-origin: 50% 50%;
+      transform: translate(-75%, -50%) rotate(45deg);
+      border-left: none;
+      border-bottom: none;
+    }
   }
   &_left {
     left: -30px;
@@ -1025,23 +1086,13 @@ a {
     z-index: 9999;
     width: 100%;
     margin: 0;
+
   }
   position: relative;
   &:hover {
     .bottom-wrp {
       display: block;
     }
-  }
-}
-@media screen and (max-width: 992px) {
-  .menu-itm {
-    max-height: 860px;
-  }
-}
-
-@media screen and (min-width:993px)  and (max-width:1200px) {
-  .menu-itm {
-    max-height: 500px;
   }
 }
 
@@ -1145,5 +1196,20 @@ a {
     p {
       font-size: 1.5rem;
     }
+  }
+}
+
+
+
+
+.preloader {
+  *[data-js="main-carousel"],
+  *[data-js="beauty-carousel"],
+  *[data-js="gallery-carousel"],
+  *[data-js="salon-carousel"],
+  *[data-js="flat-carousel"] {
+    height: 0 !important;
+    overflow: hidden !important;
+    opacity: 0 !important;
   }
 }

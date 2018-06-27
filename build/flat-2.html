@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="assets/css/style.min.css">
 </head>
 
-<body>
+<body class="preloader">
     <header class="header">
         <div class="header__top-section">
             <div class="container">
@@ -72,77 +72,138 @@
             </div>
         </div>
     </header>
+
     <!-- Modal form -->
-    <div class="modal fade" tabindex="-1" role="dialog" id="requestModal">
+    <div class="modal register-modal fade" tabindex="-1" role="dialog" id="requestModal">
         <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-body">
-                    <div class="form-wrapper d-flex justify-content-center">
-                        <form action="SUBMIT" class="popup-form">
-                            <button type="button" class="close pr-2" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-                            <div class="title-color">
-                                <h2>Бронювання номеру</h2>
-                            </div>
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-12">
-                                        <div class="row">
-                                            <div class="col-12 col-lg-6 d-flex justify-content-center">
-                                                <div class="txt-inputs d-flex flex-column">
-                                                    <p>Ім'я</p>
-                                                    <input type="text">
-                                                    <p>Прізвище</p>
-                                                    <input type="text">
-                                                </div>
-                                            </div>
-                                            <div class="col-12 col-lg-6">
-                                                <div class="txt-inputs d-flex flex-column">
-                                                    <p>Номер телефону</p>
-                                                    <input type="text">
-                                                    <p>Email</p>
-                                                    <input type="email">
-                                                </div>
-                                            </div>
-                                        </div>
+                    <button type="button" class="close pr-2" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+                    <div class="register-modal__title">
+                        <h2>Бронювання номеру</h2>
+                    </div>
+                    <form action="#" class="register-modal__form">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12 col-md-6">
+                                    <div class="f-group">
+                                        <label for="f-name">Ім'я</label>
+                                        <input type="text" id="f-name" name="f-name">
                                     </div>
-                                    <div class="separator"></div>
-                                    <div class="dialog-content ml-4 mr-4">
-                                        <div class="dialog-line d-flex justify-content-between">
-                                            <div class="select-with-label select-with-label_form d-flex">
-                                                <label for="select-1234">Місткість:</label>
-                                                <select class="custom-select pl-0" id="select-1234">
-                          <option value="0">2 дорослих</option>
-                          <option value="1">Some option</option>
-                          <option value="2">Some option</option>
-                          <option value="3">Some option</option>
-                        </select>
-                                            </div>
-                                            <input type="date">
-                                            <input type="date">
-                                        </div>
-                                        <div class="select-with-label select-with-label_form d-flex d-flex">
-                                            <label for="select-1234">Місткість:</label>
-                                            <select class="custom-select pl-0" id="select-1234">
-                        <option value="0">2 дорослих</option>
-                        <option value="1">Some option</option>
-                        <option value="2">Some option</option>
-                        <option value="3">Some option</option>
-                      </select>
-                                        </div>
+                                    <div class="f-group">
+                                        <label for="f-surname">Прізвище</label>
+                                        <input type="text" id="f-surname" name="f-surname">
                                     </div>
-                                    <div class="btn-wrapper">
-                                        <a href="#" class="btn btn_big btn_big_form">Забронювати номер</a>
+                                </div>
+                                <div class="col-12 col-md-6 mt-3 mt-md-0">
+                                    <div class="f-group">
+                                        <label for="f-phone">Номер телефону</label>
+                                        <input type="text" id="f-phone" name="f-phone">
+                                    </div>
+                                    <div class="f-group">
+                                        <label for="f-mail">Email</label>
+                                        <input type="email" id="f-mail" name="f-mail">
                                     </div>
                                 </div>
                             </div>
-                    </div>
+                        </div>
+                        <div class="separator my-3 my-md-5"></div>
+                        <div class="container-fluid">
+                            <div class="row align-items-end">
+                                <div class="col-12 col-lg-4">
+                                    <div class="f-group f-group_inline">
+                                        <label for="f-select">Кількість гостей:</label>
+                                        <select id="f-select">
+                    <option value="0">2 дорослих</option>
+                    <option value="1">Some option</option>
+                    <option value="2">Some option</option>
+                    <option value="3">Some option</option>
+                  </select>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-4 mt-3 mt-lg-0">
+                                    <div class="f-group f-group_inline">
+                                        <label for="f-date-from">Дата заїзду:</label>
+                                        <input type="text" id="f-date-from" name="f-date-from" value="13.05.18">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-4 mt-3 mt-lg-0">
+                                    <div class="f-group f-group_inline">
+                                        <label for="f-date-to">Дата виїзду:</label>
+                                        <input type="text" id="f-date-to" name="f-date-to" value="18.05.18">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row align-items-end mt-5">
+                                <div class="col-7 col-md-8">
+                                    <div class="f-group f-group_inline">
+                                        <label for="f-select-2">Категорія номера:</label>
+                                        <select id="f-select-2">
+                    <option value="0">Напівлюкс</option>
+                    <option value="1">Some option</option>
+                    <option value="2">Some option</option>
+                    <option value="3">Some option</option>
+                  </select>
+                                    </div>
+                                </div>
+                                <div class="col-5 col-md-4">
+                                    <div class="f-group">
+                                        <label>Вартість оточнюйте після бронювання</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="separator my-3 my-md-5"></div>
+                        <div class="container-fluid">
+                            <div class="row align-items-end">
+                                <div class="col-12 col-md-8">
+                                    <div class="row">
+                                        <div class="col-12 col-md-6 col-lg-4">
+                                            <div class="f-group">
+                                                <label for="f-select-time-in">Година заселення:</label>
+                                                <select id="f-select-time-in">
+                        <option value="0">14:00</option>
+                        <option value="1">15:00</option>
+                        <option value="2">16:00</option>
+                        <option value="3">17:00</option>
+                      </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-6 col-lg-4 mt-3 mt-md-0">
+                                            <div class="f-group">
+                                                <label for="f-select-time-in">Година виселення:</label>
+                                                <select id="f-select-time-in">
+                        <option value="0">14:00</option>
+                        <option value="1">15:00</option>
+                        <option value="2">16:00</option>
+                        <option value="3">17:00</option>
+                      </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-12 col-lg-4 mt-3 mt-lg-0">
+                                            <div class="f-group">
+                                                <label>Послуги таксі:</label>
+                                                <label class="checkbox-lbl">
+                        Так <input type="radio" name="taxi-service" checked>
+                      </label>
+                                                <label class="checkbox-lbl">
+                        Ні <input type="radio" name="taxi-service">
+                      </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-4 mt-3 mt-md-0">
+                                    <input type="submit" value="Забронювати">
+                                </div>
+                            </div>
+                        </div>
                     </form>
                 </div>
             </div>
         </div>
-    </div>
     </div>
     <!-- /Modal form -->
     <section class="banner " style="background-image: url(assets/img/baner-1234.jpg);">
@@ -286,7 +347,7 @@
                 </div>
             </div>
             <div class="col-12 col-lg-4">
-                <div class="column-header-bg mt-5 mb-3 pb-2 mt-lg-0">
+                <div class="column-header-bg mt-5 mb-3 pb-2 pt-3 mt-lg-0">
                     <div class="row">
                         <div class="col-6 col-sm-6 mb-3 mb-lg-1">
                             <div class="column-header">
@@ -408,25 +469,25 @@
                         <div class="row">
                             <div class="col-6 mt-5">
                                 <div class="item-serv" data-mh="item-serv-gr">
-                                    <i class="icon icon-16 d-block mx-auto"></i>
+                                    <i class="icon mb-3 icon-16 d-block mx-auto"></i>
                                     <h5>Кава, чай на рецепції</h5>
                                 </div>
                             </div>
                             <div class="col-6 mt-5">
                                 <div class="item-serv" data-mh="item-serv-gr">
-                                    <i class="icon icon-17 d-block mx-auto"></i>
+                                    <i class="icon mb-3 icon-17 d-block mx-auto"></i>
                                     <h5>Інформаційні послуги</h5>
                                 </div>
                             </div>
                             <div class="col-6 mt-5">
                                 <div class="item-serv" data-mh="item-serv-gr">
-                                    <i class="icon icon-20 d-block mx-auto"></i>
+                                    <i class="icon mb-3 icon-20 d-block mx-auto"></i>
                                     <h5>Щоденне прибирання номерів</h5>
                                 </div>
                             </div>
                             <div class="col-6 mt-5">
                                 <div class="item-serv" data-mh="item-serv-gr">
-                                    <i class="icon icon-21 d-block mx-auto"></i>
+                                    <i class="icon mb-3 icon-21 d-block mx-auto"></i>
                                     <h5>Виклик таксі</h5>
                                 </div>
                             </div>
@@ -443,28 +504,28 @@
                         <div class="row">
                             <div class="col-6 mt-5">
                                 <div class="item-serv" data-mh="item-serv-gr">
-                                    <i class="icon icon-18 d-block mx-auto"></i>
+                                    <i class="icon mb-3 icon-18 d-block mx-auto"></i>
                                     <h5>Екскурсійні програми</h5>
                                     <p>з кваліфікованими гідами на різних мовах</p>
                                 </div>
                             </div>
                             <div class="col-6 mt-5">
                                 <div class="item-serv" data-mh="item-serv-gr">
-                                    <i class="icon icon-19 d-block mx-auto"></i>
+                                    <i class="icon mb-3 icon-19 d-block mx-auto"></i>
                                     <h5>Beauty Zone</h5>
                                     <p>Послуги салону краси</p>
                                 </div>
                             </div>
                             <div class="col-6 mt-5">
                                 <div class="item-serv" data-mh="item-serv-gr">
-                                    <i class="icon icon-22 d-block mx-auto"></i>
+                                    <i class="icon mb-3 icon-22 d-block mx-auto"></i>
                                     <h5>Трансфер</h5>
                                     <p>до залізничного вокзалу або аеропорту</p>
                                 </div>
                             </div>
                             <div class="col-6 mt-5">
                                 <div class="item-serv" data-mh="item-serv-gr">
-                                    <i class="icon icon-23 d-block mx-auto"></i>
+                                    <i class="icon mb-3 icon-23 d-block mx-auto"></i>
                                     <h5>Прокат авто</h5>
                                     <p>Щоб потрапити куди потрібно з легкістю</p>
                                 </div>
@@ -487,12 +548,12 @@
             <div class="row">
                 <div class="col-12">
                     <div data-js="flat-carousel" class="flat-carousel d-flex justify-content-between">
-                        <div class="menu-itm mt-4  mr">
+                        <div class="menu-itm mr-3 ml-3">
                             <div data-mh="slide-gr" class="bgc position-relative mb-5 mr-0 ml-0">
                                 <div class="flat-carousel__slide flat-carousel__slide_one">
-                                    <img src="assets/img/other-slide-1.jpg" alt="picture" class="img-fluid w-100">
+                                    <div class="item-bg" style="background-image: url(assets/img/other-slide-1.jpg);"></div>
                                 </div>
-                                <div class="flat-wrapper">
+                                <div class="flat-wrapper p-3">
                                     <div class="title-serv title-serv_flt mt-3">
                                         <a href="#">Двомісний номер</a>
                                     </div>
@@ -510,8 +571,8 @@
                                         <p><b>Площа номеру:</b> 14 м кв</p>
                                     </div>
                                     <div class="separator"></div>
-                                    <div class="description">
-                                        <p>Двомісний номер, який ми рекомендуємо для 1 або 2-х осіб з двоспальним ліжком з ортопедичним матрацом.</p>
+                                    <div class="description" data-mh="teaser-desc-gr">
+                                        <p>Двомісний номер, який ми рекомендуємо для 1 або 2-х осіб з двоспальним ліжком з ортопедичним матрацом. Двомісний номер, який ми рекомендуємо для 1 або 2-х осіб з двоспальним ліжком з ортопедичним матрацом.</p>
                                     </div>
                                     <div class="bottom-wrp bgc">
                                         <div class="btn-wrp d-flex justify-content-center">
@@ -541,12 +602,12 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="menu-itm mt-4 ml mr">
+                        <div class="menu-itm mr-3 ml-3">
                             <div data-mh="slide-gr" class="bgc position-relative mb-5 mr-0 ml-0">
                                 <div class="flat-carousel__slide flat-carousel__slide_one">
-                                    <img src="assets/img/other-slide-1.jpg" alt="picture" class="img-fluid w-100">
+                                    <div class="item-bg" style="background-image: url(assets/img/other-slide-1.jpg);"></div>
                                 </div>
-                                <div class="flat-wrapper">
+                                <div class="flat-wrapper p-3">
                                     <div class="title-serv title-serv_flt mt-3">
                                         <a href="#">Двомісний номер</a>
                                     </div>
@@ -564,7 +625,7 @@
                                         <p><b>Площа номеру:</b> 14 м кв</p>
                                     </div>
                                     <div class="separator"></div>
-                                    <div class="description">
+                                    <div class="description" data-mh="teaser-desc-gr">
                                         <p>Двомісний номер, який ми рекомендуємо для 1 або 2-х осіб з двоспальним ліжком з ортопедичним матрацом.</p>
                                     </div>
                                     <div class="bottom-wrp bgc">
@@ -595,12 +656,12 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="menu-itm mt-4 ml ">
+                        <div class="menu-itm mr-3 ml-3">
                             <div data-mh="slide-gr" class="bgc position-relative mb-5 mr-0 ml-0">
                                 <div class="flat-carousel__slide flat-carousel__slide_one">
-                                    <img src="assets/img/other-slide-1.jpg" alt="picture" class="img-fluid w-100">
+                                    <div class="item-bg" style="background-image: url(assets/img/other-slide-1.jpg);"></div>
                                 </div>
-                                <div class="flat-wrapper">
+                                <div class="flat-wrapper p-3">
                                     <div class="title-serv title-serv_flt mt-3">
                                         <a href="#">Двомісний номер</a>
                                     </div>
@@ -618,7 +679,7 @@
                                         <p><b>Площа номеру:</b> 14 м кв</p>
                                     </div>
                                     <div class="separator"></div>
-                                    <div class="description">
+                                    <div class="description" data-mh="teaser-desc-gr">
                                         <p>Двомісний номер, який ми рекомендуємо для 1 або 2-х осіб з двоспальним ліжком з ортопедичним матрацом.</p>
                                     </div>
                                     <div class="bottom-wrp bgc">
@@ -649,12 +710,12 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="menu-itm mt-4 ">
+                        <div class="menu-itm mr-3 ml-3">
                             <div data-mh="slide-gr" class="bgc position-relative mb-5 mr-0 ml-0">
                                 <div class="flat-carousel__slide flat-carousel__slide_one">
-                                    <img src="assets/img/other-slide-1.jpg" alt="picture" class="img-fluid w-100">
+                                    <div class="item-bg" style="background-image: url(assets/img/other-slide-1.jpg);"></div>
                                 </div>
-                                <div class="flat-wrapper">
+                                <div class="flat-wrapper p-3">
                                     <div class="title-serv title-serv_flt mt-3">
                                         <a href="#">Двомісний номер</a>
                                     </div>
@@ -672,7 +733,7 @@
                                         <p><b>Площа номеру:</b> 14 м кв</p>
                                     </div>
                                     <div class="separator"></div>
-                                    <div class="description">
+                                    <div class="description" data-mh="teaser-desc-gr">
                                         <p>Двомісний номер, який ми рекомендуємо для 1 або 2-х осіб з двоспальним ліжком з ортопедичним матрацом.</p>
                                     </div>
                                     <div class="bottom-wrp bgc">
@@ -796,8 +857,8 @@
                 autoplaySpeed: 4000,
                 infinite: true,
                 arrows: true,
-                prevArrow: "<a href=\"#\" class=\"slider-arr slider-arr_prev\"></a>",
-                nextArrow: "<a href=\"#\" class=\"slider-arr slider-arr_next\"></a>",
+                prevArrow: "<a href=\"#\" class=\"slider-arr slider-arr_prev \"></a>",
+                nextArrow: "<a href=\"#\" class=\"slider-arr slider-arr_next \"></a>",
             });
         }
 
@@ -884,6 +945,31 @@
         }
     </script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDxkUUlSbRNNNbTvIKVa1tLmbhQfrgq45g&callback=initMap">
+    </script>
+    <script>
+        // Google Maps
+        function initMap() {
+            var markerPos = {
+                lat: 49.840594,
+                lng: 24.023675
+            };
+            var centerPos = {
+                lat: markerPos.lat,
+                lng: markerPos.lng - 0.001
+            };
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 16,
+                center: centerPos,
+                disableDefaultUI: true
+            });
+
+            var marker = new google.maps.Marker({
+                position: markerPos,
+                map: map,
+                icon: 'assets/img/mapID.png',
+                title: 'Family residence'
+            });
+        }
     </script>
 </body>
 

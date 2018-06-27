@@ -210,6 +210,13 @@
   }
 }
 
+.gallery-carousel {
+  &__slide {
+   padding: 0  10px;
+  }
+}
+
+
 .slide-outer {
   height: 720px;
   width: 100%;
@@ -222,8 +229,7 @@
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: cover; 
-    margin-right: 20px;
-    margin-left: 20px;  
+   
   } 
   &__beauty {
     height: 500px;
@@ -435,9 +441,7 @@
   .slick-list {
     transition: all .3s ease-in-out;
   }
-  &:hover {
-    .slick-list {
-      padding-bottom: 152px;
-    }
+  .slick-list {
+    padding-bottom: 152px;
   }
 }

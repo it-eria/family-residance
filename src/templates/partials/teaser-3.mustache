@@ -1,10 +1,10 @@
 {{#teaser-3}}
-<div class="menu-itm mt-4 {{teaser-class}}">
+<div class="menu-itm {{teaser-class}}">
   <div data-mh="slide-gr" class="bgc position-relative mb-5 mr-0 ml-0">
     <div class="flat-carousel__slide flat-carousel__slide_one">
-      <img src="assets/img/{{slide-name}}.jpg" alt="picture" class="img-fluid w-100">
+      <div class="item-bg" style="background-image: url(assets/img/{{slide-name}}.jpg);"></div>
     </div>
-    <div class="flat-wrapper">
+    <div class="flat-wrapper p-3">
       <div class="title-serv title-serv_flt mt-3">
         <a href="#">{{{title}}}</a>
       </div>
@@ -22,7 +22,7 @@
         <p>{{{txt-5}}}</p>
       </div>
       <div class="separator"></div>
-      <div class="description">
+      <div class="description" data-mh="teaser-desc-gr">
         <p>{{txt-6}}</p>
       </div>
       <div class="bottom-wrp bgc">
