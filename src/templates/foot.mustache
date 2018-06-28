@@ -23,6 +23,30 @@
       <!-- Animate on scroll -->
       <script src="assets/js/vendors/aos.js"></script>
     {{/aos}}
+    {{#map}}
+      <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDxkUUlSbRNNNbTvIKVa1tLmbhQfrgq45g&callback=initMap">
+      </script>
+      <script>
+        // Google Maps
+        function initMap() {
+          var markerPos = {lat: 49.840594, lng: 24.023675};
+          var centerPos = {lat: markerPos.lat, lng: markerPos.lng - 0.001};
+          var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 16,
+            center: centerPos,
+            disableDefaultUI: true
+          });
+          
+          var marker = new google.maps.Marker({
+            position: markerPos,
+            map: map,
+            icon: 'assets/img/mapID.png',
+            title: 'Family residence'
+          });
+        }
+      </script>
+    {{/map}}
     {{/vendor-scripts}}
       <!-- Custom script -->
       <script src="assets/js/script.min.js"></script>
@@ -132,28 +156,6 @@
             ]
           });
         }
-      </script>
-      <script async defer
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDxkUUlSbRNNNbTvIKVa1tLmbhQfrgq45g&callback=initMap">
-      </script>
-      <script>
-          // Google Maps
-          function initMap() {
-            var markerPos = {lat: 49.840594, lng: 24.023675};
-            var centerPos = {lat: markerPos.lat, lng: markerPos.lng - 0.001};
-            var map = new google.maps.Map(document.getElementById('map'), {
-              zoom: 16,
-              center: centerPos,
-              disableDefaultUI: true
-            });
-            
-            var marker = new google.maps.Marker({
-              position: markerPos,
-              map: map,
-              icon: 'assets/img/mapID.png',
-              title: 'Family residence'
-            });
-          }
       </script>
     </body>
   </html>

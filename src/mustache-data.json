@@ -11,7 +11,8 @@
         "aos": true,
         "bt-js": true,
         "nice-select":true,
-        "m-height": true
+        "m-height": true,
+        "map": true
       }
     },
     "main-carousel": {
@@ -446,7 +447,8 @@
         "aos": true,
         "bt-js": true,
         "nice-select":true,
-        "m-height": true
+        "m-height": true,
+        "map": true
       }
     }
   },
@@ -515,7 +517,8 @@
         "aos": true,
         "bt-js": true,
         "nice-select":true,
-        "m-height": true
+        "m-height": true,
+        "map": true
       }
     }
   },
@@ -780,7 +783,8 @@
         "aos": true,
         "m-height": true,
         "bt-js": true,
-        "nice-select":true
+        "nice-select":true,
+        "map": true
       }
     }
   },
@@ -957,7 +961,8 @@
         "aos": true,
         "m-height": true,
         "nice-select":true,
-        "bt-js": true
+        "bt-js": true,
+        "map": true
       }
     }
   },
@@ -982,9 +987,27 @@
         "aos": true,
         "bt-js": true,
         "nice-select":true,
+        "m-height": true,
+        "slick-slider": true
+      }
+    }
+  },
+  "successful": {
+    "head": {
+      "title": "Successful"
+    },
+    "main-content": {
+      "main-bg": "main-bg"
+    },
+    "foot": {
+      "vendor-scripts": {
+        "jquery": true,
+        "slick-slider": true,
+        "aos": true,
+        "bt-js": true,
+        "nice-select":true,
         "m-height": true
       }
     }
   }
-
 }

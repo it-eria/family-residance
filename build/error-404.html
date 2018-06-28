@@ -40,7 +40,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <a href="#" class="d-none d-lg-block btn btn_big btn_big_hdr" data-toggle="modal" data-target="#requestModal">Забронювати номер</a>
+                        <a href="#" class="d-none d-xl-block btn btn_big btn_big_hdr" data-toggle="modal" data-target="#requestModal">Забронювати номер</a>
                         <a href="#" class="d-xl-none burger-button"><span></span></a>
                     </div>
                 </div>
@@ -64,7 +64,7 @@
                                 <li><a href="#">Beauty zone</a></li>
                                 <li><a href="#">Контакти</a></li>
                                 <li><a href="#">FAQ</a></li>
-                                <a href="#" class="flex-column align-self-center d-lg-none mb-5 ml-4 mt-2 btn btn_big btn_big_hdr" data-toggle="modal" data-target="#requestModal">Забронювати номер</a>
+                                <a href="#" class="flex-column align-self-center d-xl-none mb-5 ml-4 mt-2 btn btn_big btn_big_hdr" data-toggle="modal" data-target="#requestModal">Забронювати номер</a>
                             </ul>
                         </nav>
                     </div>
@@ -213,7 +213,7 @@
             <div class="main-carousel__slide main-carousel__slide_one">
                 <div class="slide-outer error-bg" style="background-image: url(assets/img/hotel-photo-2.jpg);">
                     <div class="error-text-wrapper position-absolute w-100 h-100 d-flex justify-content-center align-items-center">
-                        <div>
+                        <div class="inner-404">
                             <h1>Сторінку не знайдено</h1>
                             <h2>404</h2>
                             <div class="">
@@ -231,6 +231,8 @@
     <script src="assets/js/vendors/jquery-3.3.1.js"></script>
     <!-- Jquery -->
     <script src="assets/js/vendors/jquery.matchHeight-min.js"></script>
+    <!-- Slick slider -->
+    <script src="assets/js/vendors/slick.min.js"></script>
     <!-- Slick slider -->
     <script src="assets/js/vendors/jquery.nice-select.js"></script>
     <script src="assets/js/vendors/bootstrap.min.js"></script>
@@ -338,33 +340,6 @@
                         slidesToShow: 1,
                     }
                 }]
-            });
-        }
-    </script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDxkUUlSbRNNNbTvIKVa1tLmbhQfrgq45g&callback=initMap">
-    </script>
-    <script>
-        // Google Maps
-        function initMap() {
-            var markerPos = {
-                lat: 49.840594,
-                lng: 24.023675
-            };
-            var centerPos = {
-                lat: markerPos.lat,
-                lng: markerPos.lng - 0.001
-            };
-            var map = new google.maps.Map(document.getElementById('map'), {
-                zoom: 16,
-                center: centerPos,
-                disableDefaultUI: true
-            });
-
-            var marker = new google.maps.Marker({
-                position: markerPos,
-                map: map,
-                icon: 'assets/img/mapID.png',
-                title: 'Family residence'
             });
         }
     </script>
