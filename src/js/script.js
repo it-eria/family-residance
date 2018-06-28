@@ -14,6 +14,13 @@ $(function() {
   });
 
   $('body').removeAttr('class');
+
+  $('.item-serv').matchHeight({
+      byRow: false,
+      property: 'height',
+      target: null,
+      remove: false
+  });
 });
 
 AOS.init();

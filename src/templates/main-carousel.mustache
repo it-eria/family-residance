@@ -1,11 +1,22 @@
 {{#main-carousel}}
-<section class="main-carousel" data-aos="fade-in">
+<section class="main-carousel {{error-class}}" data-aos="fade-in">
   <!-- Carousel -->
   <div data-js="main-carousel">
     {{#slides}}
     <!-- Slide -->
     <div class="main-carousel__slide main-carousel__slide_one">
-      <div class="slide-outer" style="background-image: url(assets/img/{{slide-name}}.jpg);">
+      <div class="slide-outer {{class-bg}}" style="background-image: url(assets/img/{{slide-name}}.jpg);">
+        {{#error-msg-404}}
+        <div class="error-text-wrapper position-absolute w-100 h-100 d-flex justify-content-center align-items-center">
+          <div>
+            <h1>Сторінку не знайдено</h1>
+            <h2>404</h2>
+            <div class="">
+              <p>Ви можете повернутись на <a href="#">Головну</a></p>
+            </div>
+          </div>
+        </div>
+        {{/error-msg-404}}
       </div>
     </div>
     <!-- /Slide -->

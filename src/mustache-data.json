@@ -3,21 +3,25 @@
     "head": {
       "title": "Home"
     },
+    "header": true,
     "foot": {
       "vendor-scripts": {
         "jquery": true,
         "slick-slider": true,
         "aos": true,
         "bt-js": true,
-        "nice-select":true
+        "nice-select":true,
+        "m-height": true
       }
     },
     "main-carousel": {
     "slides": [
       {
+        "visibility": "d-none",
         "slide-name": "main-slide"       
       },
       {
+        "visibility": "d-none",
         "slide-name": "main-slide"        
       } 
     ]
@@ -142,6 +146,7 @@
     "head": {
       "title": "Beauty salon"
     },
+    "header": true,
     "content-line-1": {
       "section-title": {
         "title": "Boutique Hotel"
@@ -250,7 +255,7 @@
     },
     "price": { 
       "section-title": {
-        "title": "kjf;ek"
+        "title": ""
       },
       "items": [
         {
@@ -260,93 +265,93 @@
             "sub-items": [
               {
                 "name": "(жін)",
-                "price": "70 грн"
+                "price": "<b>70 грн</b>"
               },
               {
                 "name": "(чол)",
-                "price": "90 грн"
+                "price": "<b>90 грн</b>"
               }
             ]
           }
         },
         {
           "name": "Зняття гель лаку",
-          "price": "30 грн"
+          "price": "<b>30 грн</b>"
         },
         {
           "name": "Покриття гель лаком (однот.)",
-          "price": "130 грн"
+          "price": "<b>130 грн</b>"
         },
         {
           "name": "Дизайн одного  нігтика від",
-          "price": "10 грн"
+          "price": "<b>10 грн</b>"
         },
         {
           "name": "Дизайн лунний",
-          "price": "30 грн"
+          "price": "<b>30 грн</b>"
         },
         {
           "name": "Дизайн френч",
-          "price": "50 грн"
+          "price": "<b>50 грн</b>"
         },
         {
           "name": "Ремонт одного нігтика",
-          "price": "20 грн"
+          "price": "<b>20 грн</b>"
         },
         {
           "name": "Укріплення акрил. пудрою",
-          "price": "160 грн"
+          "price": "<b>160 грн</b>"
         },
         {
           "name": "Укріплення біогелем",
-          "price": "100 грн"
+          "price": "<b>100 грн</b>"
         }
       ],
       "items-1": [
         {
           "name": "Педикюр (пальчики + стопа)",
-          "price": "230грн"   
+          "price": "<b>230грн</b>"   
         },
         {
           "name": "Педикюр пальчики",
-          "price": "150 грн"
+          "price": "<b>150 грн</b>"
         },
         {
           "name": "Покриття гель лаком",
-          "price": "150 грн"
+          "price": "<b>150 грн</b>"
         }
       ],
       "items-2": [
         {
           "name": "Укладка на плойку",
-          "price": "250грн"
+          "price": "<b>250грн</b>"
         },
         {
           "name": "Укладка феном",
-          "price": "100-200 грн"
+          "price": "<b>100-200 грн</b>"
         },
         {
           "name": "Укладка по формі",
-          "price": "140 грн"
+          "price": "<b>140 грн</b>"
         },
         {
           "name": "Голівудські локани",
-          "price": "300 грн"
+          "price": "<b>300 грн</b>"
         },
         {
           "name": "Візаж + укладка волосся",
-          "price": "500 грн"
+          "price": "<b>500 грн</b>"
         }
       ],
       "items-3": [
         {
           "name": "Жіноча корекція",
-          "price": "70 грн"
+          "price": "<b>70 грн</b>"
           
         },
         {
           "name": "Чоловіча корекція",
-          "price": "90 грн"
+          "price": "<b>90 грн</b>"
         },
         {
           "name": "Корекція + фарбування)",
@@ -355,11 +360,11 @@
             "sub-items": [
               {
                 "name": "Фарба",
-                "price": "100 грн"
+                "price": "<b>100 грн</b>"
               },
               {
                 "name": "Хна",
-                "price": "150 грн"
+                "price": "<b>150 грн</b>"
               }
             ]
           }
@@ -368,28 +373,28 @@
       "items-4": [
         {
           "name": "Класичний",
-          "price": "250 грн"  
+          "price": "<b>250 грн</b>"  
         },
         {
           "name": "Smoky eyes",
-          "price": "300 грн"
+          "price": "<b>300 грн</b>"
         },
         {
           "name": "Red lips",
-          "price": "250 грн"
+          "price": "<b>250 грн</b>"
         },
         {
           "name": "Віковий",
-          "price": "250 грн"
+          "price": "<b>250 грн</b>"
         },
         {
           "name": "Весільний",
-          "price": "350 грн",
+          "price": "<b>350 грн</b>",
           "sublist": {
             "sub-items": [
               {
                 "name": "-Війки",
-                "price": "50 грн"
+                "price": "<b>50 грн</b>"
               }
             ]
           }
@@ -440,7 +445,8 @@
         "slick-slider": true,
         "aos": true,
         "bt-js": true,
-        "nice-select":true
+        "nice-select":true,
+        "m-height": true
       }
     }
   },
@@ -448,6 +454,7 @@
     "head": {
       "title": "About"
     },
+    "header": true,
     "beauty-zone-baner": {
       "slide-name":"baner-1234",
       "title":"Family Residence Boutique Hotel",
@@ -507,7 +514,8 @@
         "slick-slider": true,
         "aos": true,
         "bt-js": true,
-        "nice-select":true
+        "nice-select":true,
+        "m-height": true
       }
     }
   },
@@ -515,6 +523,7 @@
     "head": {
       "title": "Flat-2"
     },
+    "header": true,
     "beauty-zone-baner": {
       "slide-name":"baner-1234",
       "title":"Family Residence Boutique Hotel",
@@ -710,7 +719,7 @@
             "txt-4": "<b>Місткість:</b> 1 або 2 особи",
             "txt-5": "<b>Площа номеру:</b> 14 м кв",
             "txt-6": "Двомісний номер, який ми рекомендуємо для 1 або 2-х осіб з двоспальним ліжком з ортопедичним матрацом. Двомісний номер, який ми рекомендуємо для 1 або 2-х осіб з двоспальним ліжком з ортопедичним матрацом.",
-            "title": "Двомісний номер",
+            "title": "<b>Двомісний номер</b>",
             "number-1": "9",
             "number-2": "10"   
           }
@@ -725,7 +734,7 @@
             "txt-4": "<b>Місткість:</b> 1 або 1 особи",
             "txt-5": "<b>Площа номеру:</b> 14 м кв",
             "txt-6": "Двомісний номер, який ми рекомендуємо для 1 або 2-х осіб з двоспальним ліжком з ортопедичним матрацом.",
-            "title": "Двомісний номер",
+            "title": "<b>Двомісний номер</b>",
             "number-1": "9",
             "number-2": "10"   
           }
@@ -740,7 +749,7 @@
             "txt-4": "<b>Місткість:</b> 1 або 2 особи",
             "txt-5": "<b>Площа номеру:</b> 14 м кв",
             "txt-6": "Двомісний номер, який ми рекомендуємо для 1 або 2-х осіб з двоспальним ліжком з ортопедичним матрацом.",
-            "title": "Двомісний номер",
+            "title": "<b>Двомісний номер</b>",
             "number-1": "9",
             "number-2": "10"   
           }
@@ -755,7 +764,7 @@
             "txt-4": "<b>Місткість:</b> 1 або 2 особи",
             "txt-5": "<b>Площа номеру:</b> 14 м кв",
             "txt-6": "Двомісний номер, який ми рекомендуємо для 1 або 2-х осіб з двоспальним ліжком з ортопедичним матрацом.",
-            "title": "Двомісний номер",
+            "title": "<b>Двомісний номер</b>",
             "number-1": "9",
             "number-2": "10"   
           }
@@ -779,6 +788,7 @@
     "head": {
       "title": "Boutique Hotel"
     },
+    "header": true,
     "beauty-zone-baner": {
       "slide-name":"baner-1234",
       "title":"Family Residence Boutique Hotel",
@@ -787,14 +797,14 @@
     "rules": {
       "items": [
         {
-          "name": "Бронювання здійснюється на термін від 1 доби"
+          "name": "Бронювання здійснюється на термін від <b>1 доби</b>"
         },
         {
-          "name": "Час поселення з 14:00"
+          "name": "Час поселення з <b>14:00</b>"
          
         },
         {
-          "name": "Час виселення до 12:00"
+          "name": "Час виселення до <b>12:00</b>"
          
         }
       ],
@@ -950,5 +960,31 @@
         "bt-js": true
       }
     }
+  },
+  "error-404": {
+    "head": {
+      "title": "404"
+    },
+    "header": {
+      "bg-none": "header__nav-section__bg-none"
+    },
+    "main-carousel": {
+      "error-class": "main-carousel__error",
+      "slides": {
+        "slide-name": "hotel-photo-2" ,
+        "class-bg": "error-bg" ,
+        "error-msg-404": true       
+      }     
+    },
+    "foot": {
+      "vendor-scripts": {
+        "jquery": true,
+        "aos": true,
+        "bt-js": true,
+        "nice-select":true,
+        "m-height": true
+      }
+    }
   }
+
 }

@@ -82,6 +82,10 @@
         margin-right: 0.5rem;
       }
     }
+    &__bg-none {
+      background-color: transparent;
+      border-bottom: 1px solid #ebe9e8;
+    }
   }
 }
 @media screen and (max-width: 1200px) {
@@ -218,7 +222,7 @@
 
 
 .slide-outer {
-  height: 720px;
+  height: 100vh;
   width: 100%;
   background-position: 50% 50%;
   background-repeat: no-repeat;
@@ -259,6 +263,7 @@
   li {
     margin-top: 5px;
     display: flex;
+    font-family: $font-9;
     flex-flow: row wrap;
     position: relative;
     justify-content: space-between;
