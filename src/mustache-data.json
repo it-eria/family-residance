@@ -1009,5 +1009,70 @@
         "m-height": true
       }
     }
+  },
+  "contacts": {
+    "head": {
+      "title": "Contacts"
+    },
+    "header": true,
+    "beauty-zone-baner": {
+      "slide-name":"baner-12345",
+      "title":"Контакти",
+      "class": "text-center banner__beauty-zone"
+    },
+    "contact-items": true, 
+    "contacts-map": true,
+    "foot": {
+      "vendor-scripts": {
+        "jquery": true,
+        "slick-slider": true,
+        "aos": true,
+        "bt-js": true,
+        "nice-select":true,
+        "m-height": true,
+        "map": true
+      }
+    }
+  },
+  "FAQ": {
+    "head": {
+      "title": "FAQ"
+    },
+    "header": {
+      "class": "z-index-9999 position-absolute"
+    },
+    "faq-questions": {
+      "main-bg": "main-bg",
+      "cards": [
+        {
+          "card-number": "1"
+        },
+        {
+          "card-number": "2"
+        },
+        {
+          "card-number": "3"
+        },
+        {
+          "card-number": "4"
+        },
+        {
+          "card-number": "5"
+        },
+        {
+          "card-number": "6"
+        }
+      ]
+    },
+    "foot": {
+      "vendor-scripts": {
+        "jquery": true,
+        "slick-slider": true,
+        "aos": true,
+        "bt-js": true,
+        "nice-select":true,
+        "m-height": true
+      }
+    }
   }
 }

@@ -14,6 +14,20 @@ body, html {
   }
 }
 
+.button-header {
+  padding: 8px 47px;
+  color: #fff;
+  text-decoration: none;
+  font-family: $font-3;
+  font-size: 1rem;
+  text-align: center;
+  background-color: #51bac2;
+  &:hover {
+    color: #fff;
+    text-decoration: none;
+    background-color: darken(#51bac2, 5%);
+  }
+}
 .inner-404 {
   margin-top: 150px;
 }
@@ -158,7 +172,9 @@ p {
   left: 0;
   width: 100%;
   height: 100%;
+  min-height: 200px;
 }
+
 
 @media screen and (max-width: 992px) {
   #map {
@@ -170,7 +186,7 @@ p {
   }
 }
 .icon {
-  // margin-right: 10px;
+
   vertical-align: middle;
 }
 
@@ -377,11 +393,14 @@ p {
   background-repeat: no-repeat;
   background-position: 50% 50%;
   position: relative;
+  text-decoration: none;
   cursor: pointer;
   &:hover {
+    text-decoration: none;
     span {
       font-size: 2.8rem;
       transition: all 0.2s ease-in-out;
+      text-decoration: none;
     }
   }
   &:before {
@@ -433,7 +452,9 @@ p {
     }
     &_hdr {
       margin-top: 0;
-      padding-top: 13px;
+      padding: 0;
+      height: 0;
+      
       width: 20%;
     }
     &_form {
@@ -449,6 +470,45 @@ p {
     width: 60%;
   }
 } 
+
+
+.faq {
+  display: flex;
+  min-height: 100vh;
+  height: 100%;
+  padding: 220px 0 50px 0;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  justify-content: center;
+  position: relative;
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(33, 33, 33,.5);  
+  }
+
+  .faq-header {
+    h2 {
+      font-family: $font-4;
+      font-size: 3.125rem;
+      text-align: center;
+      color: #fff;
+      background-color: #51bac2;
+      padding-top: 25px;
+      padding-bottom: 25px;
+    }
+  }
+  .faq-body {
+    // background-color: #ffffff;
+  }
+}
 
 
 .main-content {
@@ -783,6 +843,9 @@ p {
     padding: 30px;
     margin: 9.375rem 0 0;
     background-color: #f7f8f8;
+    &_with-shadow {
+      box-shadow: 0 1px 10px rgba(0,0,0,.1);
+    }
     * {
       color: #373736;
     }
@@ -858,6 +921,9 @@ p {
   &_map {
     padding: 12.5rem 0;
     margin-top: 0;
+  }
+  &_contact {
+    min-height: 750px
   }
   &__beauty-zone {
     position: relative;
@@ -1194,6 +1260,7 @@ span {
 .footer {
   background-color: #2a3037;
   color: #f7f7f7;
+ 
 }
 
 @media screen and (min-width: 1470px) {
@@ -1514,7 +1581,66 @@ span {
   }
 }
 
-
+.write-to-us {
+  padding: 40px;
+  background-color: #f7f8f8;
+  box-shadow: 0 1px 10px rgba(0,0,0,.1);
+  .write-title {
+    font-size: 1.875rem;
+    font-family: $font-5;
+  }
+  .insert-group {
+    width: 50%;
+    border-bottom: 1px solid #48a9b1;
+    padding-left: 8px;
+    label {
+      width: 100%;
+    }
+    input {
+      width: 100%;
+      border: none;
+      background-color: transparent;
+      line-height: 1.5;
+      font-size: 1rem;
+      font-family: $font-5;
+    }  
+  }
+  .bottom-content {
+    .insert-group {
+      border:none;
+      width: 100%;
+      padding: 0;
+      label {
+        padding-left: 8px;
+      }
+      #txt-feedback { 
+        outline: none;
+        margin: 0;
+        padding: 0;
+        height: 1rem * 4.6;
+        line-height: 1.5rem;
+        padding-left: 8px;
+        border-bottom: 1px solid #48a9b1;
+        background-image: linear-gradient(to bottom, transparent 1.5rem, #48a9b1 1.5rem);
+        background-size: 100% 1.5rem + .0625rem;
+        background-color: transparent;
+        overflow: hidden;
+        width: 100%;
+        border: none;
+        resize: none;
+        font-size: 1rem;
+        font-family: $font-5;
+    
+        height: 100px;
+      }
+    }
+  }
+  .send-button {
+    a {
+      padding: 8px 120px;
+    }
+  }
+}
 
 
 .preloader {
