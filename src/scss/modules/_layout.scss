@@ -32,6 +32,7 @@
     }   
     .contacts-nav {
       margin-left: 20px;
+    
       ul {  
         display: flex;    
         list-style: none;
@@ -90,12 +91,16 @@
 }
 @media screen and (max-width: 1200px) {
   .header {
+    position: relative;
     &__top-section {
-     .icon-2 {
-       font-size: 1.2rem;
+      background-color:rgba(247,247,247,.8);
+      padding: 0;
+      
+     .icon-5 {
+       font-size: 1.5rem;
      }
-     .icon-1 {
-      font-size: 1.11rem;
+     .icon-4 {
+      font-size: 1.5rem;
     }
     }
     &__nav-section {
@@ -139,8 +144,8 @@
       span {
         display: block;
         width: 80%;
-        height: 3px;
-        background-color: #f7f7f7;
+        height: 1px;
+        background-color: #1d2126;
         position: absolute;
         left: 10%;
         top: 50%;
@@ -151,8 +156,8 @@
         content: '';
         display: block;
         width: 80%;
-        height: 3px;
-        background-color: #f7f7f7;
+        height: 1px;
+        background-color: #1d2126;
         position: absolute;
         left: 10%;
         transform-origin: 50% 50%;
@@ -162,7 +167,7 @@
         top: 10px;
       }
       &:after {
-        top: calc(100% - 13px);
+        top: calc(100% - 10px);
       }
       &.clicked {
         span {
@@ -181,9 +186,26 @@
     .contacts-nav{
       vertical-align: middle;
     }
-  
   }
 }
+
+.header {
+  .mobile-icon {
+    a {
+      color: #333333;
+      text-decoration: none;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    .mobile-icon {
+      width: 130px;
+    }
+  }
+}
+
 
 .teaser-2 {
   p {
@@ -242,11 +264,12 @@
 
 @media screen and (max-width:480px) {
   .slide-outer {
-    &__gallery {
-      margin-right: 0;
-    }
+    min-height: 50vh;
   }
 }
+
+
+
 
 
 .white-block {

@@ -42,6 +42,8 @@
         var galleryCarousel = $('*[data-js="gallery-carousel"]').length;
         var salonCarousel = $('*[data-js="salon-carousel"]').length;
         var flatCarousel = $('*[data-js="flat-carousel"]').length;
+        var mobCarousel_1 = $('*[data-js="mob-carousel-1"]').length;
+        var mobCarousel_2 = $('*[data-js="mob-carousel-2"]').length;
 
         if (mainCarousel > 0) {
             $('*[data-js="main-carousel"]').slick({
@@ -51,8 +53,8 @@
                 autoplaySpeed: 4000,
                 infinite: true,
                 arrows: true,
-                prevArrow: "<a href=\"#\" class=\"slider-arr slider-arr_prev \"></a>",
-                nextArrow: "<a href=\"#\" class=\"slider-arr slider-arr_next \"></a>",
+                prevArrow: "<a href=\"#\" class=\"slider-arr slider-arr_prev d-xl-block d-none\"></a>",
+                nextArrow: "<a href=\"#\" class=\"slider-arr slider-arr_next d-xl-block d-none \"></a>",
             });
         }
 
@@ -133,6 +135,37 @@
                     breakpoint: 768,
                     settings: {
                         slidesToShow: 1,
+                    }
+                }]
+            });
+        }
+        if (mobCarousel_1 > 0) {
+            $('*[data-js="mob-carousel-1"]').slick({
+                slidesToShow: 1,
+                slideToScroll: 1,
+                autoplay: false,
+                autoplaySpeed: 4000,
+                infinite: true,
+                arrows: true,
+                prevArrow: "<a href=\"#\" class=\"slider-arr slider-arr_mob-l\"></a>",
+                nextArrow: "<a href=\"#\" class=\"slider-arr slider-arr_mob-r\"></a>",
+            });
+        }
+
+        if (mobCarousel_2 > 0) {
+            $('*[data-js="mob-carousel-2"]').slick({
+                slidesToShow: 1,
+                centerMode: true,
+                centerPadding: '150px',
+                slideToScroll: 1,
+                autoplay: false,
+                autoplaySpeed: 4000,
+                infinite: true,
+                arrows: false,
+                responsive: [{
+                    breakpoint: 768,
+                    settings: {
+                        centerMode: false
                     }
                 }]
             });

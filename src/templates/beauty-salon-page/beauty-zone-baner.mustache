@@ -3,12 +3,17 @@
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-12 col-lg-10 justify-content-center">
-          {{#title}}
-            <h2>{{title}}</h2>
-          {{/title}}
-          {{#desc}}
-            <p>{{desc}}</p>
-          {{/desc}}
+          <div class="d-none d-lg-block">
+            {{#title}}
+              <h2>{{title}}</h2>
+            {{/title}}
+            {{#desc}}
+              <p>{{desc}}</p>
+            {{/desc}}
+          </div>
+          <div class="text-center d-lg-none d-block">
+            <h2>Про нас</h2>
+          </div>
         </div>
       </div>
     </div>

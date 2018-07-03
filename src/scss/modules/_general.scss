@@ -417,7 +417,7 @@ p {
 @media screen and (max-width: 992px) {
   .section-title {
     h2 {
-      font-size: 2.5rem;
+      font-size: 1.5rem;
     }
   }
 }
@@ -459,7 +459,6 @@ p {
     }
     &_form {
       width: 33%;
-      
     }
     &:hover {
       color: #fff;
@@ -467,7 +466,20 @@ p {
     }
   }
   &_small {
-    width: 60%;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    height: 50px;
+    background-color: #51bac2;
+    color: #ffffff;
+    font-family: $font-3;
+    transition: all .3s ease-in-out;
+    &:hover {
+      color: #fff;
+      background-color: darken(#51bac2, 5%);
+    }
   }
 } 
 
@@ -504,9 +516,6 @@ p {
       padding-top: 25px;
       padding-bottom: 25px;
     }
-  }
-  .faq-body {
-    // background-color: #ffffff;
   }
 }
 
@@ -715,6 +724,8 @@ p {
       transition: all .3s ease-in-out;
       &_hdr {
         margin-top: 0;
+    
+        margin-left: 20px;
         height: 40px;
         width: 50%;
       }
@@ -958,8 +969,8 @@ p {
     margin-top: 20px;
     margin-bottom: 20px;
     &_map {
-      padding: 1rem 0 0;
-
+      padding: 0;
+      box-shadow: none;
     }
     .info-baner {
       margin-top: 5.6rem;
@@ -996,6 +1007,14 @@ margin-left: 15px;
       font-family: $font-5;
       display: block;
     }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .descriptions {
+    width: 100%;
+    padding-left: 10px;
+    margin-top: 10px;
   }
 }
 
@@ -1088,18 +1107,77 @@ span {
   }
 }
 
+.bg-n {
+  background: none;
+  background-image: none !important;
+}
+
+.contacts-without-bg {
+  background-color: #fff;
+  box-shadow: none;
+}
+
 .main-carousel {
   padding-bottom: 17px;
   background-color: #f8f8f8;
   box-shadow: 0 1px 10px rgba(0,0,0,.1);
+  .contacts-nav {
+    margin-left: 20px;
+    ul {  
+       
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      li {
+        a {
+          text-decoration: none;
+          color: #373736;
+        }
+        &:first-child {
+          margin-right: 1.5rem;
+        }
+      }
+    }
+  }
   &__error {
     padding: 0;
     background-color: none;
     box-shadow: none;
   }
 }
-.flat-carousel {
- 
+
+@media screen and (max-width: 1200px) {
+  .main-carousel {
+    padding-bottom: 17px;
+    background-color: #ffffff;
+    box-shadow: 0 1px 10px rgba(0,0,0,.1);
+    .contacts-nav {
+      margin: 0;
+      ul {  
+         
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        li {
+          a {
+            text-decoration: none;
+            color: #373736;
+          }
+          &:first-child {
+            margin-right: 1.5rem;
+          }
+        }
+      }
+    }
+    &__error {
+      padding: 0;
+      background-color: none;
+      box-shadow: none;
+    }
+  }
+}
+
+.flat-carousel { 
 .slide-outer {
   padding-top: 56%;
   background-position: 50% 50%;
@@ -1118,7 +1196,12 @@ span {
   }
 }
 
+.contacts-without-bg {
 
+  .contact-baner {
+    background-color: #ffffff;
+  }
+}
 
 
 .slider-arr {
@@ -1220,7 +1303,9 @@ span {
   }
 }
 
-@media screen and (max-width: 768px) {
+
+
+@media screen and (min-width: 481px) and (max-width: 992px) {
   .slider-arr {
     top: 60%;
     &_prev {
@@ -1252,6 +1337,74 @@ span {
       left: -2%;
       border-right: none;
       border-bottom: none;
+    }
+    &_mob-l {
+      width: 23px;
+      height: 23px;
+      border-right: none;
+      border-bottom: none;
+      top: -12%;
+      left: 3%;
+    }
+    &_mob-r {
+      width: 23px;
+      height: 23px;
+      border-left: none;
+      border-top: none;
+      top: -12%;
+      right: 3%;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .slider-arr {
+    top: 60%;
+    &_prev {
+      left: 20px;
+    }
+    &_next {
+      right: 20px;
+    }
+    &_salon-l {
+      right: -3%;
+    }
+    &_salon-r {
+      left: -3%;
+    }
+    &_gallery-l {
+      top: 108%; 
+    }
+    &_gallery-r {
+      top: 108%;
+    }
+    &_flats-l {
+      top: 20%;
+      left: 98%;
+      border-left: none;
+      border-top: none;
+    }
+    &_flats-r {
+      top: 20%;
+      left: -2%;
+      border-right: none;
+      border-bottom: none;
+    }
+    &_mob-l {
+      width: 23px;
+      height: 23px;
+      border-right: none;
+      border-bottom: none;
+      top: -22%;
+      left: 3%;
+    }
+    &_mob-r {
+      width: 23px;
+      height: 23px;
+      border-left: none;
+      border-top: none;
+      top: -22%;
+      right: 3%;
     }
   }
 }
