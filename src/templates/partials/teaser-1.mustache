@@ -8,13 +8,94 @@
       <div data-js="mob-carousel-1">
         <!-- Slide -->
         <div class="beauty-carousel__slide beauty-carousel__slide_one">
+          <div class="section-title text-center" data-aos="fade-right">
+            <h2>{{title-1}}</h2>
+          </div>
           <div class="slide-outer" style="background-image: url(assets/img/mob-slide.jpg);"></div>
+          {{#mob-bottom-section-1}}
+          <div class="flat-wrapper p-3">
+              <div class="title-serv title-serv_flt mt-3">
+                <a href="#">Двоміснй <b>Делюкс</b></a>
+              </div>
+              <div class="flat-txt d-flex">
+                <p>Кількість номерів</p>
+                <p>Ціна від <span>2800грн</span></p>
+              </div>
+              <div class="separator ml-2"></div>
+              <div class="info-item d-flex">
+                <i class="icon mr-2 icon-9"></i>
+                <p>Місткість: 2 особи</p>
+              </div>
+              <div class="info-item  d-flex flex-row mt-2">
+                <i class="icon mr-2 icon-10"></i>
+                <p>Площа номеру: 20 м кв</p>
+              </div>
+              <div class="separator"></div>
+              <div class="description" data-mh="teaser-desc-gr">
+                <p>Двомісний номер, який ми рекомендуємо для 2-х осіб з двоспальним ліжком King size з ортопедичним матрасом розміром 180х200см.</p>
+              </div>
+          </div>
+          {{/mob-bottom-section-1}}
         </div>
         <div class="beauty-carousel__slide beauty-carousel__slide_one">
+          <div class="section-title text-center" data-aos="fade-right">
+            <h2>{{title-2}}</h2>
+          </div>
           <div class="slide-outer" style="background-image: url(assets/img/mob-slide-1.jpg);"></div>
+          {{#mob-bottom-section-2}}
+          <div class="flat-wrapper p-3">
+              <div class="title-serv title-serv_flt mt-3">
+                <a href="#">Двоміснй <b>Делюкс</b></a>
+              </div>
+              <div class="flat-txt d-flex">
+                <p>Кількість номерів</p>
+                <p>Ціна від <span>2800грн</span></p>
+              </div>
+              <div class="separator ml-2"></div>
+              <div class="info-item d-flex">
+                <i class="icon mr-2 icon-9"></i>
+                <p>Місткість: 2 особи</p>
+              </div>
+              <div class="info-item  d-flex flex-row mt-2">
+                <i class="icon mr-2 icon-10"></i>
+                <p>Площа номеру: 20 м кв</p>
+              </div>
+              <div class="separator"></div>
+              <div class="description" data-mh="teaser-desc-gr">
+                <p>Двомісний номер, який ми рекомендуємо для 2-х осіб з двоспальним ліжком King size з ортопедичним матрасом розміром 180х200см.</p>
+              </div>
+          </div>
+          {{/mob-bottom-section-2}}
         </div>
         <div class="beauty-carousel__slide beauty-carousel__slide_one">
+          <div class="section-title text-center" data-aos="fade-right">
+            <h2>{{title-3}}</h2>
+          </div>
           <div class="slide-outer" style="background-image: url(assets/img/mob-slide-2.jpg);"></div>
+          {{#mob-bottom-section-3}}
+          <div class="flat-wrapper p-3">
+              <div class="title-serv title-serv_flt mt-3">
+                <a href="#">Двоміснй <b>Делюкс</b></a>
+              </div>
+              <div class="flat-txt d-flex">
+                <p>Кількість номерів</p>
+                <p>Ціна від <span>2800грн</span></p>
+              </div>
+              <div class="separator ml-2"></div>
+              <div class="info-item d-flex">
+                <i class="icon mr-2 icon-9"></i>
+                <p>Місткість: 2 особи</p>
+              </div>
+              <div class="info-item  d-flex flex-row mt-2">
+                <i class="icon mr-2 icon-10"></i>
+                <p>Площа номеру: 20 м кв</p>
+              </div>
+              <div class="separator"></div>
+              <div class="description" data-mh="teaser-desc-gr">
+                <p>Двомісний номер, який ми рекомендуємо для 2-х осіб з двоспальним ліжком King size з ортопедичним матрасом розміром 180х200см.</p>
+              </div>
+          </div>
+          {{/mob-bottom-section-3}}
         </div>
         <!-- /Slide -->
       </div>
@@ -27,8 +108,40 @@
     </p>
     {{/paragraphs}}
   </div>
-  <div class="d-lg-none d-block d-flex justify-content-center">
-    <a href="#" class="btn btn_small">Переглянути усі номери</a>
+  {{#mobile-icons}}
+  <div class="row justify-content-center">
+    <div class="col-12">
+      <div class="services-icons">
+          <div class="item">
+            <i class="icon icon-24"></i>
+            <p>Неперевершений візаж</p>
+          </div>
+          <div class="item">
+            <i class="icon icon-27"></i>
+            <p>Професійна корекція брів</p>
+          </div>
+      </div> 
+    </div>
   </div>
+  <div class="row justify-content-center">
+    <div class="col-12">
+      <div class="services-icons">
+          <div class="item">
+              <i class="icon icon-25"></i>
+              <p>Вишуканий манікюр та педікюр</p>
+          </div>
+          <div class="item">
+              <i class="icon icon-26"></i>
+              <p>Перукарські послуги</p>
+          </div>
+      </div> 
+    </div>
+  </div>
+  {{/mobile-icons}}
+  {{#btn-visibility}}
+  <div class="d-lg-none d-block d-flex justify-content-center">
+    <a href="#" class="btn btn_small">{{btn-caption}}</a>
+  </div>
+  {{/btn-visibility}}
 </div>
 {{/teaser-1}}

@@ -333,6 +333,7 @@
         var flatCarousel = $('*[data-js="flat-carousel"]').length;
         var mobCarousel_1 = $('*[data-js="mob-carousel-1"]').length;
         var mobCarousel_2 = $('*[data-js="mob-carousel-2"]').length;
+        var mobCarousel_3 = $('*[data-js="mob-carousel-3"]').length;
 
         if (mainCarousel > 0) {
             $('*[data-js="main-carousel"]').slick({
@@ -355,8 +356,8 @@
                 autoplaySpeed: 4000,
                 infinite: true,
                 arrows: true,
-                prevArrow: "<a href=\"#\" class=\"slider-arr slider-arr_left\"></a>",
-                nextArrow: "<a href=\"#\" class=\"slider-arr slider-arr_right\"></a>",
+                prevArrow: "<a href=\"#\" class=\"slider-arr slider-arr_left d-none d-lg-none\"></a>",
+                nextArrow: "<a href=\"#\" class=\"slider-arr slider-arr_right d-none d-lg-none\"></a>",
                 dots: true,
                 appendDots: $('.beauty-carousel .dots-place'),
             });
@@ -372,8 +373,8 @@
                 autoplaySpeed: 4000,
                 infinite: true,
                 arrows: true,
-                prevArrow: "<a href=\"#\" class=\"slider-arr slider-arr_gallery-l\"></a>",
-                nextArrow: "<a href=\"#\" class=\"slider-arr slider-arr_gallery-r \"></a>",
+                prevArrow: "<a href=\"#\" class=\"slider-arr slider-arr_gallery-l d-none d-lg-block\"></a>",
+                nextArrow: "<a href=\"#\" class=\"slider-arr slider-arr_gallery-r d-none d-lg-block\"></a>",
                 dots: true,
                 appendDots: $('.gallery-carousel .dots-place_gallery'),
                 responsive: [{
@@ -386,7 +387,6 @@
                 }, {
                     breakpoint: 768,
                     settings: {
-                        centerMode: false,
                         slidesToShow: 2,
                         centerPadding: '0',
                     }
@@ -402,8 +402,8 @@
                 autoplaySpeed: 4000,
                 infinite: true,
                 arrows: true,
-                prevArrow: "<a href=\"#\" class=\"slider-arr slider-arr_salon-l\"></a>",
-                nextArrow: "<a href=\"#\" class=\"slider-arr slider-arr_salon-r\"></a>",
+                prevArrow: "<a href=\"#\" class=\"slider-arr slider-arr_salon-l \"></a>",
+                nextArrow: "<a href=\"#\" class=\"slider-arr slider-arr_salon-r \"></a>",
                 dots: true,
                 appendDots: $('.salon-carousel .dots-place'),
             });
@@ -457,6 +457,21 @@
                         centerMode: false
                     }
                 }]
+            });
+        }
+
+
+        if (mobCarousel_3 > 0) {
+            $('*[data-js="mob-carousel-3"]').slick({
+                slidesToShow: 1,
+                slideToScroll: 1,
+                autoplay: false,
+                autoplaySpeed: 4000,
+                adaptiveHeight: true,
+                infinite: true,
+                arrows: true,
+                prevArrow: "<a href=\"#\" class=\"slider-arr slider-arr_price-l\"></a>",
+                nextArrow: "<a href=\"#\" class=\"slider-arr slider-arr_price-r\"></a>",
             });
         }
     </script>

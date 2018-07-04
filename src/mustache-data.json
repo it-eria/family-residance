@@ -31,7 +31,13 @@
       "section-title": {
         "title": "Boutique Hotel"
       },
+      "mob-sliders": true,
       "teaser-1": {
+        "title-1": "Butique hotel",
+        "title-2": "Budget hotel",
+        "title-3": "Apartaments",
+        "btn-caption": "Переглянути усі номери",
+        "btn-visibility": true,
         "file-name": "hostel-room-1.jpg",
         "class": "img-fluid pb-4",
         "paragraphs": [
@@ -100,7 +106,6 @@
           }    
         }
       ]
-      
     },
     "content-line-2": [
       {
@@ -232,6 +237,13 @@
     
     },
     "beauty-slider": {
+      "teaser-1": {
+        "title-1": "Butique hotel",
+        "title-2": "Budget hotel",
+        "title-3": "Apartaments",
+        "btn-caption": "Переглнути салон",
+        "mobile-icons" : true
+      },
       "text": "Власний салон краси",
       "slides": [
         {
@@ -486,6 +498,14 @@
       ]
     },
     "salon-slider": {
+      "teaser-1": {
+        "title-1": "Butique hotel",
+        "title-2": "Budget hotel",
+        "title-3": "Apartaments",
+        "btn-caption": "Переглнути салон",
+        "btn-visibility":true,
+        "mobile-icons" : true
+      },
       "text": "Власний салон краси",
       "slides": [
         {
@@ -799,6 +819,14 @@
       "desc": "Усі номери"
     },
     "rules": {
+      "teaser-1": {
+        "mob-bottom-section-1": true,
+        "mob-bottom-section-2": true,
+        "mob-bottom-section-3": true,
+        "title-1": "Butique hotel",
+        "title-2": "Budget hotel",
+        "title-3": "Apartaments"
+      },
       "items": [
         {
           "name": "Бронювання здійснюється на термін від <b>1 доби</b>"
