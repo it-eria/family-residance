@@ -60,23 +60,21 @@ label {
     background-color: none;
     background: none;
     .card-header {
+        border: none;
+        padding: 20px 0;
+        margin: 0;
+        height: auto;
+        background-color: none;
+        background: none;
+        font-family: $font-5;
+        color: #373736;
+        text-decoration: none;
 
-      font-family: $font-5;
-      color: #373736;
-      text-decoration: none;
-      border: none;
-      padding: 20px 0;
-      margin: 0;
-      height: auto;
-      background-color: none;
-      background: none;
       &:hover {
         text-decoration: none;
       }
       button {
-        display: flex;
-        align-items: center;
-        display: inline-block;
+   
         color: #373736;
         position: relative;
         margin: 0;
@@ -138,6 +136,40 @@ label {
     .card-body {
       padding: 0 0 0 70px;
       margin: 0;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .faq {
+    .faq-header {
+      h2 {
+        font-size: 2rem !important;
+        padding-left: 5px;
+        padding-right: 5px;
+      }
+    }
+  }
+  .accordion {
+  
+    padding: 10px;
+  
+    .card {
+
+      .card-header {
+     
+        .btn-link {
+        
+        }
+        button {
+          text-align: left;
+          white-space: normal; 
+          position: relative;
+          font-size: 0.8rem;
+        }
+      }
+      .card-body {
+        font-size: 0.8rem;
+      }
     }
   }
 }

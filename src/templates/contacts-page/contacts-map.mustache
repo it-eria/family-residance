@@ -1,5 +1,33 @@
 {{#contacts-map}}
-<section class="content-line content-line_map  content-line_contact position-relative">
+<section class="content-line content-line_contact content-line__menu-bg position-relative">
     <div id="map"></div>
   </section>
+<section>
+    <div class="col-12 d-block d-lg-none">
+        <div class="write-to-us">
+            <div class="write-title text-center">
+                <h2>Написати нам</h2>
+            </div>
+            <div class="top-content d-sm-flex d-block mt-3">
+                <div class="insert-group">
+                    <label for="txt-name">Iм'я та прізвище:</label>
+                    <input type="text" id="txt-name" name="txt-name" value="Інна Хуторянська">
+                </div>
+                <div class="insert-group">
+                    <label for="txt-mail">Email:</label>
+                    <input type="text" id="txt-mail" name="txt-mail" value="Khutoryanska.i@pg.com">
+                </div>
+            </div>
+            <div class="bottom-content mt-3 mb-4">
+                <div class="insert-group">
+                    <label for="txt-feedback">Повідомлення:</label>
+                    <textarea name="txt-feedback" id="txt-feedback">Доброго дня, я б хотів дізнатись...</textarea>
+                </div>
+            </div>
+            <div class="send-button d-flex justify-content-end">
+                <a href="#" class="button-header">Відправити</a>
+            </div>
+        </div>
+    </div>
+</section>
 {{/contacts-map}}

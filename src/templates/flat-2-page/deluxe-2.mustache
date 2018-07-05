@@ -26,7 +26,22 @@
     </div>
     <div class="row">
       <div class="col-12 col-lg-8">
-        <img src="assets/img/title-photo.jpg" alt="flat" class="img-fluid"> 
+      <img src="assets/img/title-photo.jpg" alt="flat" class="img-fluid d-none d-lg-block"> 
+        <div data-js="mob-carousel-2" class="d-block d-lg-none">
+            <img src="assets/img/title-photo.jpg" alt="flat" class="img-fluid mr-2 ml-2"> 
+            <img src="assets/img/title-photo.jpg" alt="flat" class="img-fluid mr-2 ml-2"> 
+            <img src="assets/img/title-photo.jpg" alt="flat" class="img-fluid mr-2 ml-2"> 
+        </div>
+        <div class="row mt-3 d-flex d-lg-none">
+            {{#partials}}
+            <div class="col-6 col-sm-6 mb-3 mb-lg-1">
+              {{> ../partials/column-header }}
+            </div>
+            {{/partials}}
+        </div>
+        <div class="txt-wrapper d-block d-lg-none">
+          <p>Двомісний номер, який ми рекомендуємо для 2-х осіб з двоспальним ліжком King size з ортопедичним матрасом розміром 180х200см.</p>
+        </div>
         <div class="column-header column-header-bg py-3 py-lg-5 px-3 d-block">
           <div class="row">
             <div class="col-6 col-sm-6 col-lg-3">
@@ -54,8 +69,8 @@
               </div>
             </div>                
           </div>
-          <div class="row mt-5">
-            <div class="col-12 col-sm-6 col-lg-3 mt-3 mt-sm-0">
+          <div class="row mt-3 mt-lg-5">
+            <div class="col-12 col-sm-6 col-lg-3 mt-3 mt-sm-0 d-none d-lg-block">
               <div class="item item_no-flex">
                 <div data-mh="title-gr">
                   <h4>Власна ванна кімната</h4>
@@ -69,35 +84,71 @@
                 </ul>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-lg-3 mt-3 mt-sm-0">
-              <div class="item item_no-flex">
-                <div data-mh="title-gr">
-                  <h4>Зручності</h4>
+            <div class="col-12 col-sm-6 col-lg-3 mt-3 mt-sm-0 d-none d-lg-block">
+                <div class="item item_no-flex">
+                  <div data-mh="title-gr">
+                    <h4>Зручності</h4>
+                  </div>
+                  <ul class="item-list item-list__mp">
+                    {{#items-1}}
+                    <li>
+                      {{{name}}}
+                    </li>  
+                    {{/items-1}}
+                  </ul>
                 </div>
+            </div>
+            <div class="col-12 d-block d-lg-none ml-4 mt-3">
+                <div data-mh="title-gr">
+                  <h4>Власна ванна кімната</h4>
+                </div>
+            </div>
+            {{#items-mobile-1}}
+            <div class="col-6 mt-3 mt-sm-0 d-block d-lg-none">
+              <div class="item item_no-flex">
                 <ul class="item-list item-list__mp">
-                  {{#items-1}}
+                  {{#items}}
                   <li>
                     {{{name}}}
                   </li>  
-                  {{/items-1}}
+                  {{/items}}
                 </ul>
               </div>
             </div>
-            <div class="col-12 col-lg-6 mt-5 mt-lg-0">
-              <div class="d-flex flex-column h-100">
-                <div class="txt-wrapper">
-                  <p>Двомісний номер, який ми рекомендуємо для 2-х осіб з двоспальним ліжком King size з ортопедичним матрасом розміром 180х200см.</p>
-                </div>
-                <div class="mt-auto text-right">
-                  <p class="price mt-3">Ціна від <span>2800грн</span></p>
-                  <a href="#" class="btn btn_big btn_big_mdf ml-auto">Забронювати</a>
-                </div>
+            {{/items-mobile-1}}
+            <div class="col-12 d-block d-lg-none ml-4 mt-3">
+              <div data-mh="title-gr">
+                <h4>Зручності</h4>
               </div>
+            </div>
+            {{#items-mobile-2}}
+            <div class="col-6 col-lg-3 mt-3 mt-sm-0 d-block d-lg-none">
+              <div class="item item_no-flex">
+                <ul class="item-list item-list__mp">
+                  {{#items}}
+                  <li>
+                    {{{name}}}
+                  </li>  
+                  {{/items}}
+                </ul>
+              </div>
+            </div>
+            {{/items-mobile-2}}
+            <div class="col-12 col-lg-6 mt-5 mt-lg-0">
+                <div class="d-flex flex-column h-100">
+                  <div class="txt-wrapper d-none d-lg-block">
+                    <p>Двомісний номер, який ми рекомендуємо для 2-х осіб з двоспальним ліжком King size з ортопедичним матрасом розміром 180х200см.</p>
+                  </div>
+                  <div class="mt-auto text-right">
+                    <p class="price mt-3">Ціна від <span>2800грн</span></p>
+                    <a href="#" class="btn btn_big btn_big_mdf ml-auto">Забронювати</a>
+                  </div>
+                </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="col-12 col-lg-4">
+      <div class="col-12 col-lg-4 d-none d-lg-block">
         <div class="column-header-bg mt-5 mb-3 pb-2 pt-3 mt-lg-0">
           <div class="row">
             {{#partials}}

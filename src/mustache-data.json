@@ -553,6 +553,80 @@
       "desc": "Усі номери"
     },
     "deluxe-2": {
+    "items-mobile-1": [
+      {
+        "items": [
+          {
+            "name": "Душ"
+          },
+          {
+            "name": "Умивальник"
+           
+          },
+          {
+            "name": "Туалет"
+           
+          },
+          {
+            "name": "Фен"
+            
+          }
+        ]
+      },
+      {
+        "items": [
+          {
+            "name": "Рушники"
+           
+          },
+          {
+            "name": "Шампунь"
+           
+          },
+          {
+            "name": "Рідке мило"
+            
+          },
+          {
+            "name": "Одноразові тапочки"
+            
+          }
+        ]
+      }
+    ],
+    "items-mobile-2": [
+      {
+        "items": [
+          {
+            "name": "Сейф"
+          },
+          {
+            "name": "Шафа"
+           
+          },
+          {
+            "name": "Вішаки для одягу"
+           
+          }
+        ]
+      },
+      {
+        "items": [
+          {
+            "name": "Підставка під чемодан"
+            
+          },
+          {
+            "name": "Стіл"
+           
+          },
+          {
+            "name": "Крісла"
+           
+          }
+        ]
+      }
+    ],
     "partials":[
       {
         "column-header": {
@@ -728,6 +802,15 @@
       ]  
     },
     "flat-carousel": {
+      "teaser-1": {
+        "class": "section-title__mobile",
+        "mob-bottom-section-1": true,
+        "mob-bottom-section-2": true,
+        "mob-bottom-section-3": true,
+        "title-1": "Двомісний номер <b>Делюкс</b>",
+        "title-2": "Одномісний номер <b>Делюкс</b>",
+        "title-3": "Двомісний номер <b>Делюкс</b>"
+      },
       "section-title": {
         "title": "Інші номери"
       },
