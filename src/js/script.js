@@ -13,6 +13,8 @@ $(function() {
     $(this).parent().addClass('selected');
   });
 
+
+
   $('body').removeAttr('class');
 
   $('.item-serv').matchHeight({
@@ -21,6 +23,60 @@ $(function() {
       target: null,
       remove: false
   });
+
+
+
+
+  var currentDate = new Date();
+  var endDate = new Date();
+  endDate.setDate(currentDate.getUTCDate() + 7);
+  
+  $("#f-date-from").datepicker();
+  $("#f-date-to").datepicker();
+  $("#f-date-from").datepicker("setDate", currentDate);
+  $("#f-date-to").datepicker("setDate", endDate);
+  
+  $('#f-date-from').val($('#f-date-from').val().split('/').join('.'));
+  $('#f-date-to').val($('#f-date-to').val().split('/').join('.'));
+
+
+ 
+  ( function( factory ) {
+    if ( typeof define === "function" && define.amd ) {
+  
+      // AMD. Register as an anonymous module.
+      define( [ "../widgets/datepicker" ], factory );
+    } else {
+  
+      // Browser globals
+      factory( jQuery.datepicker );
+    }
+  }( function( datepicker ) {
+  
+  datepicker.regional.uk = {
+    closeText: "Закрити",
+    prevText: "&#x3C;",
+    nextText: "&#x3E;",
+    currentText: "Сьогодні",
+    monthNames: [ "Січень","Лютий","Березень","Квітень","Травень","Червень",
+    "Липень","Серпень","Вересень","Жовтень","Листопад","Грудень" ],
+    monthNamesShort: [ "Січ","Лют","Бер","Кві","Тра","Чер",
+    "Лип","Сер","Вер","Жов","Лис","Гру" ],
+    dayNames: [ "неділя","понеділок","вівторок","середа","четвер","п’ятниця","субота" ],
+    dayNamesShort: [ "нед","пнд","вів","срд","чтв","птн","сбт" ],
+    dayNamesMin: [ "Нд","Пн","Вт","Ср","Чт","Пт","Сб" ],
+    weekHeader: "Тиж",
+    dateFormat: "dd.mm.yy",
+    firstDay: 1,
+    isRTL: false,
+    showMonthAfterYear: false,
+    yearSuffix: "" };
+  datepicker.setDefaults( datepicker.regional.uk );
+  
+  return datepicker.regional.uk;
+  
+  } ) );
+  
 });
 
 AOS.init();
