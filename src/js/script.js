@@ -1,4 +1,4 @@
-$(function() {
+$( document ).ready(function() { 
   $('.burger-button').on('click', function(e) {
     e.preventDefault();
     $(this).toggleClass('clicked');
@@ -38,6 +38,24 @@ $(function() {
   
   $('#f-date-from').val($('#f-date-from').val().split('/').join('.'));
   $('#f-date-to').val($('#f-date-to').val().split('/').join('.'));
+
+
+  
+
+  
+
+  $(document).on('click', '#minImg', function() {
+    var attr = $(this).attr('src');
+    var src = $('#maxImg').attr('src');
+    $('#maxImg').attr('src', attr);
+  });
+
+
+  $('#title').click(function(){ 
+    $("#f-select-2 option:contains('"+$(this).text()+"')").attr("selected",true);
+    $("#f-select-2").selectmenu('refresh', true);
+  });
+
 
 
  

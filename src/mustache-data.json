@@ -472,7 +472,6 @@
     "beauty-zone-baner": {
       "slide-name":"baner-1234",
       "title":"Про нас"
-
     },
     "beauty-slider": {
       "text": "Галерея",
@@ -669,7 +668,13 @@
       },
       {
         "teaser-2": {
-          "img-name": "min-img-3.jpg",
+          "img-name": "min-img-1.jpg",
+          "visibility": "d-none"
+        }    
+      },
+      {
+        "teaser-2": {
+          "img-name": "min-img-2.jpg",
           "visibility": "d-none"
         }    
       },
@@ -681,13 +686,7 @@
       },
       {
         "teaser-2": {
-          "img-name": "min-img-3.jpg",
-          "visibility": "d-none"
-        }    
-      },
-      {
-        "teaser-2": {
-          "img-name": "min-img-3.jpg",
+          "img-name": "min-img-4.jpg",
           "visibility": "d-none"
         }    
       }

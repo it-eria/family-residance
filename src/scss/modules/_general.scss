@@ -1,6 +1,39 @@
 body, html {
   min-width: 320px;
+  overflow-x: hidden;
 }
+
+
+.header__nav-section .main-nav ul li.current-menu-item a{color: #49a9b2}
+body div.wpcf7 .ajax-loader{display: none}
+span.wpcf7-not-valid-tip{display: none!important;}
+.wpcf7-not-valid{background-color: rgba(255, 0, 0, 0.2)!important}
+.write-to-us .insert-group{padding-left: 0;}
+div.wpcf7-response-output{margin: 20px 0 0 0!important;padding: 0!important;border: none!important}
+.write-to-us .bottom-content .insert-group label{padding-left: 0;}
+.write-to-us .bottom-content .insert-group #txt-feedback{padding-left: 0;}
+h6 a,h6 a:hover{color: #212529}
+.register-modal .f-group{border-bottom: 2px solid #71bdc2;}
+.register-modal .f-group .checkbox-lbl, .register-modal .f-group .nice-select, .register-modal .f-group input[type=email], .register-modal .f-group input[type=text], .register-modal .f-group select{font-family: ArimoRegular;}
+.register-modal button span{color: #fff;}
+.register-modal button{position: relative;top: 3px;opacity: 1;}
+.contacts-nav span.d-inline-block{    font-family: ArimoBold;}
+.dots-place.dots-place_gallery{max-width: 100%;overflow: hidden;}
+@media screen and (max-width: 1200px) {
+  .header__top-section .icon-4,.header__top-section .icon-5{font-size: 1rem;}
+}
+@media screen and (max-width: 991px) {
+  .header .mobile-icon {
+  text-align: right;
+  }
+  .section-title__img{margin-bottom: 20px;}
+  .services-icons{flex-wrap: wrap}
+  .faq{padding: 20px 0;}
+  .register-modal .f-group .nice-select, .register-modal .f-group input[type=email], .register-modal .f-group input[type=text], .register-modal .f-group select{
+  border: none;width: 100%;}
+} 
+
+
 .fl-mb {
   margin-top: 150px !important;
 }
@@ -13,6 +46,7 @@ body, html {
     box-shadow: none;
   }
 }
+
 
 .button-header {
   padding: 8px 47px;
@@ -587,6 +621,11 @@ p {
     }
   }
 } 
+
+#maxImg {
+  width: 100%;
+  max-height: 400px;
+}
 
 
 .faq {
@@ -1233,10 +1272,15 @@ span {
   }
 }
 
-.bg-n {
-  background: none;
-  background-image: none !important;
+
+@media screen and (max-width: 992px) {
+  .bg-n {
+    background: none;
+    background-image: none !important;
+  }
 }
+
+
 
 .contacts-without-bg {
   background-color: #fff;
