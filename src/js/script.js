@@ -1,4 +1,5 @@
-$( document ).ready(function() { 
+$( document ).ready(function() {
+  var roomType;
   $('.burger-button').on('click', function(e) {
     e.preventDefault();
     $(this).toggleClass('clicked');
@@ -14,7 +15,7 @@ $( document ).ready(function() {
   });
 
 
-
+                           
   $('body').removeAttr('class');
 
   $('.item-serv').matchHeight({
@@ -25,7 +26,20 @@ $( document ).ready(function() {
   });
 
 
+  $('#requestModal').on('shown.bs.modal', function (e) {
+    $("html").addClass("modal-open");
+  });
 
+  $('#requestModal').on('hidden.bs.modal', function (e) {
+    $("html").removeClass("modal-open");
+  });
+    
+
+  $('.btn').on('click', function() {
+    roomType = $(this).attr('data-room-type');
+    $('.f-select-2').find('option[value="'+ roomType +'"]').attr('selected', true);
+    $('select').niceSelect('update');
+  });
 
   var currentDate = new Date();
   var endDate = new Date();
@@ -39,62 +53,13 @@ $( document ).ready(function() {
   $('#f-date-from').val($('#f-date-from').val().split('/').join('.'));
   $('#f-date-to').val($('#f-date-to').val().split('/').join('.'));
 
-
-  
-
-  
-
-  $(document).on('click', '#minImg', function() {
+  $('.minImg').on('click', function() {
     var attr = $(this).attr('src');
     var src = $('#maxImg').attr('src');
     $('#maxImg').attr('src', attr);
   });
 
 
-  $('#title').click(function(){ 
-    $("#f-select-2 option:contains('"+$(this).text()+"')").attr("selected",true);
-    $("#f-select-2").selectmenu('refresh', true);
-  });
-
-
-
- 
-  ( function( factory ) {
-    if ( typeof define === "function" && define.amd ) {
-  
-      // AMD. Register as an anonymous module.
-      define( [ "../widgets/datepicker" ], factory );
-    } else {
-  
-      // Browser globals
-      factory( jQuery.datepicker );
-    }
-  }( function( datepicker ) {
-  
-  datepicker.regional.uk = {
-    closeText: "Закрити",
-    prevText: "&#x3C;",
-    nextText: "&#x3E;",
-    currentText: "Сьогодні",
-    monthNames: [ "Січень","Лютий","Березень","Квітень","Травень","Червень",
-    "Липень","Серпень","Вересень","Жовтень","Листопад","Грудень" ],
-    monthNamesShort: [ "Січ","Лют","Бер","Кві","Тра","Чер",
-    "Лип","Сер","Вер","Жов","Лис","Гру" ],
-    dayNames: [ "неділя","понеділок","вівторок","середа","четвер","п’ятниця","субота" ],
-    dayNamesShort: [ "нед","пнд","вів","срд","чтв","птн","сбт" ],
-    dayNamesMin: [ "Нд","Пн","Вт","Ср","Чт","Пт","Сб" ],
-    weekHeader: "Тиж",
-    dateFormat: "dd.mm.yy",
-    firstDay: 1,
-    isRTL: false,
-    showMonthAfterYear: false,
-    yearSuffix: "" };
-  datepicker.setDefaults( datepicker.regional.uk );
-  
-  return datepicker.regional.uk;
-  
-  } ) );
-  
 });
 
 AOS.init();

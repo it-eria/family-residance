@@ -3,6 +3,11 @@ body, html {
   overflow-x: hidden;
 }
 
+.modal-open {
+  overflow: hidden;
+}
+
+
 
 .header__nav-section .main-nav ul li.current-menu-item a{color: #49a9b2}
 body div.wpcf7 .ajax-loader{display: none}
@@ -47,6 +52,10 @@ h6 a,h6 a:hover{color: #212529}
   }
 }
 
+
+.modal {
+  z-index: 9999;
+}
 
 .button-header {
   padding: 8px 47px;

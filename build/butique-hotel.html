@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="assets/css/style.min.css">
 </head>
 
-<body class="preloader">
+<body class="preloader modal-open">
     <header class="header ">
         <div class="header__top-section">
             <div class="container">
@@ -46,7 +46,7 @@
                             <a href="#"><i class="icon icon-5 mr-2"></i></a>
                             <a href="#"><i class="icon icon-4 ml-2"></i></a>
                         </div>
-                        <a href="#" class="button-header d-none d-xl-block" data-toggle="modal" data-target="#requestModal">Забронювати номер</a>
+                        <a href="#" id="btnDesk" class="button-header d-none d-xl-block" data-toggle="modal" data-target="#requestModal">Забронювати номер</a>
                     </div>
                 </div>
             </div>
@@ -76,7 +76,7 @@
                                 <div class="separator m-0 d-block d-xl-none"></div>
                                 <li><a href="#">FAQ</a></li>
                                 <div class="separator m-0 d-block d-xl-none"></div>
-                                <a href="#" class="flex-column align-self-start d-xl-none mb-5 mt-3 btn btn_big btn_big_hdr" data-toggle="modal" data-target="#requestModal">Забронювати номер</a>
+                                <a href="#" id="btnMob" class="flex-column align-self-start d-xl-none mb-5 mt-3 btn btn_big btn_big_hdr" data-toggle="modal" data-target="#requestModal">Забронювати номер</a>
                             </ul>
                         </nav>
                     </div>
@@ -152,11 +152,10 @@
                                 <div class="col-12 col-sm-7 col-md-8">
                                     <div class="f-group f-group_inline">
                                         <label for="f-select-2">Категорія номера:</label>
-                                        <select id="f-select-2">
-                    <option value="0">Напівлюкс</option>
-                    <option value="1">Двомісний</option>
-                    <option value="2">Одномісний</option>
-                    <option value="3">Some option</option>
+                                        <select class="f-select-2" id="f-select-2">
+                    <option value="3">Напівлюкс</option>
+                    <option value="2">Двомісний</option>
+                    <option value="1">Одномісний</option>
                   </select>
                                     </div>
                                 </div>
@@ -442,13 +441,13 @@
                                 <div data-mh="slide-gr" class="bgc position-relative mb-5 mr-0 ml-0">
                                     <div class="flat-carousel__slide flat-carousel__slide_one">
                                         <div class="mob-title d-block d-lg-none">
-                                            <h3>Двомісний номер <b>Делюкс</b></h3>
+                                            <h3><b>Одномісний номер</b></h3>
                                         </div>
                                         <div class="item-bg" style="background-image: url(assets/img/other-slide-1.jpg);"></div>
                                     </div>
                                     <div class="flat-wrapper p-3">
                                         <div class="title-serv title-serv_flt mt-3">
-                                            <a href="#"><b>Двомісний номер</b></a>
+                                            <a href="#"><b>Одномісний номер</b></a>
                                         </div>
                                         <div class="flat-txt d-flex">
                                             <p>Кількість номерів - 1</p>
@@ -470,7 +469,7 @@
                                         <div class="d-none d-lg-block">
                                             <div class="bottom-wrp bgc">
                                                 <div class="btn-wrp d-flex justify-content-center">
-                                                    <a href="#" id="title" data-toggle="modal" data-target="#requestModal" class="btn btn_big btn_big_mdf">Забронювати</a>
+                                                    <a href="#" data-toggle="modal" data-target="#requestModal" data-room-type="1" class="btn btn_big btn_big_mdf">Забронювати</a>
                                                 </div>
                                                 <div class="itm-wrp d-flex justify-content-between px-3">
                                                     <ul class="flat-list justify-content-between">
@@ -503,7 +502,7 @@
                                 <div data-mh="slide-gr" class="bgc position-relative mb-5 mr-0 ml-0">
                                     <div class="flat-carousel__slide flat-carousel__slide_one">
                                         <div class="mob-title d-block d-lg-none">
-                                            <h3>Двомісний номер <b>Делюкс</b></h3>
+                                            <h3><b>Двомісний номер</b></h3>
                                         </div>
                                         <div class="item-bg" style="background-image: url(assets/img/other-slide-1.jpg);"></div>
                                     </div>
@@ -531,7 +530,7 @@
                                         <div class="d-none d-lg-block">
                                             <div class="bottom-wrp bgc">
                                                 <div class="btn-wrp d-flex justify-content-center">
-                                                    <a href="#" id="title" data-toggle="modal" data-target="#requestModal" class="btn btn_big btn_big_mdf">Забронювати</a>
+                                                    <a href="#" data-toggle="modal" data-target="#requestModal" data-room-type="2" class="btn btn_big btn_big_mdf">Забронювати</a>
                                                 </div>
                                                 <div class="itm-wrp d-flex justify-content-between px-3">
                                                     <ul class="flat-list justify-content-between">
@@ -564,13 +563,13 @@
                                 <div data-mh="slide-gr" class="bgc position-relative mb-5 mr-0 ml-0">
                                     <div class="flat-carousel__slide flat-carousel__slide_one">
                                         <div class="mob-title d-block d-lg-none">
-                                            <h3>Двомісний номер <b>Делюкс</b></h3>
+                                            <h3><b>Напівлюкс</b></h3>
                                         </div>
                                         <div class="item-bg" style="background-image: url(assets/img/other-slide-1.jpg);"></div>
                                     </div>
                                     <div class="flat-wrapper p-3">
                                         <div class="title-serv title-serv_flt mt-3">
-                                            <a href="#"><b>Двомісний номер</b></a>
+                                            <a href="#"><b>Напівлюкс</b></a>
                                         </div>
                                         <div class="flat-txt d-flex">
                                             <p>Кількість номерів - 1</p>
@@ -592,7 +591,7 @@
                                         <div class="d-none d-lg-block">
                                             <div class="bottom-wrp bgc">
                                                 <div class="btn-wrp d-flex justify-content-center">
-                                                    <a href="#" id="title" data-toggle="modal" data-target="#requestModal" class="btn btn_big btn_big_mdf">Забронювати</a>
+                                                    <a href="#" data-toggle="modal" data-target="#requestModal" data-room-type="3" class="btn btn_big btn_big_mdf">Забронювати</a>
                                                 </div>
                                                 <div class="itm-wrp d-flex justify-content-between px-3">
                                                     <ul class="flat-list justify-content-between">
@@ -625,13 +624,13 @@
                                 <div data-mh="slide-gr" class="bgc position-relative mb-5 mr-0 ml-0">
                                     <div class="flat-carousel__slide flat-carousel__slide_one">
                                         <div class="mob-title d-block d-lg-none">
-                                            <h3>Двомісний номер <b>Делюкс</b></h3>
+                                            <h3><b>Одномісний номер</b></h3>
                                         </div>
                                         <div class="item-bg" style="background-image: url(assets/img/other-slide-1.jpg);"></div>
                                     </div>
                                     <div class="flat-wrapper p-3">
                                         <div class="title-serv title-serv_flt mt-3">
-                                            <a href="#"><b>Двомісний номер</b></a>
+                                            <a href="#"><b>Одномісний номер</b></a>
                                         </div>
                                         <div class="flat-txt d-flex">
                                             <p>Кількість номерів - 1</p>
@@ -653,7 +652,7 @@
                                         <div class="d-none d-lg-block">
                                             <div class="bottom-wrp bgc">
                                                 <div class="btn-wrp d-flex justify-content-center">
-                                                    <a href="#" id="title" data-toggle="modal" data-target="#requestModal" class="btn btn_big btn_big_mdf">Забронювати</a>
+                                                    <a href="#" data-toggle="modal" data-target="#requestModal" data-room-type="1" class="btn btn_big btn_big_mdf">Забронювати</a>
                                                 </div>
                                                 <div class="itm-wrp d-flex justify-content-between px-3">
                                                     <ul class="flat-list justify-content-between">
@@ -686,7 +685,7 @@
                                 <div data-mh="slide-gr" class="bgc position-relative mb-5 mr-0 ml-0">
                                     <div class="flat-carousel__slide flat-carousel__slide_one">
                                         <div class="mob-title d-block d-lg-none">
-                                            <h3>Двомісний номер <b>Делюкс</b></h3>
+                                            <h3><b>Двомісний номер</b></h3>
                                         </div>
                                         <div class="item-bg" style="background-image: url(assets/img/other-slide-1.jpg);"></div>
                                     </div>
@@ -701,7 +700,7 @@
                                         <div class="separator ml-2"></div>
                                         <div class="info-item d-flex">
                                             <i class="icon mr-2 icon-9"></i>
-                                            <p><b>Місткість:</b> 1 або 2 особи</p>
+                                            <p><b>Місткість:</b> 1 або 1 особи</p>
                                         </div>
                                         <div class="info-item  d-flex flex-row mt-2">
                                             <i class="icon mr-2 icon-10"></i>
@@ -714,7 +713,7 @@
                                         <div class="d-none d-lg-block">
                                             <div class="bottom-wrp bgc">
                                                 <div class="btn-wrp d-flex justify-content-center">
-                                                    <a href="#" id="title" data-toggle="modal" data-target="#requestModal" class="btn btn_big btn_big_mdf">Забронювати</a>
+                                                    <a href="#" data-toggle="modal" data-target="#requestModal" data-room-type="2" class="btn btn_big btn_big_mdf">Забронювати</a>
                                                 </div>
                                                 <div class="itm-wrp d-flex justify-content-between px-3">
                                                     <ul class="flat-list justify-content-between">
@@ -747,13 +746,13 @@
                                 <div data-mh="slide-gr" class="bgc position-relative mb-5 mr-0 ml-0">
                                     <div class="flat-carousel__slide flat-carousel__slide_one">
                                         <div class="mob-title d-block d-lg-none">
-                                            <h3>Двомісний номер <b>Делюкс</b></h3>
+                                            <h3><b>Напівлюкс</b></h3>
                                         </div>
                                         <div class="item-bg" style="background-image: url(assets/img/other-slide-1.jpg);"></div>
                                     </div>
                                     <div class="flat-wrapper p-3">
                                         <div class="title-serv title-serv_flt mt-3">
-                                            <a href="#"><b>Двомісний номер</b></a>
+                                            <a href="#"><b>Напівлюкс</b></a>
                                         </div>
                                         <div class="flat-txt d-flex">
                                             <p>Кількість номерів - 1</p>
@@ -775,7 +774,7 @@
                                         <div class="d-none d-lg-block">
                                             <div class="bottom-wrp bgc">
                                                 <div class="btn-wrp d-flex justify-content-center">
-                                                    <a href="#" id="title" data-toggle="modal" data-target="#requestModal" class="btn btn_big btn_big_mdf">Забронювати</a>
+                                                    <a href="#" data-toggle="modal" data-target="#requestModal" data-room-type="3" class="btn btn_big btn_big_mdf">Забронювати</a>
                                                 </div>
                                                 <div class="itm-wrp d-flex justify-content-between px-3">
                                                     <ul class="flat-list justify-content-between">
@@ -947,8 +946,44 @@
     <!-- Custom script -->
     <script src="assets/js/script.min.js"></script>
     <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        (function(factory) {
+            if (typeof define === "function" && define.amd) {
 
+                // AMD. Register as an anonymous module.
+                define(["../widgets/datepicker"], factory);
+            } else {
 
+                // Browser globals
+                factory(jQuery.datepicker);
+            }
+        }(function(datepicker) {
+
+            datepicker.regional.uk = {
+                closeText: "Закрити",
+                prevText: "&#x3C;",
+                nextText: "&#x3E;",
+                currentText: "Сьогодні",
+                monthNames: ["Січень", "Лютий", "Березень", "Квітень", "Травень", "Червень",
+                    "Липень", "Серпень", "Вересень", "Жовтень", "Листопад", "Грудень"
+                ],
+                monthNamesShort: ["Січ", "Лют", "Бер", "Кві", "Тра", "Чер",
+                    "Лип", "Сер", "Вер", "Жов", "Лис", "Гру"
+                ],
+                dayNames: ["неділя", "понеділок", "вівторок", "середа", "четвер", "п’ятниця", "субота"],
+                dayNamesShort: ["нед", "пнд", "вів", "срд", "чтв", "птн", "сбт"],
+                dayNamesMin: ["Нд", "Пн", "Вт", "Ср", "Чт", "Пт", "Сб"],
+                weekHeader: "Тиж",
+                dateFormat: "dd.mm.yy",
+                firstDay: 1,
+                isRTL: false,
+                showMonthAfterYear: false,
+                yearSuffix: ""
+            };
+            datepicker.setDefaults(datepicker.regional.uk);
+            return datepicker.regional.uk;
+        }));
+    </script>
     <script>
         var mainCarousel = $('*[data-js="main-carousel"]').length;
         var beautyCarousel = $('*[data-js="beauty-carousel"]').length;

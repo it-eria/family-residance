@@ -30,7 +30,7 @@
              <a href="#"><i class="icon icon-5 mr-2"></i></a>  
              <a href="#"><i class="icon icon-4 ml-2"></i></a>   
           </div>
-          <a href="#" class="button-header d-none d-xl-block" data-toggle="modal" data-target="#requestModal">Забронювати номер</a>
+          <a href="#" id="btnDesk" class="button-header d-none d-xl-block" data-toggle="modal" data-target="#requestModal">Забронювати номер</a>
         </div>
       </div>
     </div>
@@ -60,7 +60,7 @@
               <div class="separator m-0 d-block d-xl-none"></div>
               <li><a href="#">FAQ</a></li>
               <div class="separator m-0 d-block d-xl-none"></div>
-              <a href="#" class="flex-column align-self-start d-xl-none mb-5 mt-3 btn btn_big btn_big_hdr" data-toggle="modal" data-target="#requestModal">Забронювати номер</a>
+              <a href="#" id="btnMob" class="flex-column align-self-start d-xl-none mb-5 mt-3 btn btn_big btn_big_hdr" data-toggle="modal" data-target="#requestModal">Забронювати номер</a>
             </ul>
           </nav>
         </div>
@@ -136,11 +136,10 @@
               <div class="col-12 col-sm-7 col-md-8">
                 <div class="f-group f-group_inline">
                   <label for="f-select-2">Категорія номера:</label>
-                  <select id="f-select-2">
-                    <option value="0">Напівлюкс</option>
-                    <option value="1">Двомісний</option>
-                    <option value="2">Одномісний</option>
-                    <option value="3">Some option</option>
+                  <select class="f-select-2" id="f-select-2">
+                    <option value="3">Напівлюкс</option>
+                    <option value="2">Двомісний</option>
+                    <option value="1">Одномісний</option>
                   </select>
                 </div>
               </div>
